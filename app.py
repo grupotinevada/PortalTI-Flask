@@ -203,10 +203,16 @@ def index():
 def renombrar_contrato():
     return render_template('renombreContratosPage.html')
 
+# Ruta para chatBot
+@app.route('/chatBotPage')
+def chat_bot_page():
+    return render_template('chatBot.html')
+
 ######################## ENDPOINT BOT CHAT ########################################################################
-import markdown
+
 
 def formatear_texto(texto):
+    import markdown
     """
     Aplica formato al texto del artículo usando Markdown para mejorar la presentación.
     """
@@ -215,7 +221,9 @@ def formatear_texto(texto):
     
     # Detectar listas enumeradas (1. Algo, 2. Algo más...)
     texto = re.sub(r"(\n\d+\.\s)", r"\n- \1", texto)
-
+    texto = re.sub(r"(\(\s*[a-zA-Z]+\s*\))", r"- \1", texto)  
+    texto = re.sub(r"(\n\s*[ivxlcdm]+[)])", r"\n  - \1", texto)  # Números romanos
+    texto = re.sub(r"(\(\s*[ivxlcdmIVXLCDM]+\s*\))", r"  - \1", texto)  
     # Detectar viñetas comunes (usualmente marcadas con guiones o asteriscos)
     texto = re.sub(r"(\n[-*]\s)", r"\n- ", texto)
 
@@ -227,8 +235,9 @@ def bot_api():
     global last_relevant_question
 
     try:
-        # Obtener el mensaje del usuario
+        # Obtener el mensaje del usuario y el último mensaje del historial
         user_message = request.json.get('message', '').strip()
+        last_message = request.json.get('last_message', '')
 
         if not user_message:
             return jsonify({"error": "No se proporcionó un mensaje"}), 400
@@ -237,20 +246,42 @@ def bot_api():
         if qa_chain is None:
             return jsonify({"error": "El sistema no está listo. Por favor, intenta nuevamente más tarde."}), 503
 
-        # Detectar si el usuario hace referencia al contexto previo
-        hace_referencia = any(
-            palabra in user_message.lower() for palabra in ["anterior", "mencioné", "pregunté", "dije", "acabo"]
+        # Detectar si el usuario menciona algo del contexto previo
+        requiere_contexto = any(
+            palabra in user_message.lower() for palabra in ["acerca de este tema","esto", "anterior", "referido", "mencionado", "dicho","a lo anterior", "a lo mencionado", "a dicho", "dicho"]
         )
 
-        # Incluir el mensaje anterior relevante en el contexto si aplica
-        contexto = ""
-        if hace_referencia and last_relevant_question:
-            contexto = f"En el mensaje anterior, el usuario preguntó: '{last_relevant_question}'.\n\n"
+        # Crear el prompt con o sin el mensaje anterior según corresponda
+        if requiere_contexto and last_message:
+            contexto = f"El usuario mencionó anteriormente: {last_message}\n\n"
+        else:
+            contexto = ""
+            
 
-        # Crear el prompt para el modelo
+        # Detectar si el usuario menciona un artículo
+        match_articulo = re.search(r"(art[ií]culo\s*)?(\d+)(º)?", user_message, re.IGNORECASE)
+        contenido_articulo = None
+
+        if match_articulo:
+            numero_articulo = match_articulo.group(2)
+            texto_completo = extraer_texto_pdf(PDF_PATH)
+
+            # Patrón para buscar el contenido del artículo
+            patron_articulo = fr"(Artículo {numero_articulo}[º]?\s.*?)(?=\nArtículo \d+|$)"
+            resultado = re.search(patron_articulo, texto_completo, re.DOTALL)
+
+            if resultado:
+                contenido_articulo = resultado.group(1).strip()
+                contenido_articulo = formatear_texto(contenido_articulo)
+
+        # Crear el prompt completo para el modelo
         prompt_completo = f"""
-        Eres un asistente virtual especializado en responder preguntas basadas en el reglamento interno.
-        Responde de manera clara, concisa y textual basándote exclusivamente en el reglamento.
+        Eres un asistente virtual especializado en responder preguntas basadas en el reglamento interno. 
+        Responde de manera literal y textual basándote exclusivamente en el reglamento.
+        Eres un asistente amable y profesional, si te saludan, devolveras el saludo, si no, solo entregas la información, siempre preguntarás si queda alguna duda.
+        siempre recomendarás revisar el reglamento RIOHS.
+        Ten en cuenta que eres un asistente para 4 empresas que tienen el mismo reglamento interno debido a que es un holding, trata de no nombrar la empresa para mantener la coherencia entre empresas.
+        {f"**Artículo {numero_articulo}**:\n{contenido_articulo}\n\n" if contenido_articulo else ""}
         {contexto}
         Consulta del usuario: {user_message}
         """
@@ -259,16 +290,16 @@ def bot_api():
         respuesta = qa_chain.run(prompt_completo)
 
         if not respuesta.strip():
-            respuesta = "Lo siento, no encontré información relevante sobre tu consulta en el reglamento."
-
-        # Actualizar la última pregunta relevante solo si no es una referencia
-        if not hace_referencia:
-            last_relevant_question = user_message
+            respuesta = (
+                f"Lo siento, no encontré información relevante en el reglamento sobre tu consulta."
+                f"{' Además, no encontré el Artículo solicitado.' if contenido_articulo is None else ''}"
+            )
 
         # Registrar la interacción en el CSV
         registrar_interaccion_csv(user_message, respuesta)
 
-        return jsonify({"response": respuesta})
+        # Retornar respuesta y el mensaje actual como referencia para el próximo mensaje
+        return jsonify({"response": respuesta, "last_message": user_message})
 
     except Exception as e:
         print("Error en el servidor:", str(e))
@@ -297,5 +328,5 @@ def server_error(e):
 
 # Ejecución en modo de desarrollo o producción
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=os.environ.get('FLASK_DEBUG', True))
+    app.run(host='0.0.0.0', port=5000, debug=os.environ.get('FLASK_DEBUG', True), use_reloader=True)
 
