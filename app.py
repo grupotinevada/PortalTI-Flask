@@ -64,6 +64,33 @@ def extraer_texto_pdf(pdf_path):
             if page_text:
                 text += page_text + "\n"
     return text
+#################################################################################################################
+# REGISTRO PREGUNTAS
+#################################################################################################################
+import csv
+from datetime import datetime
+
+CSV_FILE = "USUARIO_DATA.csv"
+
+def registrar_interaccion_csv(pregunta, respuesta):
+    """Registra la pregunta, respuesta y fecha en un archivo CSV."""
+    fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    encabezados = ["PREGUNTA", "RESPUESTA", "FECHA"]
+    datos = {"PREGUNTA": pregunta, "RESPUESTA": respuesta, "FECHA": fecha_actual}
+
+    # Verificar si el archivo ya existe
+    existe_archivo = os.path.exists(CSV_FILE)
+
+    with open(CSV_FILE, mode="a", newline="", encoding="utf-8") as archivo_csv:
+        escritor = csv.DictWriter(archivo_csv, fieldnames=encabezados)
+
+        # Si el archivo no existía, escribir los encabezados primero
+        if not existe_archivo:
+            escritor.writeheader()
+
+        # Escribir los datos
+        escritor.writerow(datos)
+
 
 #################################################################################################################
 # Inicialización del sistema
@@ -111,36 +138,13 @@ def initialize_model():
     retriever = vectorstore.as_retriever(search_kwargs={"k": 5})  # Reducir a 5 resultados relevantes
 
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini-2024-07-18",
         openai_api_key=OPENAI_API_KEY,
         temperature=0.1
     )
     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
     print("Modelo y PDF cargados exitosamente.")
-############################### Extraer texto del PDF ################################################################################
 
-# 1. Función para extraer texto del PDF
-def extract_text_from_pdf(pdf_path):
-    text = ""
-    with pdfplumber.open(pdf_path) as pdf:
-        for page in pdf.pages:
-            text += page.extract_text()
-    return text
-
-# 2. Procesar texto para embeddings
-def process_pdf(pdf_path):
-    text = extract_text_from_pdf(pdf_path)
-
-    # Dividir el texto en fragmentos manejables
-    text_splitter = CharacterTextSplitter(
-        chunk_size=1000, chunk_overlap=200, separator="\n"
-    )
-    texts = text_splitter.split_text(text)
-
-    # Generar embeddings con OpenAI
-    embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
-    vectorstore = FAISS.from_texts(texts, embeddings)
-    return vectorstore
 
 ##############################################################################################################
 
@@ -220,9 +224,12 @@ def formatear_texto(texto):
 
 @app.route('/api/bot', methods=['POST'])
 def bot_api():
+    global last_relevant_question
+
     try:
         # Obtener el mensaje del usuario
         user_message = request.json.get('message', '').strip()
+
         if not user_message:
             return jsonify({"error": "No se proporcionó un mensaje"}), 400
 
@@ -230,53 +237,42 @@ def bot_api():
         if qa_chain is None:
             return jsonify({"error": "El sistema no está listo. Por favor, intenta nuevamente más tarde."}), 503
 
-        # Detectar si el usuario menciona un artículo
-        match_articulo = re.search(r"(art[ií]culo\s*)?(\d+)(º)?", user_message, re.IGNORECASE)
-        contenido_articulo = None
+        # Detectar si el usuario hace referencia al contexto previo
+        hace_referencia = any(
+            palabra in user_message.lower() for palabra in ["anterior", "mencioné", "pregunté", "dije", "acabo"]
+        )
 
-        if match_articulo:
-            numero_articulo = match_articulo.group(2)  # Captura solo el número del artículo
-            texto_completo = extraer_texto_pdf(PDF_PATH)
+        # Incluir el mensaje anterior relevante en el contexto si aplica
+        contexto = ""
+        if hace_referencia and last_relevant_question:
+            contexto = f"En el mensaje anterior, el usuario preguntó: '{last_relevant_question}'.\n\n"
 
-            # Patrón para buscar el contenido del artículo
-            patron_articulo = fr"(Artículo {numero_articulo}[º]?\s.*?)(?=\nArtículo \d+|$)"
-            resultado = re.search(patron_articulo, texto_completo, re.DOTALL)
-
-            if resultado:
-                contenido_articulo = resultado.group(1).strip()
-                contenido_articulo = formatear_texto(contenido_articulo)
-
-        # Crear el prompt completo para el modelo
-        if contenido_articulo:
-            prompt_completo = (
-                f"Eres un asistente virtual especializado en responder preguntas basadas en el reglamento interno. "
-                f"Responde de manera literal y textual basándote exclusivamente en el reglamento. "
-                f"Siempre realiza citas del reglamento"
-                f"\n\n**Artículo {numero_articulo}**:\n{contenido_articulo}\n\n"
-                f"Consulta del usuario: {user_message}"
-            )
-        else:
-            prompt_completo = (
-                f"Eres un asistente virtual especializado en responder preguntas basadas en el reglamento interno. "
-                f"Responde de manera literal y textual basándote exclusivamente en el reglamento. "
-                f"Consulta del usuario: {user_message}"
-            )
+        # Crear el prompt para el modelo
+        prompt_completo = f"""
+        Eres un asistente virtual especializado en responder preguntas basadas en el reglamento interno.
+        Responde de manera clara, concisa y textual basándote exclusivamente en el reglamento.
+        {contexto}
+        Consulta del usuario: {user_message}
+        """
 
         # Ejecutar la consulta
         respuesta = qa_chain.run(prompt_completo)
 
         if not respuesta.strip():
-            respuesta = (
-                f"Lo siento, no encontré información relevante en el reglamento sobre tu consulta."
-                f"{' Además, no encontré el Artículo solicitado.' if contenido_articulo is None else ''}"
-            )
+            respuesta = "Lo siento, no encontré información relevante sobre tu consulta en el reglamento."
+
+        # Actualizar la última pregunta relevante solo si no es una referencia
+        if not hace_referencia:
+            last_relevant_question = user_message
+
+        # Registrar la interacción en el CSV
+        registrar_interaccion_csv(user_message, respuesta)
 
         return jsonify({"response": respuesta})
 
     except Exception as e:
         print("Error en el servidor:", str(e))
         return jsonify({"error": f"Error interno del servidor: {str(e)}"}), 500
-
     
     
 @app.route('/')
@@ -301,5 +297,5 @@ def server_error(e):
 
 # Ejecución en modo de desarrollo o producción
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=os.environ.get('FLASK_DEBUG', False))
+    app.run(host='0.0.0.0', port=5000, debug=os.environ.get('FLASK_DEBUG', True))
 

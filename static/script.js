@@ -61,16 +61,17 @@ const chatContent = document.getElementById('chatContent');
 const userInput = document.getElementById('userMessage');
 
 // Variables para el manejo del arrastre
-let isDragging = false;
+
 let startX, startY, initialX, initialY;
 let preventChatOpen = false;
+let isFirstClick = true; // Variable para controlar el primer clic
 
 // Función para posicionar el chat
 function positionChat() {
     const ballRect = chatBall.getBoundingClientRect();
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
-    const chatWidth = 350;
+    const chatWidth = 350;      //posicion
     const chatHeight = 500;
 
     let left = ballRect.right + 10;
@@ -127,8 +128,10 @@ document.getElementById('userMessage').addEventListener('keypress', function (ev
 });
 // Función para enviar mensaje al backend y obtener respuesta del bot
 async function getBotResponse(userMessage) {
+    const typingIndicator = document.getElementById('typing-indicator');
+    typingIndicator.style.display = 'flex'; // Mostrar el indicador
+
     try {
-        // Hacer una solicitud POST al endpoint del bot
         const response = await fetch('/api/bot', {
             method: 'POST',
             headers: {
@@ -137,22 +140,21 @@ async function getBotResponse(userMessage) {
             body: JSON.stringify({ message: userMessage }),
         });
 
-        // Verificar si la respuesta es exitosa
         if (!response.ok) {
             throw new Error('Error en la comunicación con el bot.');
         }
 
-        // Parsear la respuesta como JSON
         const data = await response.json();
-
-        // Obtener la respuesta del bot
         const botResponse = data.response || 'No se pudo obtener respuesta.';
         appendMessage('AI', botResponse);
     } catch (error) {
         console.error('Error:', error);
         appendMessage('AI', 'Ocurrió un error al comunicarse con el bot.');
+    } finally {
+        typingIndicator.style.display = 'none'; // Ocultar el indicador
     }
 }
+
 
 // Evento para mostrar/ocultar el chat
 chatBall.addEventListener('click', (event) => {
@@ -164,6 +166,12 @@ chatBall.addEventListener('click', (event) => {
     if (chatBox.style.display === 'none' || chatBox.style.display === '') {
         positionChat();
         chatBox.style.display = 'flex';
+
+        // Mostrar mensaje de bienvenida solo en el primer clic
+        if (isFirstClick) {
+            appendMessage('AI', '¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?');
+            isFirstClick = false; // Evitar que se repita
+        }
     } else {
         chatBox.style.display = 'none';
     }
@@ -184,81 +192,9 @@ sendMessage.addEventListener('click', () => {
     }
 });
 
-// Eventos para el arrastre de la bola flotante
-chatBall.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    preventChatOpen = false;
-    startX = e.clientX;
-    startY = e.clientY;
-    const ballRect = chatBall.getBoundingClientRect();
-    initialX = ballRect.left;
-    initialY = ballRect.top;
-    chatBall.style.transition = 'none';
-    document.body.style.userSelect = 'none';
-});
-
-document.addEventListener('mousemove', (e) => {
-    if (isDragging) {
-        if (Math.abs(e.clientX - startX) > 5 || Math.abs(e.clientY - startY) > 5) {
-            preventChatOpen = true;
-        }
-
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newX = initialX + dx;
-        const newY = initialY + dy;
-
-        const maxX = window.innerWidth - chatBall.offsetWidth;
-        const maxY = window.innerHeight - chatBall.offsetHeight;
-
-        chatBall.style.left = `${Math.max(0, Math.min(newX, maxX))}px`;
-        chatBall.style.top = `${Math.max(0, Math.min(newY, maxY))}px`;
-    }
-});
-
-document.addEventListener('mouseup', () => {
-    if (isDragging) {
-        isDragging = false;
-        document.body.style.userSelect = '';
-        chatBall.style.transition = 'all 0.3s ease';
-    }
-});
-
-// Eventos táctiles para dispositivos móviles
-chatBall.addEventListener('touchstart', (e) => {
-    isDragging = true;
-    preventChatOpen = false;
-    const touch = e.touches[0];
-    startX = touch.clientX;
-    startY = touch.clientY;
-    const ballRect = chatBall.getBoundingClientRect();
-    initialX = ballRect.left;
-    initialY = ballRect.top;
-    chatBall.style.transition = 'none';
-});
-
-document.addEventListener('touchmove', (e) => {
-    if (isDragging) {
-        const touch = e.touches[0];
-        if (Math.abs(touch.clientX - startX) > 5 || Math.abs(touch.clientY - startY) > 5) {
-            preventChatOpen = true;
-        }
-
-        const dx = touch.clientX - startX;
-        const dy = touch.clientY - startY;
-        const newX = initialX + dx;
-        const newY = initialY + dy;
-
-        const maxX = window.innerWidth - chatBall.offsetWidth;
-        const maxY = window.innerHeight - chatBall.offsetHeight;
-
-        chatBall.style.left = `${Math.max(0, Math.min(newX, maxX))}px`;
-        chatBall.style.top = `${Math.max(0, Math.min(newY, maxY))}px`;
-    }
-});
 
 document.addEventListener('touchend', () => {
-    isDragging = false;
+    
     chatBall.style.transition = 'all 0.3s ease';
 });
 
