@@ -135,12 +135,12 @@ def initialize_model():
     if vectorstore is None:
         raise ValueError("No se pudo inicializar el vectorstore.")
 
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 5})  # Reducir a 5 resultados relevantes
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 20})  # Reducir a 5 resultados relevantes
 
     llm = ChatOpenAI(
         model="gpt-4o-mini-2024-07-18",
         openai_api_key=OPENAI_API_KEY,
-        temperature=0.1
+        temperature=0.5
     )
     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
     print("Modelo y PDF cargados exitosamente.")
@@ -187,6 +187,11 @@ def serve_manuales(filename):
 @limiter.exempt
 def serve_logos_png(filename):
     return send_from_directory('logos_png', filename)
+
+@app.route('/reglamentos/<path:filename>')
+@limiter.exempt
+def serve_reglamentos(filename):
+    return send_from_directory('reglamentos', filename)
 
 @app.route('/ejecutables/<path:filename>')
 @limiter.exempt
@@ -278,8 +283,13 @@ def bot_api():
         prompt_completo = f"""
         Eres un asistente virtual especializado en responder preguntas basadas en el reglamento interno. 
         Responde de manera literal y textual basándote exclusivamente en el reglamento.
-        Eres un asistente amable y profesional, si te saludan, devolveras el saludo, si no, solo entregas la información, siempre preguntarás si queda alguna duda.
+        Eres un asistente amable y profesional, solo saluda si te saludan, si no te saludan no saludarás(Son mal educados). siempre preguntarás si queda alguna duda.
         siempre recomendarás revisar el reglamento RIOHS.
+        Siempre debes responder de manera clara y citando de que articulo o capitulo sacaste la informacion.
+        antes de responder verificaras el articulo y basaras la informacion en base a ese articulo, por ejemplo si te preguntan "lavado de activos" Buscaras donde se mencione las caracteristicas, analizaras y responderas.
+        Aveces los usuarios preguntaran cosas raras, debes responder de manera profesional y amable.
+        debes interpretar las preguntas y dar una respuesta clara y precisa.
+        ATENCION, Si te preguntan acerca del contrato de trabajo, responderas en base al articulo 112.
         Ten en cuenta que eres un asistente para 4 empresas que tienen el mismo reglamento interno debido a que es un holding, trata de no nombrar la empresa para mantener la coherencia entre empresas.
         {f"**Artículo {numero_articulo}**:\n{contenido_articulo}\n\n" if contenido_articulo else ""}
         {contexto}
@@ -328,5 +338,5 @@ def server_error(e):
 
 # Ejecución en modo de desarrollo o producción
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=os.environ.get('FLASK_DEBUG', True), use_reloader=True)
+    app.run(host='0.0.0.0', port=5000)
 

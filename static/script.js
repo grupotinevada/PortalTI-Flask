@@ -92,14 +92,30 @@ function positionChat() {
     chatBox.style.top = `${top}px`;
 }
 
+let messageCount = 0; // Contador global para los mensajes
+
 // Función para agregar mensajes al chat
 function appendMessage(sender, message) {
     const messageElement = document.createElement('div');
     messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+
+    // Incrementar el contador de mensajes
+    messageCount++;
+
     if (sender === 'Usuario') {
         messageElement.classList.add('user-message');
+        if (messageCount % 2 === 0) {
+            messageElement.style.alignSelf = 'flex-end'; // Alinear mensajes pares a la derecha
+        } else {
+            messageElement.style.alignSelf = 'flex-start'; // Alinear mensajes impares a la izquierda
+        }
     } else {
-        messageElement.classList.add('bot-message');
+        messageElement.classList.add('bot-message'); // Clase general para mensajes del bot
+        if (messageCount % 2 === 0) {
+            messageElement.style.alignSelf = 'flex-start'; // Alinear mensajes pares a la izquierda
+        } else {
+            messageElement.style.alignSelf = 'flex-end'; // Alinear mensajes impares a la derecha
+        }
     }
     chatContent.appendChild(messageElement);
     chatContent.scrollTop = chatContent.scrollHeight;
@@ -126,6 +142,9 @@ document.getElementById('userMessage').addEventListener('keypress', function (ev
         handleUserMessage(event);
     }
 });
+
+
+
 // Función para enviar mensaje al backend y obtener respuesta del bot
 async function getBotResponse(userMessage) {
     const typingIndicator = document.getElementById('typing-indicator');
@@ -145,8 +164,10 @@ async function getBotResponse(userMessage) {
         }
 
         const data = await response.json();
-        const botResponse = data.response || 'No se pudo obtener respuesta.';
-        appendMessage('AI', botResponse);
+        const botResponse = data.response || 'No se pudo obtener respuesta.' ;
+        const formattedMessage = marked.parse(botResponse) || botResponse;
+        
+        appendMessage('AI', formattedMessage);
     } catch (error) {
         console.error('Error:', error);
         appendMessage('AI', 'Ocurrió un error al comunicarse con el bot.');
@@ -171,6 +192,7 @@ chatBall.addEventListener('click', (event) => {
         if (isFirstClick) {
             appendMessage('AI', '¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?');
             isFirstClick = false; // Evitar que se repita
+            messageCount--; // Restar 1 al contador para no afectar lógica de par/impar
         }
     } else {
         chatBox.style.display = 'none';

@@ -44,3 +44,18 @@ body{margin-top:20px;}
 .border-top {
     border-top: 1px solid #dee2e6!important;
 }
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green; /* Verde para "En línea" */
+    margin-right: 5px;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+
+.status-indicator.typing {
+    background-color: gray; /* Gris para "Escribiendo..." */
+}

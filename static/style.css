@@ -289,14 +289,14 @@ footer {
 #chatContent div:nth-child(even) {
   background-color: #641ACF;
   color: white;
-  align-self: flex-start;
+  align-self: flex-end;
   margin-right: auto;
 }
 
 #chatContent div:nth-child(odd) {
   background-color: #2771FA;
   color: white;
-  align-self: flex-end;
+  align-self: flex-start;
   margin-left: auto;
 }
 
