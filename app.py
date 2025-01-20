@@ -4,10 +4,16 @@ from flask_limiter.util import get_remote_address
 from werkzeug.middleware.proxy_fix import ProxyFix
 from dotenv import load_dotenv
 
+
+
+import markdown
+import json
+import time
 import os
 import openai
 import hashlib
 import re  # Agregar esta línea si no está ya importado
+
 from langchain.schema import Document  # Importar la clase Document
 from langchain_community.vectorstores import FAISS
 from langchain_openai.embeddings import OpenAIEmbeddings
@@ -203,6 +209,11 @@ def serve_ejecutables(filename):
 def index():
     return render_template('index.html')
 
+# Ruta para faq
+@app.route('/faq')
+def faq():
+    return send_from_directory('.', 'faq.json')
+
 # Ruta para renombrar contratos
 @app.route('/renombreContratosPage')
 def renombrar_contrato():
@@ -215,9 +226,7 @@ def chat_bot_page():
 
 ######################## ENDPOINT BOT CHAT ########################################################################
 
-
 def formatear_texto(texto):
-    import markdown
     """
     Aplica formato al texto del artículo usando Markdown para mejorar la presentación.
     """
@@ -231,6 +240,20 @@ def formatear_texto(texto):
     texto = re.sub(r"(\(\s*[ivxlcdmIVXLCDM]+\s*\))", r"  - \1", texto)  
     # Detectar viñetas comunes (usualmente marcadas con guiones o asteriscos)
     texto = re.sub(r"(\n[-*]\s)", r"\n- ", texto)
+    # Detectar y formatear subtítulos (como "a)", "b)", etc.)
+    texto = re.sub(r"(\n\s*[a-z]\))", r"\n- \1", texto)
+
+    # Detectar y formatear subtítulos con números romanos (como "i)", "ii)", etc.)
+    texto = re.sub(r"(\n\s*[ivxlcdm]+\))", r"\n  - \1", texto)
+
+    # Detectar y formatear subtítulos con letras mayúsculas (como "A)", "B)", etc.)
+    texto = re.sub(r"(\n\s*[A-Z]\))", r"\n- \1", texto)
+
+    # Detectar y formatear subtítulos con números (como "1)", "2)", etc.)
+    texto = re.sub(r"(\n\s*\d+\))", r"\n- \1", texto)
+
+    # Detectar y formatear listas con letras minúsculas seguidas de paréntesis (como "a)", "b)", etc.)
+    texto = re.sub(r"([a-z]\))", r"\n- \1", texto)
 
     # Convertir el texto procesado a HTML o mantenerlo en Markdown
     return markdown.markdown(texto)
@@ -251,9 +274,21 @@ def bot_api():
         if qa_chain is None:
             return jsonify({"error": "El sistema no está listo. Por favor, intenta nuevamente más tarde."}), 503
 
-        # Detectar si el usuario menciona algo del contexto previo
+        # Cargar el FAQ JSON
+        with open('faq.json', 'r', encoding='utf-8') as f:
+            faq_data = json.load(f)
+
+        # Buscar si la pregunta del usuario coincide con alguna pregunta del FAQ
+        for faq in faq_data:
+            if user_message.lower() == faq['question'].lower():
+                respuesta = faq['answer']
+                registrar_interaccion_csv(user_message, respuesta)
+                time.sleep(2.0)  # Agregar un delay de 2.0 segundos antes de responder
+                return jsonify({"response": formatear_texto(respuesta), "last_message": user_message})
+
+        # Detectar si elona algo del contexto previo
         requiere_contexto = any(
-            palabra in user_message.lower() for palabra in ["acerca de este tema","esto", "anterior", "referido", "mencionado", "dicho","a lo anterior", "a lo mencionado", "a dicho", "dicho"]
+            palabra in user_message.lower() for palabra in ["acerca de este tema", "esto", "anterior", "referido", "mencionado", "dicho", "a lo anterior", "a lo mencionado", "a dicho", "dicho"]
         )
 
         # Crear el prompt con o sin el mensaje anterior según corresponda
@@ -261,7 +296,6 @@ def bot_api():
             contexto = f"El usuario mencionó anteriormente: {last_message}\n\n"
         else:
             contexto = ""
-            
 
         # Detectar si el usuario menciona un artículo
         match_articulo = re.search(r"(art[ií]culo\s*)?(\d+)(º)?", user_message, re.IGNORECASE)
@@ -338,5 +372,13 @@ def server_error(e):
 
 # Ejecución en modo de desarrollo o producción
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
+
+
+
+
+
+
+
 

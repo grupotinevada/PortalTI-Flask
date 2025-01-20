@@ -59,3 +59,13 @@ body{margin-top:20px;}
 .status-indicator.typing {
     background-color: gray; /* Gris para "Escribiendo..." */
 }
+
+#bienvenida {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}

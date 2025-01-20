@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="/logos_png/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/logos_png/favicon.ico" type="image/x-icon" >
     <title>Portal TI | Inevada</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -25,7 +25,7 @@
                     <div class="col-4 mb-4">
                         <button class="btn btn-outline-primary category w-100" data-bs-toggle="modal"
                             data-bs-target="#manualModal" onclick="cargarManuales('outlook')">
-                            <div><img src="/logos_png/outlookLogo.png" class="categoryImg" alt=""></div>
+                            <div><img src="/logos_png/outlookLogo.webp" class="categoryImg" alt=""></div>
                             <h3>Manuales Outlook</h3>
                         </button>
                     </div>
@@ -33,42 +33,42 @@
                         <button class="btn btn-outline-primary category w-100" data-bs-toggle="modal"
                             id="direccion_trabajo" data-bs-target="#manualModal"
                             onclick="cargarManuales('direccion_trabajo')">
-                            <div><img src="/logos_png/direccionDelTrabajo.png" class="categoryImg" alt=""></div>
+                            <div><img src="/logos_png/direccionDelTrabajo.webp" class="categoryImg" alt=""></div>
                             <h3>Dirección del Trabajo</h3>
                         </button>
                     </div>
                     <div class="col-4 mb-4">
                         <button class="btn btn-outline-primary category w-100" data-bs-toggle="modal" id="impresora"
                             data-bs-target="#manualModal" onclick="cargarManuales('impresora')">
-                            <div><img src="/logos_png/impresoraLogo.png" class="categoryImg" alt=""></div>
+                            <div><img src="/logos_png/impresoraLogo.webp" class="categoryImg" alt=""></div>
                             <h3>Manual impresora <br>Kyocera</h3>
                         </button>
                     </div>
                     <div class="col-4 mb-4">
                         <button class="btn btn-outline-primary category w-100" data-bs-toggle="modal" id="authenticator"
                             data-bs-target="#manualModal" onclick="cargarManuales('authenticator')">
-                            <div><img src="/logos_png/authenticatorLogo.png" class="categoryImg" alt=""></div>
+                            <div><img src="/logos_png/authenticatorLogo.webp" class="categoryImg" alt=""></div>
                             <h3>Authenticator</h3>
                         </button>
                     </div>
                     <div class="col-4 mb-4">
                         <button class="btn btn-outline-primary category w-100" data-bs-toggle="modal" id="pdf"
                             data-bs-target="#manualModal" onclick="cargarManuales('pdf')">
-                            <div><img src="/logos_png/llave.png" class="categoryImg" alt=""></div>
+                            <div><img src="/logos_png/llave.webp" class="categoryImg" alt=""></div>
                             <h3>Clave en PDF</h3>
                         </button>
                     </div>
                     <div class="col-4 mb-4">
                         <button class="btn btn-outline-primary category w-100" data-bs-toggle="modal" id="sap"
                             data-bs-target="#manualModal" onclick="cargarManuales('sap')">
-                            <div><img src="/logos_png/sapLogo.png" class="categoryImg" alt=""></div>
+                            <div><img src="/logos_png/sapLogo.webp" class="categoryImg" alt=""></div>
                             <h3>Manuales SAP</h3>
                         </button>
                     </div>
                     <div class="col-4 mb-4">
                         <a class="btn btn-outline-primary category w-100" href="renombreContratosPage">
                             <div>
-                                <img src="/logos_png/pdfLogo.png" class="categoryImg" alt="Logo PDF">
+                                <img src="/logos_png/pdfLogo.webp" class="categoryImg" alt="Logo PDF">
                             </div>
                             <h3>Renombre de contratos</h3>
                         </a>
@@ -76,49 +76,24 @@
                     <div class="col-4 mb-4">
                         <button class="btn btn-outline-primary category w-100" data-bs-toggle="modal" id="exe"
                             data-bs-target="#manualModal" onclick="cargarManuales('exe')">
-                            <div><img src="/logos_png/ejecutableLogo.png" class="categoryImg" alt=""></div>
+                            <div><img src="/logos_png/ejecutableLogo.webp" class="categoryImg" alt=""></div>
                             <h3>Ejecutables :D</h3>
                         </button>
                     </div>
                     <div class="col-4 mb-4">
-                        <button class="btn btn-outline-primary category w-100" data-bs-toggle="" id=""
-                            data-bs-target="">
-                            <div><img src="" class="categoryImg" alt=""></div>
-                            <h3>Próximamente :D</h3>
-                        </button>
+                        <a class="btn btn-outline-primary category w-100 rounded" href="chatBotPage">
+                            <div>
+                                <img src="/logos_png/nevaita.webp" class="categoryImg" alt="">
+                            </div>
+                            <h3>ChatBot Reglamento Interno</h3>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bola flotante -->
-    <div id="chat-floating-ball">
-        <img src="/logos_png/chatLogo.png" alt="">
-    </div>
-
-    <!-- Chat desplegable -->
-    <div id="chat-box">
-        <div id="chat-header">
-            <span>IA Nevadito</span>
-            <button id="close-chat">X</button>
-        </div>
-        <div id="chatContent">
-            <!-- Aquí irán los mensajes del chat -->
-        </div>
-        <!-- Icono de "escribiendo" -->
-        <div id="typing-indicator" style="display: none;">
-            <span>AI está escribiendo...</span>
-            <div class="dots">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div id="chat-input-area">
-            <textarea id="userMessage" placeholder="Escribe un mensaje..."></textarea>
-            <button id="sendButton">Enviar</button>
-        </div>
-    </div>
-
+   
     <!-- Modal -->
     <div class="modal fade" id="manualModal" tabindex="-1" aria-labelledby="manualModalLabel" aria-hidden="false">
         <div class="modal-dialog modal-dialog-centered">
@@ -141,11 +116,11 @@
     <footer>
         <div class="slider">
             <div class="slider-images">
-                <a href="https://ivcentenario.cl/" target="_blank"><img src="/logos_png/logo_centenario.png"
+                <a href="https://ivcentenario.cl/" target="_blank"><img src="/logos_png/logo_centenario.webp"
                         alt="Imagen 1"></a>
-                <a href="https://coval.cl/" target="_blank"><img src="/logos_png/coval.jpg" alt="Imagen 2"></a>
-                <a href="" target="_blank"><img src="/logos_png/logo-nevada.png" alt="Imagen 4"></a>
-                <a href="https://savisa.cl/" target="_blank"><img src="/logos_png/saludvida.jpg" alt="Imagen 3"></a>
+                <a href="https://coval.cl/" target="_blank"><img src="/logos_png/coval.webp" alt="Imagen 2"></a>
+                <a href="" target="_blank"><img src="/logos_png/logo-nevada.webp" alt="Imagen 4"></a>
+                <a href="https://savisa.cl/" target="_blank"><img src="/logos_png/saludvida.webp" alt="Imagen 3"></a>
             </div>
         </div>
     </footer>
