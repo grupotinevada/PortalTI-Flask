@@ -168,7 +168,7 @@ def keep_alive():
             requests.get("https://portalti.inevada.cl/")  # Cambia el puerto si es diferente
         except Exception as e:
             print(f"Error en Keep-Alive: {e}")
-        time.sleep(300)  # Intervalo de 5 minutos
+        time.sleep(180)  # Intervalo de 5 minutos
 ##############################################################################################################
 
 ##############################################################################################################
