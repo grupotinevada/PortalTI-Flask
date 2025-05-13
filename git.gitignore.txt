@@ -1,0 +1,2 @@
+.env
+USUARIO_DATA.csv
