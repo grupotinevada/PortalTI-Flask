@@ -1,2 +1,6 @@
 .env
 USUARIO_DATA.csv
+
+.vscode
+
+__pycache__
