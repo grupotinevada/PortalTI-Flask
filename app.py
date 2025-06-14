@@ -1,10 +1,17 @@
-from flask import Flask, render_template, send_from_directory, request, jsonify
+from flask import Flask, render_template, send_from_directory, request, jsonify, send_file, redirect, url_for, flash, make_response
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from werkzeug.middleware.proxy_fix import ProxyFix
 from dotenv import load_dotenv
 
+#IHATE PDF
 
+import datetime
+import subprocess
+import sys
+from werkzeug.utils import secure_filename
+import fitz
+import uuid
 
 import markdown
 import json
@@ -180,7 +187,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_port=1)
 
 # Configuración de seguridad
 app.secret_key = os.environ.get('SECRET_KEY', 'supersecretkey')  # Cambiar en producción
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # Limitar subida de archivos a 16MB
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024   # Limitar subida de archivos a 16MB
 
 # Limitar solicitudes para prevenir ataques de DoS
 limiter = Limiter(
@@ -373,7 +380,104 @@ def welcome_message():
         )
     })
 ##############################################################################################################
+################################## IHATEPDF ################################################################
 
+
+
+
+app.config['UPLOAD_FOLDER'] = 'uploads'
+app.config['OUTPUT_FOLDER'] = 'outputs'
+
+
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+os.makedirs(app.config['OUTPUT_FOLDER'], exist_ok=True)
+
+def merge_pdfs(pdf_list, output_path):  
+    merged = fitz.open()
+    for path in pdf_list:
+        with fitz.open(path) as pdf:
+            merged.insert_pdf(pdf)
+    merged.save(output_path)
+    merged.close()
+
+def compress_pdf_with_ghostscript(input_pdf, output_pdf, quality="ebook"):
+    if getattr(sys, 'frozen', False):
+        gs_executable = os.path.join(sys._MEIPASS, 'gs', 'gswin64c.exe')
+    else:
+        gs_executable = 'gswin64c'
+
+    gs_command = [
+        gs_executable, '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4',
+        f'-dPDFSETTINGS=/{quality}', '-dNOPAUSE', '-dQUIET', '-dBATCH',
+        f'-sOutputFile={output_pdf}', input_pdf
+    ]
+
+    result = subprocess.run(gs_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    if result.returncode != 0:
+        raise Exception(f"Ghostscript Error: {result.stderr.decode()}")
+
+@app.route('/ihatepdf', methods=['GET', 'POST'])
+def ihatepdf():
+    if request.method == 'POST':
+        if 'pdfs' not in request.files:
+            flash('No files part')
+            return redirect(request.url)
+
+        files = request.files.getlist('pdfs')
+        quality = request.form.get('quality', 'ebook')
+        token = request.form.get('download_token')
+
+        if not files or any(f.filename == '' for f in files):
+            flash('No selected file')
+            return redirect(request.url)
+
+        unique_id = uuid.uuid4().hex
+        merged_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'merged_{unique_id}.pdf')
+        compressed_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'compressed_{unique_id}.pdf')
+
+        saved_files = []
+        original_size = 0
+        for file in files:
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            file.save(filepath)
+            saved_files.append(filepath)
+            original_size += os.path.getsize(filepath)
+
+        try:
+            # Condicional para decidir si hacer merge o solo comprimir
+            if len(saved_files) == 1:
+                merged_pdf_path = saved_files[0]  # No hacer merge, usar directamente el archivo subido
+            else:
+                merge_pdfs(saved_files, merged_pdf_path)
+
+            compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+
+            compressed_size = os.path.getsize(compressed_pdf_path)
+            for f in saved_files:
+                os.remove(f)
+            if len(saved_files) > 1:
+                os.remove(merged_pdf_path)
+
+             # Crear la respuesta con el archivo
+            response = make_response(send_file(compressed_pdf_path, as_attachment=True))
+            
+            if token:
+                response.set_cookie(f'download_complete_{token}', 'true')
+                response.set_cookie(f'original_size_{token}', str(original_size))
+                response.set_cookie(f'compressed_size_{token}', str(compressed_size))
+            
+            return response
+
+        except Exception as e:
+            flash(str(e))
+            return redirect(request.url)
+
+    return render_template('ihatepdf.html')
+
+
+
+##############################################################################################################
 # Manejo de errores personalizados
 @app.errorhandler(404)
 def not_found(e):
@@ -388,7 +492,7 @@ import threading
 
 if __name__ == '__main__':
     threading.Thread(target=keep_alive, daemon=True).start()
-    #app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
 
 

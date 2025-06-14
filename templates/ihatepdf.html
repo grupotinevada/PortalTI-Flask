@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>I HATE PDF - Unir y Comprimir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='pdfLogo.webp') }}">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(45deg, #079fa4, #04686b);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .upload-section {
+            background: white;
+            padding: 2rem;
+            margin-top: -3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control,
+        .form-select {
+            height: 48px;
+            font-size: 1rem;
+        }
+
+        .btn-danger {
+            background-color: #079fa4;
+            border: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #04686b;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 2rem;
+            color: #666;
+        }
+
+        /* Spinner + working message container */
+        #loadingOverlay {
+            display: none !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.75);
+            z-index: 1050;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: bold;
+            color: #c70000;
+            font-size: 1.5rem;
+        }
+
+        /* Clase para mostrar el spinner */
+        #loadingOverlay.show {
+            display: flex !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section class="hero">
+        <h1>I 💔 PDF</h1>
+        <p>Unir y comprimir tus PDFs</p>
+    </section>
+
+    <!-- Form Section -->
+    <div class="container">
+        <div class="upload-section mx-auto mt-5" style="max-width: 600px;">
+            <form id="pdfForm" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="pdfs" class="form-label">Selecciona archivos PDF</label>
+                    <input type="file" class="form-control" id="pdfs" name="pdfs" multiple required accept=".pdf" />
+                    <small id="fileSizeInfo" class="form-text text-muted mt-1"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="quality" class="form-label">Calidad de compresión</label>
+                    <select class="form-select" id="quality" name="quality">
+                        <option value="screen">Baja</option>
+                        <option value="ebook" selected>Media</option>
+                        <option value="printer">Alta</option>
+                        <option value="prepress">Muy Alta</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-danger w-100 py-2">💣 Unir y Comprimir</button>
+            </form>
+
+            <!-- Mostrar mensaje de peso después del proceso -->
+            <div id="resultInfo" class="mt-4" style="display: none;">
+                <div class="alert alert-info">
+                    <strong>Tamaño original:</strong> <span id="originalSize">0</span> MB<br>
+                    <strong>Tamaño comprimido:</strong> <span id="compressedSize">0</span> MB<br>
+                    <strong>Se redujo el tamaño en un:</strong> <span id="variation">0</span>%
+                </div>
+            </div>
+
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="mt-3">
+                <ul class="list-group">
+                    {% for message in messages %}
+                    <li class="list-group-item list-group-item-danger">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay">
+        <div class="spinner-border text-danger" role="status" style="width: 3rem; height: 3rem;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="mt-3"  id="workingMessage">Procesando archivos, por favor espera...</div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const pdfInput = document.getElementById('pdfs');
+        const fileSizeInfo = document.getElementById('fileSizeInfo');
+        const form = document.getElementById('pdfForm');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+
+        // Función para calcular y mostrar peso total seleccionado
+        pdfInput.addEventListener('change', () => {
+            const files = pdfInput.files;
+            if (files.length === 0) {
+                fileSizeInfo.textContent = '';
+                return;
+            }
+            let totalBytes = 0;
+            for (const file of files) {
+                totalBytes += file.size;
+            }
+            const mb = (totalBytes / 1024 / 1024).toFixed(2);
+            fileSizeInfo.textContent = `Peso total seleccionado: ${mb} MB`;
+        });
+
+        // Función para ocultar el spinner y mostrar resultados
+        function hideSpinner(originalSize = null, compressedSize = null) {
+            loadingOverlay.classList.remove('show');
+
+            // Si se proporcionaron los tamaños, mostrar los resultados
+            if (originalSize && compressedSize) {
+                displayResults(originalSize, compressedSize);
+            }
+        }
+
+        // Función para mostrar los resultados de compresión
+        function displayResults(originalSize, compressedSize) {
+            const originalMB = (originalSize / 1024 / 1024).toFixed(2);
+            const compressedMB = (compressedSize / 1024 / 1024).toFixed(2);
+            const variation = (((compressedSize - originalSize) / originalSize) * -100).toFixed(2);
+
+            document.getElementById('originalSize').textContent = originalMB;
+            document.getElementById('compressedSize').textContent = compressedMB;
+            document.getElementById('variation').textContent = variation;
+
+            // Mostrar el div de resultados
+            document.getElementById('resultInfo').style.display = 'block';
+        }
+
+        // Función para obtener el valor de una cookie
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        function deleteAllCookies() {
+            const cookies = document.cookie.split(";");
+
+            for (let i = 0; i < cookies.length; i++) {
+                const cookieName = cookies[i].split("=")[0].trim();
+                document.cookie = cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            }
+        }
+        // Detectar cuando comienza la descarga
+        function detectDownload() {
+            // Crear un token único
+            const downloadToken = 'download_' + Date.now();
+
+            // Eliminar cualquier input previo con ese name
+            const existingTokenInput = form.querySelector('input[name="download_token"]');
+            if (existingTokenInput) {
+                existingTokenInput.remove();
+            }
+
+            // Agregar nuevo token oculto al formulario
+            const tokenInput = document.createElement('input');
+            tokenInput.type = 'hidden';
+            tokenInput.name = 'download_token';
+            tokenInput.value = downloadToken;
+            form.appendChild(tokenInput);
+
+            // Mostrar overlay inmediatamente
+            loadingOverlay.classList.add('show');
+
+            // Intervalo para detectar la cookie
+            const checkDownload = setInterval(() => {
+                if (document.cookie.includes('download_complete_' + downloadToken)) {
+                    clearInterval(checkDownload);
+                    clearTimeout(midwayTimeoutId);
+                    clearTimeout(fallbackTimeoutId);
+
+                    const originalSize = getCookie('original_size_' + downloadToken);
+                    const compressedSize = getCookie('compressed_size_' + downloadToken);
+
+                    hideSpinner(originalSize, compressedSize);
+                    deleteAllCookies();
+                }
+            }, 1000);
+
+            // A los 30 segundos, cambia el mensaje
+            const midwayTimeoutId = setTimeout(() => {
+                const msg = document.getElementById('workingMessage');
+                if (msg) {
+                    msg.textContent = "Todavía estamos trabajando, por favor espera unos segundos más...";
+                }
+            }, 5000);
+
+            // A los 60 segundos, oculta el spinner
+            const fallbackTimeoutId = setTimeout(() => {
+                clearInterval(checkDownload);
+                hideSpinner();
+            }, 60000);
+        }
+
+        // Mostrar overlay "Trabajando"
+        form.addEventListener('submit', (e) => {
+            // Validar que se hayan seleccionado archivos
+            if (pdfInput.files.length === 0) {
+                e.preventDefault();
+                alert('Por favor selecciona al menos un archivo PDF');
+                return;
+            }
+
+            // Mostrar el spinner usando la clase CSS
+            loadingOverlay.classList.add('show');
+
+            // Iniciar detección de descarga
+            detectDownload();
+        });
+    </script>
+</body>
+
+</html>
