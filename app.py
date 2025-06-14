@@ -475,8 +475,6 @@ def ihatepdf():
 
     return render_template('ihatepdf.html')
 
-
-
 ##############################################################################################################
 # Manejo de errores personalizados
 @app.errorhandler(404)
