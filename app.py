@@ -510,7 +510,7 @@ def cargar_modelo_en_segundo_plano():
 
 if __name__ == '__main__':
     threading.Thread(target=keep_alive, daemon=True).start()
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    #app.run(host='0.0.0.0', port=5000, debug=True)
 
 
 
