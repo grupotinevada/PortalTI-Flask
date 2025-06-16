@@ -162,7 +162,7 @@ def initialize_model():
 ##############################################################################################################
 
 # Cargar el modelo al iniciar la aplicación
-initialize_model()
+# initialize_model()
 
 ##############################################################################################################
 # Función Keep-Alive
@@ -187,7 +187,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_port=1)
 
 # Configuración de seguridad
 app.secret_key = os.environ.get('SECRET_KEY', 'supersecretkey')  # Cambiar en producción
-app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024   # Limitar subida de archivos a 16MB
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024   
 
 # Limitar solicitudes para prevenir ataques de DoS
 limiter = Limiter(
@@ -486,7 +486,27 @@ def server_error(e):
     return jsonify({"error": "Internal Server Error"}), 500
 
 # Ejecución en modo de desarrollo o producción
+
+
 import threading
+# Precarga diferida del modelo después de la primera petición
+modelo_cargado = False
+
+@app.before_request
+def cargar_modelo_en_segundo_plano():
+    global modelo_cargado
+    if not modelo_cargado:
+        def background_loader():
+            global modelo_cargado
+            try:
+                print("Inicializando modelo en segundo plano...")
+                initialize_model()
+                modelo_cargado = True
+                print("Modelo cargado correctamente en segundo plano.")
+            except Exception as e:
+                print(f"Error al inicializar el modelo: {e}")
+        threading.Thread(target=background_loader, daemon=True).start()
+
 
 if __name__ == '__main__':
     threading.Thread(target=keep_alive, daemon=True).start()
