@@ -186,7 +186,7 @@ app = Flask(__name__, static_folder='static', template_folder='templates')
 app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_port=1)
 
 # Configuración de seguridad
-app.secret_key = os.environ.get('SECRET_KEY', 'supersecretkey')  # Cambiar en producción
+app.secret_key = os.environ.get('SECRET_KEY', os.getenv("key"))  # Cambiar en producción
 app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024   
 
 # Limitar solicitudes para prevenir ataques de DoS
@@ -510,7 +510,7 @@ def cargar_modelo_en_segundo_plano():
 
 if __name__ == '__main__':
     threading.Thread(target=keep_alive, daemon=True).start()
-    #app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
 
 
