@@ -127,9 +127,7 @@ function cargarManuales(categoria) {
       card.innerHTML = `
         <div class="row g-0 align-items-center">
         <div class="col-auto p-3">
-            <img src="${
-            categoriasInfo[cat]?.icono || "logos_png/default.webp"
-            }" alt="${cat}" style="width:64px;" />
+            <img src="${categoriasInfo[cat]?.icono || "logos_png/default.webp"}" alt="${cat}" style="width:64px;" />
         </div>
         <div class="col">
             <div class="card-body py-2">
