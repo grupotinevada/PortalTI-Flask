@@ -571,9 +571,9 @@ def cargar_modelo_en_segundo_plano():
         threading.Thread(target=background_loader, daemon=True).start()
 
 
-# if __name__ == '__main__':
-#     threading.Thread(target=keep_alive, daemon=True).start()
-#     app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == '__main__':
+    threading.Thread(target=keep_alive, daemon=True).start()
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
 
 

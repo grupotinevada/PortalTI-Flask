@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <title>I HATE PDF - Unir y Comprimir</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="icon"
-      type="image/png"
-      href="{{ url_for('static', filename='pdfLogo.webp') }}"
+      type="image/webp"
+      href="{{ url_for('serve_logos_png', filename='ihatepdf.webp') }}"
     />
     <!-- Bootstrap CDN -->
     <link
@@ -19,7 +20,6 @@
       href="{{ url_for('static', filename='styleIhatePDF.css') }}"
     />
   </head>
-
   <body>
     <div class="container-fluid p-0 main-wrapper">
       <!-- Header -->
@@ -27,7 +27,6 @@
         <h1 class="m-0">I 💔 PDF</h1>
         <p class="m-0">UNIR Y COMPRIMIR TUS PDF</p>
       </header>
-
       <!-- Main Content -->
       <div class="container-fluid content-wrapper">
         <div class="row g-0">
@@ -45,7 +44,7 @@
                     Arrastra aquí tus archivos PDF
                   </p>
                   <p class="text-muted">
-                    o haz click para seleccionar archivos
+                    o haz click para seleccionar archivos <br />
                   </p>
                 </label>
                 <small
@@ -115,7 +114,6 @@
                     name="quality"
                     id="qualityMedium"
                     value="ebook"
-                    
                   />
                   <label class="form-check-label" for="qualityMedium"
                     >Media</label
@@ -160,23 +158,21 @@
                 >
                   💣 Unir y Comprimir
                 </button>
+
+                <div
+                  id="sizeAlert"
+                  class="alert alert-warning mt-3 d-none"
+                  role="alert"
+                >
+                  El peso total excede los 50 MB. Puede tardar más en
+                  procesarse.
+                </div>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Botón flotante para seleccionar más archivos -->
-    <!-- <button
-      id="addMoreBtn"
-      type="button"
-      class="btn btn-secondary position-fixed bottom-0 end-0 m-4 shadow d-none"
-      onclick="pdfInput.click()"
-    >
-      ➕ Agregar más PDF
-    </button> -->
-
     <!-- Loading overlay -->
     <div id="loadingOverlay">
       <div
@@ -198,7 +194,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <script>

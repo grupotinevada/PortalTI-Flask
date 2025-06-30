@@ -24,7 +24,8 @@ function renderSelectedFiles() {
 
   let totalBytes = 0;
 
-  selectedFiles.forEach((file, index) => { // Usar index en lugar de positionCounter
+  selectedFiles.forEach((file, index) => {
+    // Usar index en lugar de positionCounter
     totalBytes += file.size;
 
     const reader = new FileReader();
@@ -51,10 +52,15 @@ function renderSelectedFiles() {
                 <button type="button" class="btn btn-sm btn-light position-absolute top-0 end-0 m-1 rounded-circle delete-btn" aria-label="Eliminar" title="Eliminar">
                   <i class="bi bi-x-lg text-danger"></i>
                 </button>
-                <img src="${imgData}" class="card-img-top pdf-thumbnail" alt="PDF preview" style="border-bottom: 1px solid #eee;">
+                <img src="${imgData}" 
+     class="card-img-top pdf-thumbnail object-fit-contain bg-light" 
+     alt="PDF preview"
+     style="height: 220px; border-bottom: 1px solid #eee;">
                 <div class="card-body p-2">
                   <div class="text-center">
-                    <p class="card-title small text-truncate mb-1" title="${file.name}">
+                    <p class="card-title small text-truncate mb-1" title="${
+                      file.name
+                    }">
                       <strong>#${index + 1}</strong> ${file.name}
                     </p>
                   </div>
@@ -77,24 +83,64 @@ function renderSelectedFiles() {
     reader.readAsArrayBuffer(file);
   });
 
-  // Card para "Agregar más"
-  const addCol = document.createElement("div");
-  addCol.className = "col-6 col-md-4 col-lg-3";
-
-  addCol.innerHTML = `
-    <div class="card h-100 shadow-sm border border-dashed text-center d-flex align-items-center justify-content-center cursor-pointer" style="min-height: 200px;" id="addMoreCard">
-      <div>
-        <i class="bi bi-plus-circle fs-1 text-primary"></i>
-        <p class="mt-2 mb-0 small fw-bold">Agregar más PDF</p>
-      </div>
-    </div>
-  `;
-
-  addCol.addEventListener("click", () => pdfInput.click());
-  previewContainer.appendChild(addCol);
-
   const mb = (totalBytes / 1024 / 1024).toFixed(2);
   fileSizeInfo.textContent = `Peso total seleccionado: ${mb} MB`;
+
+  // Card para "Agregar más"
+  const addCol = document.createElement("div");
+  alertCol = document.createElement("div");
+  addCol.className = "col-6 col-md-4 col-lg-3";
+  alertCol.className = "col-6 col-md-4 col-lg-3";
+
+  if (mb >= 100) {
+    alertCol.innerHTML = `
+<div class="card h-100 shadow-sm border-0 bg-light d-flex flex-column justify-content-center align-items-center p-3 text-center" style="min-height: 200px;">
+  <div id="sizeAlert" class="alert alert-danger w-100 d-flex align-items-center gap-2 mb-0 d-none" role="alert" style="font-size: 0.9rem;">
+    <i class="bi bi-exclamation-triangle-fill fs-4 text-danger"></i>
+    <div>
+      <strong>¡Atención!</strong><br>
+      El peso total excede los <strong>100 MB</strong>.<br>
+      Se superó el peso permitido.
+    </div>
+  </div>
+</div>
+
+    `;
+  } else {
+    addCol.innerHTML = `
+<div class="card h-100 shadow-sm border border-dashed text-center d-flex flex-column justify-content-center align-items-center cursor-pointer bg-light" style="min-height: 200px;" id="addMoreCard">
+  <div class="d-flex flex-column justify-content-center align-items-center" style=" height: 220px;">
+    <i class="bi bi-plus-circle fs-1 text-primary"></i>
+    <p class="mt-2 mb-0 small fw-bold">Agregar más PDF</p>
+  </div>
+  <div class="pt-2">
+    <p class="mb-0 small text-muted" style="min-height: 1.25rem;">${mb} MB / 100 MB</p>
+  </div>
+</div>
+
+    `;
+  }
+
+  addCol.addEventListener("click", () => {
+    // Al hacer click, intentamos abrir el selector de archivos
+    pdfInput.click();
+  });
+
+  // Si el peso es menor a 100 MB, mostramos addCol, si no, mostramos alertCol
+  if (mb < 100) {
+    previewContainer.appendChild(addCol);
+  } else {
+    previewContainer.appendChild(alertCol);
+  }
+
+  const sizeAlert = document.getElementById("sizeAlert");
+  if (sizeAlert) {
+    if (mb > 50) {
+      sizeAlert.classList.remove("d-none");
+    } else {
+      sizeAlert.classList.add("d-none");
+    }
+  }
 }
 
 // 📌 Al seleccionar nuevos archivos
@@ -229,7 +275,7 @@ form.addEventListener("submit", (e) => {
 const sortable = new Sortable(previewContainer, {
   animation: 150,
   handle: ".card",
-  ghostClass: 'blue-background-class',
+  ghostClass: "blue-background-class",
   onEnd: function () {
     const newOrder = Array.from(previewContainer.children)
       .filter((child) => child.querySelector(".card-title")) // excluye "agregar más"
