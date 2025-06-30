@@ -1,0 +1,120 @@
+en esta ruta se puede entender mejor, repositorio GitHub, bajar y estarán las mismas instrucciones:
+https://github.com/grupotinevada/PortalTI-Flask
+===============================================================================
+
+Entrar a la ruta /var/www/
+
+Dentro copiar y pegar la carpeta
+
+ejecutar estos comandos:
+
+verificar versión e Python debe ser 3.13.5 o variantes 1.13.x
+
+/usr/local/bin/python3.13 --version
+
+dentro e la carpeta recién pegada
+
+/usr/local/bin/python3.13 -m venv env
+
+luego entramos al entorno:
+
+source env/bin/actívate
+
+(aquí debería salir (env) en la terminal)
+
+luego ejecutamos e instalamos las librerías
+
+pip install -r requirements.txt
+
+(aquí si hay un error en algún modulo, hay que buscar el nombre del modulo y realizar un pip install [nombre modulo])
+y salimos del entorno:
+
+deactivate
+
+Ahora tenemos que ir a la raíz de la carpeta y vamos a sacar el archivo "gs_10.05.1_amd64_snap.tgz" de la raiz a una carpeta cualquiera externa:
+
+sudo tar -xvzf gs_10.05.1_amd64_snap.tgz
+
+entramos a la carpeta que deja
+
+cd gs_10.05.1_amd64_snap/
+
+instalamos el instalador de snap
+
+sudo apt install snapd (verificar si es snap, preguntarle a chat gpt y dará el comando)
+
+usar snap para instalar el programa:
+
+sudo snap install --dangerous --devmode gs_10.05.1_amd64.snap
+
+verificar intalacion con:
+
+snap list | grep gs
+
+resultado del comando(instalación exitosa):
+gs 		10.05.1 	x1 			-	devmode
+
+reiniciar maquina para que se integre ghostscript a las variables de entorno
+
+luego debería esta todo listo para entrar nuevamente al entorno virtual:
+
+vamos a crear una screen (terminal en 2do plano)
+
+screen -S PortalTI
+
+ir a la careta raíz del portal y ejecutar el siguiente comando:
+
+source env/bin/actívate
+
+dentro ejecutar:
+
+pip install gunicorn
+
+luego:
+
+gunicorn -c gunicorn.conf.py app:app o gunicorn -w 4 -b 0.0.0.0:5000 app:app
+
+saldrá algo como:
+
+running on all addresses (0.0.0.0)
+running on http://127.0.0.1:5000
+running on http://192.168.195.147:5000 (este es la que hay que añadir al cloudflare, si no mal recuerdo, la maquina de ejemplo para esta guía es el servidor de desarrollo)
+
+
+Finalmente ponemos en 2do plano la screen saliendo aprentado ctrl + a + d al mismo tiempo.
+
+ahora vamos a trabajar en nginx y cloudflare
+
+=================================================================================================================================
+
+Crear un archivo [Nombre portal].conf en /etc/nginx/sites-available y copiar esto dentro del archivo
+server {
+    listen 80;     server_name portalti2.inevada.cl; # Tu subdominio en Cloudflare
+
+    location / {
+        proxy_pass http://192.168.195.147:5000; # Dirección de tu API de Flask
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade; # Permitir la actualización de >
+        proxy_set_header Connection 'upgrade';  # Mantener la conexión abierta
+        proxy_set_header Host $host;             # Mantener el encabezado del h>
+        proxy_cache_bypass $http_upgrade;        # No usar cache para las actua>
+
+        # Opciones de seguridad
+        proxy_set_header X-Real-IP $remote_addr;           # La IP real del cli>
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # Encabeza>
+        proxy_set_header X-Forwarded-Proto $scheme;       # Protocolo original >
+    }
+}
+
+luego guardar y ejecutar estos dos comandos:
+
+sudo ln -s /etc/nginx/sites-available/mi_sitio /etc/nginx/sites-enabled/
+
+sudo nginx -t
+(Aquí debe salir que el test es succesfull)
+
+y finalmente 
+
+sudo systemctl reload nginx
+
+con esto ya esta aplicado solo falta ingresar en los túneles de cloudflare para añadir el {server_name} por ejemplo http://portalti.inevada.cl y que apunte internamente a la IP 192.168.195.147:5000(Puede variar) 

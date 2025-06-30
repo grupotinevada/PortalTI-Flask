@@ -152,12 +152,26 @@
                   accept=".pdf"
                   class="d-none"
                 />
-                <button
-                  type="submit"
-                  class="btn btn-primary w-100 py-2 fw-bold mt-auto"
-                >
-                  💣 Unir y Comprimir
-                </button>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <button
+                    type="submit"
+                    class="btn btn-primary fw-bold flex-grow-1"
+                  >
+                    💣 Unir y Comprimir
+                  </button>
+
+                  <span
+                    tabindex="0"
+                    class="btn btn-outline-secondary btn-sm d-flex align-items-center justify-content-center"
+                    style="width: 30px; height: 30px; cursor: pointer"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    title="NOTA: Si el peso es demasiado grande, puede desaparecer logo de 'cargando' sin descargar el archivo, en ese caso, debes esperar ya que el navegador esta terminando de empaquetar el archivo."
+                    data-bs-delay='{"show": 500, "hide": 100}'
+                  >
+                    <i class="bi bi-info-circle"></i>
+                  </span>
+                </div>
 
                 <div
                   id="sizeAlert"
@@ -168,6 +182,61 @@
                   procesarse.
                 </div>
               </form>
+
+              <!-- Logos en sidebar -->
+              <div class="mt-auto pt-3 border-top" style="margin-bottom: 3rem">
+                <h6 class="mb-3 text-center">Patrocinadores</h6>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                  <a
+                    href="https://ivcentenario.cl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Iv Centenario"
+                  >
+                    <img
+                      src="/logos_png/logo_centenario.webp"
+                      alt="Logo Iv Centenario"
+                      height="40"
+                    />
+                  </a>
+                  <a
+                    href="https://coval.cl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Coval"
+                  >
+                    <img
+                      src="/logos_png/coval.webp"
+                      alt="Logo Coval"
+                      height="40"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Nevada"
+                  >
+                    <img
+                      src="/logos_png/logo-nevada.webp"
+                      alt="Logo Nevada"
+                      height="40"
+                    />
+                  </a>
+                  <a
+                    href="https://savisa.cl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Salud Vida"
+                  >
+                    <img
+                      src="/logos_png/saludvida.webp"
+                      alt="Logo Salud Vida"
+                      height="40"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

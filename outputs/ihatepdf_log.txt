@@ -12,3 +12,89 @@
 2025-06-30 11:21:34,512 [INFO] Archivo mergeado eliminado: outputs\merged_c976640c61aa457f903abd188b2ea567.pdf
 2025-06-30 11:21:34,518 [INFO] Archivo enviado: outputs\TITULO_c976640c61aa457f903abd188b2ea567.pdf (original 208382 bytes → comprimido 138289 bytes)
 2025-06-30 11:21:44,512 [INFO] Archivo eliminado: outputs\TITULO_c976640c61aa457f903abd188b2ea567.pdf
+2025-06-30 16:25:15,363 [INFO] [USAGE] IP: 192.168.195.65 | Fecha: 2025-06-30 16:25:15 | Archivos: 3 | Extensiones: .pdf
+2025-06-30 16:25:15,368 [INFO] Archivo guardado: uploads\TITULO.pdf
+2025-06-30 16:25:15,370 [INFO] Archivo guardado: uploads\certificado-fonasa.pdf
+2025-06-30 16:25:15,372 [INFO] Archivo guardado: uploads\certificado-afp.pdf
+2025-06-30 16:25:15,372 [INFO] Merge iniciado con 3 archivos...
+2025-06-30 16:25:15,563 [INFO] Merge completado: outputs\merged_a7942c50f6ea494298f7cc8b724e994a.pdf
+2025-06-30 16:25:15,563 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 16:25:16,887 [INFO] Compresión completada: outputs\TITULO_a7942c50f6ea494298f7cc8b724e994a.pdf
+2025-06-30 16:25:16,888 [INFO] Archivo temporal eliminado: uploads\TITULO.pdf
+2025-06-30 16:25:16,889 [INFO] Archivo temporal eliminado: uploads\certificado-fonasa.pdf
+2025-06-30 16:25:16,890 [INFO] Archivo temporal eliminado: uploads\certificado-afp.pdf
+2025-06-30 16:25:16,892 [INFO] Archivo mergeado eliminado: outputs\merged_a7942c50f6ea494298f7cc8b724e994a.pdf
+2025-06-30 16:25:16,896 [INFO] Archivo enviado: outputs\TITULO_a7942c50f6ea494298f7cc8b724e994a.pdf (original 208382 bytes → comprimido 138289 bytes)
+2025-06-30 16:25:26,896 [INFO] Archivo eliminado: outputs\TITULO_a7942c50f6ea494298f7cc8b724e994a.pdf
+2025-06-30 16:49:40,178 [INFO] [USAGE] IP: 192.168.195.65 | Fecha: 2025-06-30 16:49:40 | Archivos: 2 | Extensiones: .pdf
+2025-06-30 16:49:40,282 [INFO] Archivo guardado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 16:49:40,368 [INFO] Archivo guardado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 16:49:40,368 [INFO] Merge iniciado con 2 archivos...
+2025-06-30 16:49:40,964 [INFO] Merge completado: outputs\merged_2ccf862612384941b5a7ccdf5e0cf71c.pdf
+2025-06-30 16:49:40,964 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 16:50:08,080 [INFO] Compresión completada: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_2ccf862612384941b5a7ccdf5e0cf71c.pdf
+2025-06-30 16:50:08,087 [INFO] Archivo temporal eliminado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 16:50:08,094 [INFO] Archivo temporal eliminado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 16:50:08,108 [INFO] Archivo mergeado eliminado: outputs\merged_2ccf862612384941b5a7ccdf5e0cf71c.pdf
+2025-06-30 16:50:08,109 [INFO] Archivo enviado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_2ccf862612384941b5a7ccdf5e0cf71c.pdf (original 76845097 bytes → comprimido 45221669 bytes)
+2025-06-30 16:50:18,128 [INFO] Archivo eliminado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_2ccf862612384941b5a7ccdf5e0cf71c.pdf
+2025-06-30 17:06:26,867 [INFO] [USAGE] IP: 192.168.195.65 | Fecha: 2025-06-30 17:06:26 | Archivos: 2 | Extensiones: .pdf
+2025-06-30 17:06:27,015 [INFO] Archivo guardado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:06:27,153 [INFO] Archivo guardado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:06:27,153 [INFO] Merge iniciado con 2 archivos...
+2025-06-30 17:06:27,878 [INFO] Merge completado: outputs\merged_a91ec9826dce41209cf71317d36d8385.pdf
+2025-06-30 17:06:27,878 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 17:07:16,696 [INFO] Compresión completada: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_a91ec9826dce41209cf71317d36d8385.pdf
+2025-06-30 17:07:16,697 [INFO] Archivo temporal eliminado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:07:16,698 [INFO] Archivo temporal eliminado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:07:16,708 [INFO] Archivo mergeado eliminado: outputs\merged_a91ec9826dce41209cf71317d36d8385.pdf
+2025-06-30 17:07:16,709 [INFO] Archivo enviado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_a91ec9826dce41209cf71317d36d8385.pdf (original 76845097 bytes → comprimido 45221669 bytes)
+2025-06-30 17:07:26,723 [INFO] Archivo eliminado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_a91ec9826dce41209cf71317d36d8385.pdf
+2025-06-30 17:12:27,411 [INFO] [USAGE] IP: 192.168.195.65 | Fecha: 2025-06-30 17:12:27 | Archivos: 2 | Extensiones: .pdf
+2025-06-30 17:12:27,536 [INFO] Archivo guardado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:12:27,664 [INFO] Archivo guardado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:12:27,664 [INFO] Merge iniciado con 2 archivos...
+2025-06-30 17:12:28,067 [INFO] Merge completado: outputs\merged_8a4771323fc048a9aab70213eb2294d7.pdf
+2025-06-30 17:12:28,067 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 17:12:55,377 [INFO] Compresión completada: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_8a4771323fc048a9aab70213eb2294d7.pdf
+2025-06-30 17:12:55,382 [INFO] Archivo temporal eliminado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:12:55,386 [INFO] Archivo temporal eliminado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:12:55,396 [INFO] Archivo mergeado eliminado: outputs\merged_8a4771323fc048a9aab70213eb2294d7.pdf
+2025-06-30 17:12:55,397 [INFO] Archivo enviado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_8a4771323fc048a9aab70213eb2294d7.pdf (original 76845097 bytes → comprimido 45221669 bytes)
+2025-06-30 17:13:05,406 [INFO] Archivo eliminado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_8a4771323fc048a9aab70213eb2294d7.pdf
+2025-06-30 17:13:53,850 [INFO] [USAGE] IP: 192.168.195.65 | Fecha: 2025-06-30 17:13:53 | Archivos: 2 | Extensiones: .pdf
+2025-06-30 17:13:53,972 [INFO] Archivo guardado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:13:54,153 [INFO] Archivo guardado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:13:54,153 [INFO] Merge iniciado con 2 archivos...
+2025-06-30 17:13:54,563 [INFO] Merge completado: outputs\merged_e6caecca941d4c5c8880534fa128a9fa.pdf
+2025-06-30 17:13:54,563 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 17:14:28,706 [INFO] Compresión completada: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_e6caecca941d4c5c8880534fa128a9fa.pdf
+2025-06-30 17:14:28,714 [INFO] Archivo temporal eliminado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:14:28,722 [INFO] Archivo temporal eliminado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:14:28,740 [INFO] Archivo mergeado eliminado: outputs\merged_e6caecca941d4c5c8880534fa128a9fa.pdf
+2025-06-30 17:14:28,741 [INFO] Archivo enviado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_e6caecca941d4c5c8880534fa128a9fa.pdf (original 76845097 bytes → comprimido 45221669 bytes)
+2025-06-30 17:14:38,754 [INFO] Archivo eliminado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_e6caecca941d4c5c8880534fa128a9fa.pdf
+2025-06-30 17:15:46,035 [INFO] [USAGE] IP: 192.168.195.65 | Fecha: 2025-06-30 17:15:46 | Archivos: 2 | Extensiones: .pdf
+2025-06-30 17:15:46,253 [INFO] Archivo guardado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:15:46,494 [INFO] Archivo guardado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:15:46,495 [INFO] Merge iniciado con 2 archivos...
+2025-06-30 17:15:47,572 [INFO] Merge completado: outputs\merged_a337251cab1b47468a02d58f99de1e55.pdf
+2025-06-30 17:15:47,572 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 17:16:23,457 [INFO] Compresión completada: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_a337251cab1b47468a02d58f99de1e55.pdf
+2025-06-30 17:16:23,465 [INFO] Archivo temporal eliminado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:16:23,473 [INFO] Archivo temporal eliminado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:16:23,488 [INFO] Archivo mergeado eliminado: outputs\merged_a337251cab1b47468a02d58f99de1e55.pdf
+2025-06-30 17:16:23,489 [INFO] Archivo enviado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_a337251cab1b47468a02d58f99de1e55.pdf (original 76845097 bytes → comprimido 45221669 bytes)
+2025-06-30 17:16:33,498 [INFO] Archivo eliminado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_a337251cab1b47468a02d58f99de1e55.pdf
+2025-06-30 17:28:55,743 [INFO] [USAGE] IP: 192.168.195.65 | Fecha: 2025-06-30 17:28:55 | Archivos: 2 | Extensiones: .pdf
+2025-06-30 17:28:55,860 [INFO] Archivo guardado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:28:55,959 [INFO] Archivo guardado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:28:55,959 [INFO] Merge iniciado con 2 archivos...
+2025-06-30 17:28:56,307 [INFO] Merge completado: outputs\merged_b0489a521dcd4eddb28bf61f2fbc9267.pdf
+2025-06-30 17:28:56,307 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 17:29:24,914 [INFO] Compresión completada: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_b0489a521dcd4eddb28bf61f2fbc9267.pdf
+2025-06-30 17:29:24,920 [INFO] Archivo temporal eliminado: uploads\compressed_82c0f689e8ee4918aac53138d58747dd.pdf
+2025-06-30 17:29:24,926 [INFO] Archivo temporal eliminado: uploads\compressed_5230aed242b94727abe939652b5aaac3.pdf
+2025-06-30 17:29:24,938 [INFO] Archivo mergeado eliminado: outputs\merged_b0489a521dcd4eddb28bf61f2fbc9267.pdf
+2025-06-30 17:29:24,939 [INFO] Archivo enviado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_b0489a521dcd4eddb28bf61f2fbc9267.pdf (original 76845097 bytes → comprimido 45221669 bytes)
+2025-06-30 17:29:34,957 [INFO] Archivo eliminado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_b0489a521dcd4eddb28bf61f2fbc9267.pdf

@@ -298,3 +298,4 @@ function updateCardIndices() {
     titleElem.innerHTML = `<strong>#${index + 1}</strong> ${fullName}`;
   });
 }
+

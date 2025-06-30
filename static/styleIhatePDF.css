@@ -132,3 +132,17 @@ header {
 .cursor-pointer {
   cursor: pointer;
 }
+footer {
+  background-color: #f8f9fa; /* gris claro */
+  border-top: 1px solid #dee2e6; /* línea superior */
+}
+
+footer a img {
+  transition: transform 0.3s ease;
+}
+
+footer a:hover img,
+footer a:focus img {
+  transform: scale(1.1);
+  outline: none;
+}

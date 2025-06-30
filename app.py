@@ -4,6 +4,9 @@ from flask_limiter.util import get_remote_address
 from werkzeug.middleware.proxy_fix import ProxyFix
 from dotenv import load_dotenv
 from flask import after_this_request
+import platform
+import shutil
+import subprocess
 
 #IHATE PDF
 
@@ -431,24 +434,51 @@ def merge_pdfs(pdf_list, output_path):
         logger.exception(f"Error en merge_pdfs: {e}")
         raise
 
+def get_ghostscript_executable():
+    """
+    Retorna la ruta adecuada al ejecutable Ghostscript según el sistema operativo.
+    Soporta ejecución empaquetada con PyInstaller (usando _MEIPASS).
+    """
+    if getattr(sys, 'frozen', False):  # Si es una app compilada con PyInstaller
+        base_path = sys._MEIPASS
+        if platform.system() == 'Windows':
+            return os.path.join(base_path, 'gs', 'gswin64c.exe')
+        else:
+            return os.path.join(base_path, 'gs', 'gs')
+    else:
+        return 'gswin64c' if platform.system() == 'Windows' else 'gs'
+
 def compress_pdf_with_ghostscript(input_pdf, output_pdf, quality="ebook"):
+    """
+    Comprime un archivo PDF usando Ghostscript con la calidad especificada.
+    Parámetros válidos para 'quality': screen, ebook, printer, prepress, default
+    """
     try:
         logger.info(f"Inicio de compresión con Ghostscript - Calidad: {quality}")
-        if getattr(sys, 'frozen', False):
-            gs_executable = os.path.join(sys._MEIPASS, 'gs', 'gswin64c.exe')
-        else:
-            gs_executable = 'gswin64c'
+
+        gs_executable = get_ghostscript_executable()
+        # Verifica si Ghostscript está disponible en el PATH
+        if shutil.which(gs_executable) is None:
+            raise FileNotFoundError(f"Ghostscript no encontrado en PATH: {gs_executable}")
 
         gs_command = [
-            gs_executable, '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4',
-            f'-dPDFSETTINGS=/{quality}', '-dNOPAUSE', '-dQUIET', '-dBATCH',
-            f'-sOutputFile={output_pdf}', input_pdf
+            gs_executable,
+            "-sDEVICE=pdfwrite",
+            "-dCompatibilityLevel=1.4",
+            f"-dPDFSETTINGS=/{quality}",  # opciones: screen, ebook, printer, prepress, default
+            "-dNOPAUSE",
+            "-dQUIET",
+            "-dBATCH",
+            f"-sOutputFile={output_pdf}",
+            input_pdf
         ]
 
         result = subprocess.run(gs_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if result.returncode != 0:
-            raise Exception(f"Ghostscript Error: {result.stderr.decode()}")
+            raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+
         logger.info(f"Compresión completada: {output_pdf}")
+
     except Exception as e:
         logger.exception(f"Error al comprimir PDF: {e}")
         raise
@@ -465,7 +495,6 @@ def delayed_delete(filepath, delay=10):
     threading.Timer(delay, delete_file).start()
 
 
-@app.route('/ihatepdf', methods=['GET', 'POST'])
 @app.route('/ihatepdf', methods=['GET', 'POST'])
 def ihatepdf():
     if request.method == 'POST':
