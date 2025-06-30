@@ -3,6 +3,7 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from werkzeug.middleware.proxy_fix import ProxyFix
 from dotenv import load_dotenv
+from flask import after_this_request
 
 #IHATE PDF
 
@@ -105,6 +106,7 @@ def registrar_interaccion_csv(pregunta, respuesta):
         escritor.writerow(datos)
 
 
+
 #################################################################################################################
 # Inicialización del sistema
 #################################################################################################################
@@ -175,7 +177,7 @@ def keep_alive():
             requests.get("https://portalti.inevada.cl/")  # Cambia el puerto si es diferente
         except Exception as e:
             print(f"Error en Keep-Alive: {e}")
-        time.sleep(180)  # Intervalo de 5 minutos
+        time.sleep(300)  # Intervalo de 5 minutos
 ##############################################################################################################
 
 ##############################################################################################################
@@ -370,106 +372,167 @@ def bot_api():
         return jsonify({"error": f"Error interno del servidor: {str(e)}"}), 500
     
     
-@app.route('/')
-def welcome_message():
-    """Mensaje de bienvenida inicial."""
-    return jsonify({
-        "message": (
-            "¡Hola! Soy tu asistente para la comprensión del reglamento interno. 👩‍💻👩‍⚖️"
-            "Puedes hacerme cualquier pregunta sobre el documento y responderé basándome únicamente en su contenido.✨"
-        )
-    })
+
 ##############################################################################################################
-################################## IHATEPDF ################################################################
-
-
+################################### LOGGER IHATE PDF###################################################################
+import logging
+from logging.handlers import RotatingFileHandler
+from datetime import datetime
+from flask import request
 
 
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['OUTPUT_FOLDER'] = 'outputs'
+
+# Crear logger
+log_file_path = os.path.join(app.config['OUTPUT_FOLDER'], 'ihatepdf_log.txt')
+log_formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
+
+file_handler = RotatingFileHandler(log_file_path, maxBytes=1024*1024, backupCount=5, encoding='utf-8')
+file_handler.setFormatter(log_formatter)
+
+logger = logging.getLogger('ihatepdfLogger')
+logger.setLevel(logging.INFO)
+logger.addHandler(file_handler)
+
+# Función para log personalizado
+def log_usage_info(files):
+    ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if not ip:
+        ip = request.remote_addr or 'Unknown IP'
+    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    extensions = [os.path.splitext(f.filename)[1].lower() for f in files]
+    unique_exts = list(set(extensions))
+    logger.info(f'[USAGE] IP: {ip} | Fecha: {now} | Archivos: {len(files)} | Extensiones: {", ".join(unique_exts)}')
+
+##############################################################################################################
+################################## IHATEPDF ##################################################################
+
+
+
+
+
 
 
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['OUTPUT_FOLDER'], exist_ok=True)
 
 def merge_pdfs(pdf_list, output_path):  
-    merged = fitz.open()
-    for path in pdf_list:
-        with fitz.open(path) as pdf:
-            merged.insert_pdf(pdf)
-    merged.save(output_path)
-    merged.close()
+    try:
+        logger.info(f"Merge iniciado con {len(pdf_list)} archivos...")
+        merged = fitz.open()
+        for path in pdf_list:
+            with fitz.open(path) as pdf:
+                merged.insert_pdf(pdf)
+        merged.save(output_path)
+        merged.close()
+        logger.info(f"Merge completado: {output_path}")
+    except Exception as e:
+        logger.exception(f"Error en merge_pdfs: {e}")
+        raise
 
 def compress_pdf_with_ghostscript(input_pdf, output_pdf, quality="ebook"):
-    if getattr(sys, 'frozen', False):
-        gs_executable = os.path.join(sys._MEIPASS, 'gs', 'gswin64c.exe')
-    else:
-        gs_executable = 'gswin64c'
+    try:
+        logger.info(f"Inicio de compresión con Ghostscript - Calidad: {quality}")
+        if getattr(sys, 'frozen', False):
+            gs_executable = os.path.join(sys._MEIPASS, 'gs', 'gswin64c.exe')
+        else:
+            gs_executable = 'gswin64c'
 
-    gs_command = [
-        gs_executable, '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4',
-        f'-dPDFSETTINGS=/{quality}', '-dNOPAUSE', '-dQUIET', '-dBATCH',
-        f'-sOutputFile={output_pdf}', input_pdf
-    ]
+        gs_command = [
+            gs_executable, '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4',
+            f'-dPDFSETTINGS=/{quality}', '-dNOPAUSE', '-dQUIET', '-dBATCH',
+            f'-sOutputFile={output_pdf}', input_pdf
+        ]
 
-    result = subprocess.run(gs_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    if result.returncode != 0:
-        raise Exception(f"Ghostscript Error: {result.stderr.decode()}")
+        result = subprocess.run(gs_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if result.returncode != 0:
+            raise Exception(f"Ghostscript Error: {result.stderr.decode()}")
+        logger.info(f"Compresión completada: {output_pdf}")
+    except Exception as e:
+        logger.exception(f"Error al comprimir PDF: {e}")
+        raise
 
+# Función para eliminar el archivo después de un delay
+def delayed_delete(filepath, delay=10):
+    def delete_file():
+        try:
+            if os.path.exists(filepath):
+                os.remove(filepath)
+                logger.info(f"Archivo eliminado: {filepath}")
+        except Exception as e:
+            logger.error(f"Error al eliminar el archivo {filepath}: {e}")
+    threading.Timer(delay, delete_file).start()
+
+
+@app.route('/ihatepdf', methods=['GET', 'POST'])
 @app.route('/ihatepdf', methods=['GET', 'POST'])
 def ihatepdf():
     if request.method == 'POST':
         if 'pdfs' not in request.files:
             flash('No files part')
+            logger.warning("Solicitud sin archivos adjuntos.")
             return redirect(request.url)
 
         files = request.files.getlist('pdfs')
+        log_usage_info(files)
         quality = request.form.get('quality', 'ebook')
         token = request.form.get('download_token')
 
         if not files or any(f.filename == '' for f in files):
             flash('No selected file')
+            logger.warning("Archivos vacíos o sin selección.")
             return redirect(request.url)
 
         unique_id = uuid.uuid4().hex
+        first_filename = secure_filename(files[0].filename)
+        base_name = os.path.splitext(first_filename)[0]
+        output_filename = f"{base_name}_{unique_id}.pdf"
+
         merged_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'merged_{unique_id}.pdf')
-        compressed_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'compressed_{unique_id}.pdf')
+        compressed_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], output_filename)
 
         saved_files = []
         original_size = 0
-        for file in files:
-            filename = secure_filename(file.filename)
-            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-            file.save(filepath)
-            saved_files.append(filepath)
-            original_size += os.path.getsize(filepath)
-
         try:
-            # Condicional para decidir si hacer merge o solo comprimir
+            for file in files:
+                filename = secure_filename(file.filename)
+                filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                file.save(filepath)
+                saved_files.append(filepath)
+                original_size += os.path.getsize(filepath)
+                logger.info(f"Archivo guardado: {filepath}")
+
             if len(saved_files) == 1:
-                merged_pdf_path = saved_files[0]  # No hacer merge, usar directamente el archivo subido
+                merged_pdf_path = saved_files[0]
             else:
                 merge_pdfs(saved_files, merged_pdf_path)
 
             compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
-
             compressed_size = os.path.getsize(compressed_pdf_path)
+
+            # Borrar archivos temporales
             for f in saved_files:
                 os.remove(f)
-            if len(saved_files) > 1:
+                logger.info(f"Archivo temporal eliminado: {f}")
+            if len(saved_files) > 1 and os.path.exists(merged_pdf_path):
                 os.remove(merged_pdf_path)
+                logger.info(f"Archivo mergeado eliminado: {merged_pdf_path}")
 
-             # Crear la respuesta con el archivo
-            response = make_response(send_file(compressed_pdf_path, as_attachment=True))
-            
+            delayed_delete(compressed_pdf_path, delay=10)
+
+            response = make_response(send_file(compressed_pdf_path, as_attachment=True, download_name=output_filename))
+
             if token:
                 response.set_cookie(f'download_complete_{token}', 'true')
                 response.set_cookie(f'original_size_{token}', str(original_size))
                 response.set_cookie(f'compressed_size_{token}', str(compressed_size))
-            
+
+            logger.info(f"Archivo enviado: {compressed_pdf_path} (original {original_size} bytes → comprimido {compressed_size} bytes)")
             return response
 
         except Exception as e:
+            logger.exception(f"Error general en ihatepdf: {e}")
             flash(str(e))
             return redirect(request.url)
 
@@ -508,9 +571,9 @@ def cargar_modelo_en_segundo_plano():
         threading.Thread(target=background_loader, daemon=True).start()
 
 
-if __name__ == '__main__':
-    threading.Thread(target=keep_alive, daemon=True).start()
-    #app.run(host='0.0.0.0', port=5000, debug=True)
+# if __name__ == '__main__':
+#     threading.Thread(target=keep_alive, daemon=True).start()
+#     app.run(host='0.0.0.0', port=5000, debug=True)
 
 
 

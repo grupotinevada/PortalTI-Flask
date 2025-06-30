@@ -1,6 +1,13 @@
-.env
 USUARIO_DATA.csv
 
-.vscode
+.vscode/
+dist/
+build/
+__pycache__/
 
-__pycache__
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/

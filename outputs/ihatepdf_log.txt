@@ -1,0 +1,14 @@
+2025-06-30 11:21:34,096 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-06-30 11:21:34 | Archivos: 3 | Extensiones: .pdf
+2025-06-30 11:21:34,097 [INFO] Archivo guardado: uploads\TITULO.pdf
+2025-06-30 11:21:34,098 [INFO] Archivo guardado: uploads\certificado-fonasa.pdf
+2025-06-30 11:21:34,100 [INFO] Archivo guardado: uploads\certificado-afp.pdf
+2025-06-30 11:21:34,100 [INFO] Merge iniciado con 3 archivos...
+2025-06-30 11:21:34,147 [INFO] Merge completado: outputs\merged_c976640c61aa457f903abd188b2ea567.pdf
+2025-06-30 11:21:34,147 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-06-30 11:21:34,509 [INFO] Compresión completada: outputs\TITULO_c976640c61aa457f903abd188b2ea567.pdf
+2025-06-30 11:21:34,510 [INFO] Archivo temporal eliminado: uploads\TITULO.pdf
+2025-06-30 11:21:34,511 [INFO] Archivo temporal eliminado: uploads\certificado-fonasa.pdf
+2025-06-30 11:21:34,511 [INFO] Archivo temporal eliminado: uploads\certificado-afp.pdf
+2025-06-30 11:21:34,512 [INFO] Archivo mergeado eliminado: outputs\merged_c976640c61aa457f903abd188b2ea567.pdf
+2025-06-30 11:21:34,518 [INFO] Archivo enviado: outputs\TITULO_c976640c61aa457f903abd188b2ea567.pdf (original 208382 bytes → comprimido 138289 bytes)
+2025-06-30 11:21:44,512 [INFO] Archivo eliminado: outputs\TITULO_c976640c61aa457f903abd188b2ea567.pdf
