@@ -159,3 +159,7 @@ body {
   height: 18px;
   fill: #dc2626;
 }
+
+.app-tile:hover {
+  background-color: #f8f9fa;
+}
