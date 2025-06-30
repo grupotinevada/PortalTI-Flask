@@ -53,9 +53,11 @@ const categoriasInfo = {
   },
   ihatepdf: { nombre: "I hate PDF", icono: "/logos_png/ihatepdf.webp" },
 };
+
 /**
  * aqui para agregar aplicaciones o extensiones en aplicaciones al offcanvas del index.html
  */
+
 const categoriasConLink = {
   chatbot: "/chatBotPage",
   contratos: "/renombreContratosPage",
@@ -104,44 +106,55 @@ function cargarManuales(categoria) {
   }
 
   // Si la categoría es 'exe', agregar botones con enlaces externos
-  if (categoria === "exe") {
-    const gridApps = document.createElement("div");
-    gridApps.className = "mt-4 d-flex flex-column gap-3";
+ if (categoria === "exe") {
 
-    Object.entries(categoriasConLink).forEach(([cat, url]) => {
-      const card = document.createElement("a");
-      card.href = url;
-      card.target = "_blank";
-      card.className = "card shadow-sm text-decoration-none text-dark";
-      card.style.transition = "transform 0.2s ease";
-      card.onmouseover = () => {
-        card.style.transform = "scale(1.01)";
-        card.style.borderColor = "#0E5C94";
-        card.querySelector(".card-title").style.color = "#0E5C94";
-      };
-      card.onmouseout = () => {
-        card.style.transform = "scale(1)";
-        card.style.borderColor = "";
-        card.querySelector(".card-title").style.color = "";
-      };
-      card.innerHTML = `
-        <div class="row g-0 align-items-center">
+  const existente = document.getElementById("gridApps");
+  if (existente) existente.remove();
+
+
+  const gridApps = document.createElement("div");
+  gridApps.id = "gridApps"; // Esto permite encontrarlo fácilmente después
+  gridApps.className = "mt-4 d-flex flex-column gap-3";
+
+  Object.entries(categoriasConLink).forEach(([cat, url]) => {
+    const card = document.createElement("a");
+    card.href = url;
+    card.target = "_blank";
+    card.className = "card shadow-sm text-decoration-none text-dark";
+    card.style.transition = "transform 0.2s ease";
+
+    card.onmouseover = () => {
+      card.style.transform = "scale(1.01)";
+      card.style.borderColor = "#0E5C94";
+      card.querySelector(".card-title").style.color = "#0E5C94";
+    };
+
+    card.onmouseout = () => {
+      card.style.transform = "scale(1)";
+      card.style.borderColor = "";
+      card.querySelector(".card-title").style.color = "";
+    };
+
+    card.innerHTML = `
+      <div class="row g-0 align-items-center">
         <div class="col-auto p-3">
-            <img src="${categoriasInfo[cat]?.icono || "logos_png/default.webp"}" alt="${cat}" style="width:64px;" />
+          <img src="${categoriasInfo[cat]?.icono || "logos_png/default.webp"}" alt="${cat}" style="width:64px;" />
         </div>
         <div class="col">
-            <div class="card-body py-2">
+          <div class="card-body py-2">
             <h6 class="card-title mb-1">${categoriasInfo[cat]?.nombre || cat}</h6>
             <p class="card-text small text-muted mb-0">Haz clic para abrir la aplicación.</p>
-            </div>
+          </div>
         </div>
-        </div>
-        `;
-      gridApps.appendChild(card);
-    });
+      </div>
+    `;
 
-    lista.parentElement.appendChild(gridApps);
-  }
+    gridApps.appendChild(card);
+  });
+
+  lista.parentElement.appendChild(gridApps);
+}
+
 
   // Cierra el otro componente si está abierto
   if (categoria === "exe") {
