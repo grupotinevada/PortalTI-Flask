@@ -1,7 +1,7 @@
 Flask==3.1.0
-Flask_Limiter==3.9.2
+Flask-Limiter==3.9.2
 langchain==0.3.13
-langchain_openai==0.2.13
+langchain-openai==0.2.13
 python-dotenv
 faiss-cpu
 markdown
@@ -27,8 +27,6 @@ Deprecated==1.2.18
 distro==1.9.0
 etelemetry==0.3.1
 filelock==3.18.0
-Flask==3.1.0
-Flask-Limiter==3.9.2
 frozenlist==1.7.0
 greenlet==3.2.3
 h11==0.16.0
@@ -42,10 +40,8 @@ Jinja2==3.1.6
 jiter==0.10.0
 jsonpatch==1.33
 jsonpointer==3.0.0
-langchain
 langchain-community
 langchain-core
-langchain-openai
 langchain-text-splitters
 langsmith
 limits==5.2.0
