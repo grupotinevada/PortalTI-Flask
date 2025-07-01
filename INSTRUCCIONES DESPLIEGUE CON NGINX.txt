@@ -92,7 +92,7 @@ server {
     listen 80;     server_name portalti2.inevada.cl; # Tu subdominio en Cloudflare
 
     location / {
-        proxy_pass http://192.168.195.147:5000; # Dirección de tu API de Flask
+        proxy_pass http://192.168.195.147:5000; # Dirección de tu GUNICORN
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade; # Permitir la actualización de >
         proxy_set_header Connection 'upgrade';  # Mantener la conexión abierta
