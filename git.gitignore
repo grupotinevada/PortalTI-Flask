@@ -12,7 +12,7 @@ env/
 venv/
 ENV/
 .scannerwork/
-sonar-scanner-7.1.0.4889-windows-x64/
+/sonar-scanner-7.1.0.4889-windows-x64/
 # SonarQube common exclusions
 .sonar/
 .sonarcloud/

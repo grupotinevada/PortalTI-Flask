@@ -68,8 +68,7 @@
                 files: [],
                 sortableInstance: null,
                 resultTimeout: null,
-                isSubmitting: false,
-                isTransitioning : false 
+                isSubmitting: false
             };
 
             // Asegurar que las dependencias externas existen
@@ -114,8 +113,10 @@
             );
 
             newFiles.forEach(file => {
+                const id = crypto.randomUUID(); // Genera un ID único para cada archivo
+              console.log("📥 Añadiendo archivo:", file.name, "| ID único generado:", id);
                 this.state.files.push({
-                    uniqueId: crypto.randomUUID(),
+                    uniqueId: id,
                     sourceFile: file,
                     rotation: 0,
                     name: file.name,
@@ -140,20 +141,38 @@
          * Rota un archivo 90 grados en sentido horario.
          * @param {string} fileId - El ID único del archivo a rotar.
          */
-        rotateFile(fileId) {
+          rotateFile(fileId) {
+            console.log("🔁 Solicitud de rotación para fileId:", fileId);
 
-          if (this.state.isTransitioning) return;
             const fileData = this.state.files.find(f => f.uniqueId === fileId);
-            if (fileData) {
-                fileData.rotation = (fileData.rotation + 90) % 360;
-                // En lugar de un re-renderizado completo, solo actualizamos el thumbnail afectado
-                const cardElement = this.dom.previewContainer.querySelector(`.card[data-file-id="${fileId}"]`);
-                if(cardElement) {
-                    const placeholder = cardElement.querySelector('.card-img-top-placeholder');
-                    placeholder.style.transform = `rotate(${fileData.rotation}deg)`;
-                }
+            if (!fileData) {
+                console.warn("❌ No se encontró el archivo en el estado con ese fileId:", fileId);
+                console.log("📦 Estado actual de archivos:", this.state.files.map(f => ({ name: f.name, id: f.uniqueId })));
+                return;
+            }
+
+            console.log("✅ Archivo encontrado para rotar:", fileData.name, "| Rotación previa:", fileData.rotation);
+
+            fileData.rotation = (fileData.rotation + 90) % 360;
+            console.log("🔄 Nueva rotación:", fileData.rotation);
+
+            const cardElement = this.dom.previewContainer.querySelector(`.card[data-file-id="${fileId}"]`);
+            if (!cardElement) {
+                console.warn("⚠️ No se encontró el cardElement correspondiente al fileId:", fileId);
+                return;
+            }
+
+            const placeholder = cardElement.querySelector('.card-img-top-placeholder');
+            if (placeholder) {
+                placeholder.style.transform = `rotate(${fileData.rotation}deg)`;
+                console.log("🎯 Rotación visual aplicada al thumbnail del PDF:", fileData.name);
+            } else {
+                console.warn("⚠️ No se encontró el placeholder en el card para aplicar rotación visual.");
             }
         }
+
+
+
 
         // =================================================================
         // 3. MÉTODOS "PRIVADOS" (Lógica interna y helpers)
@@ -171,34 +190,33 @@
         /**
          * Inicializa la librería SortableJS en el contenedor de previsualización.
          */
-        _initSortable() {
-            this.state.sortableInstance = new Sortable(this.dom.previewContainer, {
-                animation: 150,
-                handle: this.config.selectors.card,
-                filter: '.add-more-card-wrapper',
-                onEnd: () => {
-                  const cardElements = [...this.dom.previewContainer.querySelectorAll(`${this.config.selectors.pdfCardWrapper} ${this.config.selectors.card}`)];
-                  const newIdOrder = cardElements.map(card => card.dataset.fileId);
+          _initSortable() {
+              this.state.sortableInstance = new Sortable(this.dom.previewContainer, {
+                  animation: 150,
+                  handle: this.config.selectors.card,
+                  filter: '.add-more-card-wrapper',
+                  onEnd: () => {
+                      const cardElements = [...this.dom.previewContainer.querySelectorAll(`${this.config.selectors.pdfCardWrapper} ${this.config.selectors.card}`)];
+                      const newIdOrder = cardElements.map(card => card.dataset.fileId);
+                       console.log("🔃 Nuevo orden de fileIds (después de mover):", newIdOrder);
 
-                  // Crea nuevo estado basado en el nuevo orden visual
-                  const newFilesState = newIdOrder.map(id => {
+                      const newFilesState = newIdOrder.map(id => {
                       const file = this.state.files.find(f => f.uniqueId === id);
-                      return file ? { ...file } : null;
-                  }).filter(Boolean);
+                      return file ? { ...file } : null; // 🔁 copiar todo el objeto, manteniendo sourceFile y rotation
+                      }).filter(Boolean);
 
-                  if (newFilesState.length === this.state.files.length) {
-                      this.state.files = newFilesState;
-                      this.render(); // Re-renderizar para que el orden se refleje bien
-                      this.state.isTransitioning = true;
-                      setTimeout(() => {
-                          this.state.isTransitioning = false;
-                      }, 500); // 0.5 segundos de buffer
 
+
+                      if (newFilesState.length === this.state.files.length) {
+                          this.state.files = newFilesState;
+                          console.log("📚 Nuevo estado ordenado:", this.state.files.map(f => ({ name: f.name, id: f.uniqueId })));
+                      }
+
+                      // IMPORTANTE: no llames a render() aquí, porque perderías el DOM reciente, afectando la rotación
                   }
-              }
+              });
+          }
 
-            });
-        }
 
         /**
          * Alterna la visibilidad entre el área de carga y el área de previsualización.
@@ -247,15 +265,19 @@
          */
         _handlePreviewContainerClick(event) {
             const target = event.target;
+            console.log("🖱 Click detectado en:", target.tagName, "| Clase:", target.className);
+
             const closestCard = target.closest(this.config.selectors.card);
+            if (!closestCard) return;
+
+            const fileId = closestCard.dataset.fileId;
+            console.log("🆔 fileId obtenido desde el DOM:", fileId);
 
             if (target.closest(this.config.selectors.addMoreCard)) {
                 this.dom.pdfInput.click();
                 return;
             }
-            
-            if (!closestCard) return;
-            const fileId = closestCard.dataset.fileId;
+
             if (!fileId) return;
 
             if (target.closest(this.config.selectors.deleteBtn)) {
@@ -264,6 +286,7 @@
                 this.rotateFile(fileId);
             }
         }
+
 
         /**
          * Maneja el envío del formulario.
@@ -277,7 +300,6 @@
             if (this.state.isSubmitting) return;
 
             this._showSpinner();
-            
             this.state.isSubmitting = true;
 
             const downloadToken = `token_${Date.now()}`;
@@ -298,11 +320,8 @@
                 this._showBootstrapAlert(`Hubo un error al procesar los archivos: ${error.message}`, "danger");
                 this._hideSpinner(); // Asegurarse de ocultar el spinner en caso de error
             } finally {
-                    setTimeout(() => {
-                        this.state.isSubmitting = false;
-                    }, 500);
-                }
-
+                this.state.isSubmitting = false; // Permitir nuevos envíos
+            }
         }
         
         /**
@@ -310,18 +329,35 @@
          * @param {string} downloadToken - El token para asociar con la descarga.
          * @returns {Promise<FormData>} El objeto FormData listo para ser enviado.
          */
-        async _buildFormData(downloadToken) {
-            const formData = new FormData();
-            const quality = this.dom.form.querySelector('input[name="quality"]:checked')?.value || "ebook";
-            formData.append("quality", quality);
-            formData.append("download_token", downloadToken);
+async _buildFormData(downloadToken) {
+    const formData = new FormData();
+    const quality = this.dom.form.querySelector('input[name="quality"]:checked')?.value || "ebook";
+    formData.append("quality", quality);
+    formData.append("download_token", downloadToken);
 
-            for (const fileData of this.state.files) {
-                const fileToUpload = await this._rotatePdfBinary(fileData.sourceFile, fileData.rotation);
-                formData.append("pdfs", fileToUpload, fileData.name);
-            }
-            return formData;
-        }
+    console.log("📤 Enviando archivos al backend con calidad:", quality);
+    console.log("📄 Archivos en el orden actual:", this.state.files.map((f, idx) => ({
+        index: idx + 1,
+        name: f.name,
+        rotation: f.rotation,
+        uniqueId: f.uniqueId,
+        sizeMB: (f.size / 1024 / 1024).toFixed(2) + " MB"
+    })));
+
+    for (const fileData of this.state.files) {
+        const fileToUpload = await this._rotatePdfBinary(fileData.sourceFile, fileData.rotation);
+
+        console.log("✅ PDF preparado:", {
+            name: fileData.name,
+            rotated: fileData.rotation,
+            uploadedSize: (fileToUpload.size / 1024 / 1024).toFixed(2) + " MB"
+        });
+
+        formData.append("pdfs", fileToUpload, fileData.name);
+    }
+
+    return formData;
+}
         
         /**
          * Inicia el mecanismo de detección de descarga basado en cookies.
@@ -470,13 +506,18 @@
          * @returns {Promise<File>} Un nuevo objeto File con el PDF rotado.
          */
         async _rotatePdfBinary(sourceFile, angle) {
+            console.log("🧪 Rotando PDF en memoria:", sourceFile.name, "| Ángulo:", angle);
+
             if (angle === 0) return sourceFile; // No hay necesidad de procesar si no hay rotación
+
             const arrayBuffer = await sourceFile.arrayBuffer();
             const pdfDoc = await PDFLib.PDFDocument.load(arrayBuffer);
+
             pdfDoc.getPages().forEach(page => {
                 const currentRotation = page.getRotation().angle;
                 page.setRotation(PDFLib.degrees(currentRotation + angle));
             });
+            
             const rotatedBytes = await pdfDoc.save();
             return new File([rotatedBytes], sourceFile.name, { type: "application/pdf" });
         }
