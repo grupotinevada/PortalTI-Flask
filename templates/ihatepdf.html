@@ -54,6 +54,8 @@
               </div>
 
               <!-- 🟩 Aquí va el contenedor de miniaturas (fuera de .upload-area) -->
+               <div id="alertContainer" class="mt-2"></div>
+
               <div
                 id="previewContainer"
                 class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 d-none mt-4"
@@ -265,6 +267,9 @@
     />
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <!-- pdf-lib.js -->
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+
     <script>
       // Establece la ruta del worker
       pdfjsLib.GlobalWorkerOptions.workerSrc =

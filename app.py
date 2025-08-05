@@ -447,6 +447,41 @@ def get_ghostscript_executable():
             return os.path.join(base_path, 'gs', 'gs')
     else:
         return 'gswin64c' if platform.system() == 'Windows' else 'gs'
+    
+def standardize_pdf(input_pdf, output_pdf):
+    """
+    Lee un PDF y lo vuelve a escribir usando Ghostscript.
+    Esto repara/estandariza la estructura interna del archivo, haciéndolo
+    más compatible con procesos posteriores como la compresión.
+    """
+    try:
+        logger.info(f"Inicio de estandarización de PDF: {input_pdf}")
+        gs_executable = get_ghostscript_executable()
+
+        if shutil.which(gs_executable) is None:
+            raise FileNotFoundError(f"Ghostscript no encontrado en PATH: {gs_executable}")
+
+        gs_command = [
+            gs_executable,
+            "-o", output_pdf, # Forma más segura de especificar el output
+            "-sDEVICE=pdfwrite",
+            "-dPDFSETTINGS=/default", # Usamos /default para no comprimir, solo re-escribir
+            "-dCompatibilityLevel=1.4",
+            "-dNOPAUSE",
+            "-dQUIET",
+            "-dBATCH",
+            input_pdf
+        ]
+        
+        result = subprocess.run(gs_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if result.returncode != 0:
+            raise RuntimeError(f"Ghostscript (estandarización) falló: {result.stderr.decode().strip()}")
+
+        logger.info(f"Estandarización completada: {output_pdf}")
+
+    except Exception as e:
+        logger.exception(f"Error al estandarizar PDF: {e}")
+        raise   
 
 def compress_pdf_with_ghostscript(input_pdf, output_pdf, quality="ebook"):
     """
@@ -519,6 +554,7 @@ def ihatepdf():
         output_filename = f"{base_name}_{unique_id}.pdf"
 
         merged_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'merged_{unique_id}.pdf')
+        standardized_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'standardized_{unique_id}.pdf')
         compressed_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], output_filename)
 
         saved_files = []
@@ -526,27 +562,31 @@ def ihatepdf():
         try:
             for file in files:
                 filename = secure_filename(file.filename)
-                filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                temp_filename = f"{unique_id}_{filename}"
+                filepath = os.path.join(app.config['UPLOAD_FOLDER'], temp_filename)
                 file.save(filepath)
                 saved_files.append(filepath)
                 original_size += os.path.getsize(filepath)
                 logger.info(f"Archivo guardado: {filepath}")
 
             if len(saved_files) == 1:
-                merged_pdf_path = saved_files[0]
+                shutil.copy(saved_files[0], merged_pdf_path)
             else:
                 merge_pdfs(saved_files, merged_pdf_path)
-
+            
+            standardize_pdf(merged_pdf_path, standardized_pdf_path)
             compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
             compressed_size = os.path.getsize(compressed_pdf_path)
 
             # Borrar archivos temporales
             for f in saved_files:
                 os.remove(f)
-                logger.info(f"Archivo temporal eliminado: {f}")
-            if len(saved_files) > 1 and os.path.exists(merged_pdf_path):
+            # Borramos los archivos intermedios creados
+            if os.path.exists(merged_pdf_path):
                 os.remove(merged_pdf_path)
-                logger.info(f"Archivo mergeado eliminado: {merged_pdf_path}")
+            ### AÑADIMOS EL NUEVO ARCHIVO A LA LIMPIEZA ###
+            if os.path.exists(standardized_pdf_path):
+                os.remove(standardized_pdf_path)
 
             delayed_delete(compressed_pdf_path, delay=10)
 
@@ -563,6 +603,12 @@ def ihatepdf():
         except Exception as e:
             logger.exception(f"Error general en ihatepdf: {e}")
             flash(str(e))
+            # Limpieza adicional en caso de error
+            if os.path.exists(merged_pdf_path): os.remove(merged_pdf_path)
+            if os.path.exists(standardized_pdf_path): os.remove(standardized_pdf_path)
+            if os.path.exists(compressed_pdf_path): os.remove(compressed_pdf_path)
+            for f in saved_files: 
+                if os.path.exists(f): os.remove(f)
             return redirect(request.url)
 
     return render_template('ihatepdf.html')
