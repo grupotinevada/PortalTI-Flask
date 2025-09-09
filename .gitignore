@@ -1,3 +1,9 @@
 .env
 USUARIO_DATA.csv
 USUARIO_DATA.csv
+outputs/
+uploads/
+debug_output/
+__pycache__/
+env/
+venv/

@@ -52,6 +52,7 @@ const categoriasInfo = {
     icono: "/logos_png/pdfLogo.webp",
   },
   ihatepdf: { nombre: "I hate PDF", icono: "/logos_png/ihatepdf.webp" },
+  conversor: { nombre: "Conversor", icono: "/logos_png/conversor.png" },
 };
 
 /**
@@ -59,9 +60,10 @@ const categoriasInfo = {
  */
 
 const categoriasConLink = {
+  ihatepdf: "/ihatepdf",
   chatbot: "/chatBotPage",
   contratos: "/renombreContratosPage",
-  ihatepdf: "/ihatepdf",
+  conversor: "https://conversor.inevada.cl/conversion",
 };
 // Función para cargar los manuales en el modal
 function cargarManuales(categoria) {

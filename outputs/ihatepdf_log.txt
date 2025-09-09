@@ -98,3 +98,1585 @@
 2025-06-30 17:29:24,938 [INFO] Archivo mergeado eliminado: outputs\merged_b0489a521dcd4eddb28bf61f2fbc9267.pdf
 2025-06-30 17:29:24,939 [INFO] Archivo enviado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_b0489a521dcd4eddb28bf61f2fbc9267.pdf (original 76845097 bytes → comprimido 45221669 bytes)
 2025-06-30 17:29:34,957 [INFO] Archivo eliminado: outputs\compressed_82c0f689e8ee4918aac53138d58747dd_b0489a521dcd4eddb28bf61f2fbc9267.pdf
+2025-07-25 13:12:02,635 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-07-25 13:12:02 | Archivos: 1 | Extensiones: .pdf
+2025-07-25 13:12:02,641 [INFO] Archivo guardado: uploads\CartolaProvisoria-000083960418-0045-20250724.pdf
+2025-07-25 13:12:02,641 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-07-25 13:12:03,381 [INFO] Compresión completada: outputs\CartolaProvisoria-000083960418-0045-20250724_d603f252f86e41a09096b8532833845b.pdf
+2025-07-25 13:12:03,382 [INFO] Archivo temporal eliminado: uploads\CartolaProvisoria-000083960418-0045-20250724.pdf
+2025-07-25 13:12:03,384 [INFO] Archivo enviado: outputs\CartolaProvisoria-000083960418-0045-20250724_d603f252f86e41a09096b8532833845b.pdf (original 566328 bytes → comprimido 95425 bytes)
+2025-07-25 13:12:13,385 [INFO] Archivo eliminado: outputs\CartolaProvisoria-000083960418-0045-20250724_d603f252f86e41a09096b8532833845b.pdf
+2025-07-25 13:13:54,726 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-07-25 13:13:54 | Archivos: 1 | Extensiones: .pdf
+2025-07-25 13:13:54,767 [INFO] Archivo guardado: uploads\compressed.pdf
+2025-07-25 13:13:54,768 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-07-25 13:14:02,405 [INFO] Compresión completada: outputs\compressed_f15c0e6c285e4f5fa80415d583426923.pdf
+2025-07-25 13:14:02,407 [INFO] Archivo temporal eliminado: uploads\compressed.pdf
+2025-07-25 13:14:02,423 [INFO] Archivo enviado: outputs\compressed_f15c0e6c285e4f5fa80415d583426923.pdf (original 11229379 bytes → comprimido 11117065 bytes)
+2025-07-25 13:14:12,413 [INFO] Archivo eliminado: outputs\compressed_f15c0e6c285e4f5fa80415d583426923.pdf
+2025-07-25 13:19:24,389 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-07-25 13:19:24 | Archivos: 1 | Extensiones: .pdf
+2025-07-25 13:19:24,423 [INFO] Archivo guardado: uploads\compressed.pdf
+2025-07-25 13:19:24,423 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-07-25 13:19:31,248 [INFO] Compresión completada: outputs\compressed_319a077b2cd441fd978febde354f23ee.pdf
+2025-07-25 13:19:31,251 [INFO] Archivo temporal eliminado: uploads\compressed.pdf
+2025-07-25 13:19:31,257 [INFO] Archivo enviado: outputs\compressed_319a077b2cd441fd978febde354f23ee.pdf (original 11229380 bytes → comprimido 11117065 bytes)
+2025-07-25 13:19:41,254 [INFO] Archivo eliminado: outputs\compressed_319a077b2cd441fd978febde354f23ee.pdf
+2025-07-25 13:21:17,179 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-07-25 13:21:17 | Archivos: 1 | Extensiones: .pdf
+2025-07-25 13:21:17,210 [INFO] Archivo guardado: uploads\compressed.pdf
+2025-07-25 13:21:17,210 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-07-25 13:21:24,245 [INFO] Compresión completada: outputs\compressed_66f95bddd6e74f6591ee9cd36ff5aeeb.pdf
+2025-07-25 13:21:24,248 [INFO] Archivo temporal eliminado: uploads\compressed.pdf
+2025-07-25 13:21:24,256 [INFO] Archivo enviado: outputs\compressed_66f95bddd6e74f6591ee9cd36ff5aeeb.pdf (original 11229381 bytes → comprimido 11164061 bytes)
+2025-07-25 13:21:34,252 [INFO] Archivo eliminado: outputs\compressed_66f95bddd6e74f6591ee9cd36ff5aeeb.pdf
+2025-07-25 14:51:05,592 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-07-25 14:51:05 | Archivos: 1 | Extensiones: .pdf
+2025-07-25 14:51:05,599 [INFO] Archivo guardado: uploads\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-07-25 14:51:05,599 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-07-25 14:51:06,259 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_83de16835b4b4321b9e3076780e8a6ed.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 478, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_83de16835b4b4321b9e3076780e8a6ed.pdf .
+**** Unable to open the initial device, quitting.
+2025-07-25 14:51:06,306 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_83de16835b4b4321b9e3076780e8a6ed.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 540, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 478, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_83de16835b4b4321b9e3076780e8a6ed.pdf .
+**** Unable to open the initial device, quitting.
+2025-07-25 14:58:01,228 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-07-25 14:58:01 | Archivos: 1 | Extensiones: .pdf
+2025-07-25 14:58:01,232 [INFO] Archivo guardado: uploads\CartolaProvisoria-000083960418-0045-20250724.pdf
+2025-07-25 14:58:01,232 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-07-25 14:58:01,678 [INFO] Compresión completada: outputs\CartolaProvisoria-000083960418-0045-20250724_479faafda8a249e0b8b89cb55c38d384.pdf
+2025-07-25 14:58:01,679 [INFO] Archivo temporal eliminado: uploads\CartolaProvisoria-000083960418-0045-20250724.pdf
+2025-07-25 14:58:01,686 [INFO] Archivo enviado: outputs\CartolaProvisoria-000083960418-0045-20250724_479faafda8a249e0b8b89cb55c38d384.pdf (original 566328 bytes → comprimido 95425 bytes)
+2025-07-25 14:58:11,681 [INFO] Archivo eliminado: outputs\CartolaProvisoria-000083960418-0045-20250724_479faafda8a249e0b8b89cb55c38d384.pdf
+2025-08-05 11:09:28,891 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:09:28 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 11:09:28,896 [INFO] Archivo guardado: uploads\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 11:09:28,896 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:09:29,257 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_febb341420914897bb34cba8a192542d.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 478, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_febb341420914897bb34cba8a192542d.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 11:09:29,273 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_febb341420914897bb34cba8a192542d.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 540, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 478, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_febb341420914897bb34cba8a192542d.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 11:10:44,041 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:10:44 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 11:10:44,045 [INFO] Archivo guardado: uploads\elmercurio.pdf
+2025-08-05 11:10:44,046 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:10:47,258 [INFO] Compresión completada: outputs\elmercurio_3fb01f9192844f9a9b3e00b7c0ddd0d4.pdf
+2025-08-05 11:10:47,259 [INFO] Archivo temporal eliminado: uploads\elmercurio.pdf
+2025-08-05 11:10:47,271 [INFO] Archivo enviado: outputs\elmercurio_3fb01f9192844f9a9b3e00b7c0ddd0d4.pdf (original 1241485 bytes → comprimido 647998 bytes)
+2025-08-05 11:10:57,260 [INFO] Archivo eliminado: outputs\elmercurio_3fb01f9192844f9a9b3e00b7c0ddd0d4.pdf
+2025-08-05 11:30:32,672 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:30:32 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 11:30:32,674 [INFO] Archivo guardado: uploads\c766f52615e84ac3bf3d8368b9b8a3c5_compressed_4.pdf
+2025-08-05 11:30:32,674 [INFO] Archivo guardado: uploads\c766f52615e84ac3bf3d8368b9b8a3c5_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 11:30:32,675 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 11:30:32,791 [INFO] Merge completado: outputs\merged_c766f52615e84ac3bf3d8368b9b8a3c5.pdf
+2025-08-05 11:30:32,792 [INFO] Inicio de estandarización de PDF: outputs\merged_c766f52615e84ac3bf3d8368b9b8a3c5.pdf
+2025-08-05 11:30:33,751 [INFO] Estandarización completada: outputs\standardized_c766f52615e84ac3bf3d8368b9b8a3c5.pdf
+2025-08-05 11:30:33,751 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:30:34,148 [INFO] Compresión completada: outputs\compressed_4_c766f52615e84ac3bf3d8368b9b8a3c5.pdf
+2025-08-05 11:30:34,156 [INFO] Archivo enviado: outputs\compressed_4_c766f52615e84ac3bf3d8368b9b8a3c5.pdf (original 674489 bytes → comprimido 662257 bytes)
+2025-08-05 11:30:44,153 [INFO] Archivo eliminado: outputs\compressed_4_c766f52615e84ac3bf3d8368b9b8a3c5.pdf
+2025-08-05 11:48:41,371 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:48:41 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 11:48:41,372 [INFO] Archivo guardado: uploads\e67f82bc1fcf4b028a6b6d5d29463d61_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 11:48:41,373 [INFO] Archivo guardado: uploads\e67f82bc1fcf4b028a6b6d5d29463d61_TITULO.pdf
+2025-08-05 11:48:41,373 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 11:48:41,408 [INFO] Merge completado: outputs\merged_e67f82bc1fcf4b028a6b6d5d29463d61.pdf
+2025-08-05 11:48:41,408 [INFO] Inicio de estandarización de PDF: outputs\merged_e67f82bc1fcf4b028a6b6d5d29463d61.pdf
+2025-08-05 11:48:41,700 [INFO] Estandarización completada: outputs\standardized_e67f82bc1fcf4b028a6b6d5d29463d61.pdf
+2025-08-05 11:48:41,700 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:48:41,871 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_e67f82bc1fcf4b028a6b6d5d29463d61.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_e67f82bc1fcf4b028a6b6d5d29463d61.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 11:48:41,886 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_e67f82bc1fcf4b028a6b6d5d29463d61.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 578, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_e67f82bc1fcf4b028a6b6d5d29463d61.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 11:48:59,918 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:48:59 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 11:48:59,925 [INFO] Archivo guardado: uploads\b81b57fab984453e95c581d1ddcc3175_elmercurio.pdf
+2025-08-05 11:48:59,942 [INFO] Inicio de estandarización de PDF: outputs\merged_b81b57fab984453e95c581d1ddcc3175.pdf
+2025-08-05 11:49:01,129 [INFO] Estandarización completada: outputs\standardized_b81b57fab984453e95c581d1ddcc3175.pdf
+2025-08-05 11:49:01,129 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:49:03,439 [INFO] Compresión completada: outputs\elmercurio_b81b57fab984453e95c581d1ddcc3175.pdf
+2025-08-05 11:49:03,446 [INFO] Archivo enviado: outputs\elmercurio_b81b57fab984453e95c581d1ddcc3175.pdf (original 1239455 bytes → comprimido 648034 bytes)
+2025-08-05 11:49:13,443 [INFO] Archivo eliminado: outputs\elmercurio_b81b57fab984453e95c581d1ddcc3175.pdf
+2025-08-05 11:49:56,113 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:49:56 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 11:49:56,118 [INFO] Archivo guardado: uploads\5a9a5e38867b40e298f7be54301b26c2_elmercurio.pdf
+2025-08-05 11:49:56,119 [INFO] Archivo guardado: uploads\5a9a5e38867b40e298f7be54301b26c2_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 11:49:56,119 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 11:49:56,160 [INFO] Merge completado: outputs\merged_5a9a5e38867b40e298f7be54301b26c2.pdf
+2025-08-05 11:49:56,160 [INFO] Inicio de estandarización de PDF: outputs\merged_5a9a5e38867b40e298f7be54301b26c2.pdf
+2025-08-05 11:49:57,243 [INFO] Estandarización completada: outputs\standardized_5a9a5e38867b40e298f7be54301b26c2.pdf
+2025-08-05 11:49:57,244 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:50:00,029 [INFO] Compresión completada: outputs\elmercurio_5a9a5e38867b40e298f7be54301b26c2.pdf
+2025-08-05 11:50:00,037 [INFO] Archivo enviado: outputs\elmercurio_5a9a5e38867b40e298f7be54301b26c2.pdf (original 1265943 bytes → comprimido 667114 bytes)
+2025-08-05 11:50:10,035 [INFO] Archivo eliminado: outputs\elmercurio_5a9a5e38867b40e298f7be54301b26c2.pdf
+2025-08-05 11:50:10,232 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:50:10 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 11:50:10,234 [INFO] Archivo guardado: uploads\72bdfe410cf84b66ab327451d41c6b04_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 11:50:10,250 [INFO] Inicio de estandarización de PDF: outputs\merged_72bdfe410cf84b66ab327451d41c6b04.pdf
+2025-08-05 11:50:12,166 [INFO] Estandarización completada: outputs\standardized_72bdfe410cf84b66ab327451d41c6b04.pdf
+2025-08-05 11:50:12,166 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:50:12,341 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_72bdfe410cf84b66ab327451d41c6b04.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_72bdfe410cf84b66ab327451d41c6b04.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 11:50:12,342 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_72bdfe410cf84b66ab327451d41c6b04.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 578, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_72bdfe410cf84b66ab327451d41c6b04.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 11:51:01,420 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:51:01 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 11:51:01,424 [INFO] Archivo guardado: uploads\3fce407568f54fb98733a3a6ad4daff9_elmercurio.pdf
+2025-08-05 11:51:01,442 [INFO] Inicio de estandarización de PDF: outputs\merged_3fce407568f54fb98733a3a6ad4daff9.pdf
+2025-08-05 11:51:02,350 [INFO] Estandarización completada: outputs\standardized_3fce407568f54fb98733a3a6ad4daff9.pdf
+2025-08-05 11:51:02,351 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:51:04,715 [INFO] Compresión completada: outputs\elmercurio_3fce407568f54fb98733a3a6ad4daff9.pdf
+2025-08-05 11:51:04,733 [INFO] Archivo enviado: outputs\elmercurio_3fce407568f54fb98733a3a6ad4daff9.pdf (original 1239455 bytes → comprimido 648034 bytes)
+2025-08-05 11:51:14,714 [INFO] Archivo eliminado: outputs\elmercurio_3fce407568f54fb98733a3a6ad4daff9.pdf
+2025-08-05 11:51:33,672 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:51:33 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 11:51:33,675 [INFO] Archivo guardado: uploads\2e5504df63384802ae08729cdd0f4151_elmercurio.pdf
+2025-08-05 11:51:33,677 [INFO] Archivo guardado: uploads\2e5504df63384802ae08729cdd0f4151_elmercurio.pdf
+2025-08-05 11:51:33,678 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 11:51:33,697 [INFO] Merge completado: outputs\merged_2e5504df63384802ae08729cdd0f4151.pdf
+2025-08-05 11:51:33,698 [INFO] Inicio de estandarización de PDF: outputs\merged_2e5504df63384802ae08729cdd0f4151.pdf
+2025-08-05 11:51:35,303 [INFO] Estandarización completada: outputs\standardized_2e5504df63384802ae08729cdd0f4151.pdf
+2025-08-05 11:51:35,303 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:51:39,869 [INFO] Compresión completada: outputs\elmercurio_2e5504df63384802ae08729cdd0f4151.pdf
+2025-08-05 11:51:39,870 [ERROR] Error general en ihatepdf: [WinError 2] El sistema no puede encontrar el archivo especificado: 'uploads\\2e5504df63384802ae08729cdd0f4151_elmercurio.pdf'
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 583, in ihatepdf
+    os.remove(f)
+    ~~~~~~~~~^^^
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado: 'uploads\\2e5504df63384802ae08729cdd0f4151_elmercurio.pdf'
+2025-08-05 11:57:23,198 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:57:23 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 11:57:23,199 [INFO] Archivo guardado: uploads\8d354fb46aed474599bd5f9fd2edd4d6_TITULO.pdf
+2025-08-05 11:57:23,205 [INFO] Archivo guardado: uploads\8d354fb46aed474599bd5f9fd2edd4d6_elmercurio.pdf
+2025-08-05 11:57:23,205 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 11:57:23,240 [INFO] Merge completado: outputs\merged_8d354fb46aed474599bd5f9fd2edd4d6.pdf
+2025-08-05 11:57:23,240 [INFO] Inicio de estandarización de PDF: outputs\merged_8d354fb46aed474599bd5f9fd2edd4d6.pdf
+2025-08-05 11:57:24,624 [INFO] Estandarización completada: outputs\standardized_8d354fb46aed474599bd5f9fd2edd4d6.pdf
+2025-08-05 11:57:24,624 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:57:27,244 [INFO] Compresión completada: outputs\TITULO_8d354fb46aed474599bd5f9fd2edd4d6.pdf
+2025-08-05 11:57:27,266 [INFO] Archivo enviado: outputs\TITULO_8d354fb46aed474599bd5f9fd2edd4d6.pdf (original 1314450 bytes → comprimido 680657 bytes)
+2025-08-05 11:57:35,919 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 11:57:35 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 11:57:35,922 [INFO] Archivo guardado: uploads\6c97b84ed9014a39b4577e746786eec3_elmercurio.pdf
+2025-08-05 11:57:35,923 [INFO] Archivo guardado: uploads\6c97b84ed9014a39b4577e746786eec3_TITULO.pdf
+2025-08-05 11:57:35,923 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 11:57:36,214 [INFO] Merge completado: outputs\merged_6c97b84ed9014a39b4577e746786eec3.pdf
+2025-08-05 11:57:36,214 [INFO] Inicio de estandarización de PDF: outputs\merged_6c97b84ed9014a39b4577e746786eec3.pdf
+2025-08-05 11:57:37,168 [INFO] Estandarización completada: outputs\standardized_6c97b84ed9014a39b4577e746786eec3.pdf
+2025-08-05 11:57:37,168 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 11:57:37,245 [INFO] Archivo eliminado: outputs\TITULO_8d354fb46aed474599bd5f9fd2edd4d6.pdf
+2025-08-05 11:57:39,591 [INFO] Compresión completada: outputs\elmercurio_6c97b84ed9014a39b4577e746786eec3.pdf
+2025-08-05 11:57:39,595 [INFO] Archivo enviado: outputs\elmercurio_6c97b84ed9014a39b4577e746786eec3.pdf (original 1314450 bytes → comprimido 680673 bytes)
+2025-08-05 11:57:49,592 [INFO] Archivo eliminado: outputs\elmercurio_6c97b84ed9014a39b4577e746786eec3.pdf
+2025-08-05 12:06:30,256 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:06:30 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 12:06:30,259 [INFO] Archivo guardado: uploads\638a11ddd60e45589b93328833e62a57_elmercurio.pdf
+2025-08-05 12:06:30,261 [INFO] Archivo guardado: uploads\638a11ddd60e45589b93328833e62a57_renuncia.pdf
+2025-08-05 12:06:30,261 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 12:06:30,303 [INFO] Merge completado: outputs\merged_638a11ddd60e45589b93328833e62a57.pdf
+2025-08-05 12:06:30,303 [INFO] Inicio de estandarización de PDF: outputs\merged_638a11ddd60e45589b93328833e62a57.pdf
+2025-08-05 12:06:31,650 [INFO] Estandarización completada: outputs\standardized_638a11ddd60e45589b93328833e62a57.pdf
+2025-08-05 12:06:31,650 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:06:34,298 [INFO] Compresión completada: outputs\elmercurio_638a11ddd60e45589b93328833e62a57.pdf
+2025-08-05 12:06:34,304 [INFO] Archivo enviado: outputs\elmercurio_638a11ddd60e45589b93328833e62a57.pdf (original 1463091 bytes → comprimido 739324 bytes)
+2025-08-05 12:06:44,305 [INFO] Archivo eliminado: outputs\elmercurio_638a11ddd60e45589b93328833e62a57.pdf
+2025-08-05 12:06:47,253 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:06:47 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 12:06:47,256 [INFO] Archivo guardado: uploads\6d8d28af9a454c7499cf23e16c46225d_elmercurio.pdf
+2025-08-05 12:06:47,257 [INFO] Archivo guardado: uploads\6d8d28af9a454c7499cf23e16c46225d_renuncia.pdf
+2025-08-05 12:06:47,257 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 12:06:47,302 [INFO] Merge completado: outputs\merged_6d8d28af9a454c7499cf23e16c46225d.pdf
+2025-08-05 12:06:47,302 [INFO] Inicio de estandarización de PDF: outputs\merged_6d8d28af9a454c7499cf23e16c46225d.pdf
+2025-08-05 12:06:48,304 [INFO] Estandarización completada: outputs\standardized_6d8d28af9a454c7499cf23e16c46225d.pdf
+2025-08-05 12:06:48,304 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:06:50,845 [INFO] Compresión completada: outputs\elmercurio_6d8d28af9a454c7499cf23e16c46225d.pdf
+2025-08-05 12:06:50,851 [INFO] Archivo enviado: outputs\elmercurio_6d8d28af9a454c7499cf23e16c46225d.pdf (original 1436437 bytes → comprimido 739315 bytes)
+2025-08-05 12:07:00,848 [INFO] Archivo eliminado: outputs\elmercurio_6d8d28af9a454c7499cf23e16c46225d.pdf
+2025-08-05 12:07:28,008 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:07:28 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 12:07:28,011 [INFO] Archivo guardado: uploads\b779c495f4e74954aaeb39458c84cb54_compressed_4.pdf
+2025-08-05 12:07:28,053 [INFO] Archivo guardado: uploads\b779c495f4e74954aaeb39458c84cb54_Cartola_Santander_CV04.pdf
+2025-08-05 12:07:28,053 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 12:07:28,126 [INFO] Merge completado: outputs\merged_b779c495f4e74954aaeb39458c84cb54.pdf
+2025-08-05 12:07:28,126 [INFO] Inicio de estandarización de PDF: outputs\merged_b779c495f4e74954aaeb39458c84cb54.pdf
+2025-08-05 12:07:34,133 [INFO] Estandarización completada: outputs\standardized_b779c495f4e74954aaeb39458c84cb54.pdf
+2025-08-05 12:07:34,133 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:07:39,843 [INFO] Compresión completada: outputs\compressed_4_b779c495f4e74954aaeb39458c84cb54.pdf
+2025-08-05 12:07:39,850 [INFO] Archivo enviado: outputs\compressed_4_b779c495f4e74954aaeb39458c84cb54.pdf (original 13311609 bytes → comprimido 11782972 bytes)
+2025-08-05 12:07:49,855 [INFO] Archivo eliminado: outputs\compressed_4_b779c495f4e74954aaeb39458c84cb54.pdf
+2025-08-05 12:08:14,823 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:08:14 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 12:08:14,826 [INFO] Archivo guardado: uploads\d733c8f5742046af85aeec084f0cdd1e_elmercurio.pdf
+2025-08-05 12:08:14,827 [INFO] Archivo guardado: uploads\d733c8f5742046af85aeec084f0cdd1e_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 12:08:14,827 [INFO] Archivo guardado: uploads\d733c8f5742046af85aeec084f0cdd1e_2025_07-14_13-17_Pacto_Horas_Extras_Inversiones_725_ok_mel_Ignacio_Andres_Salazar_Soto_F1.pdf
+2025-08-05 12:08:14,827 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 12:08:14,873 [INFO] Merge completado: outputs\merged_d733c8f5742046af85aeec084f0cdd1e.pdf
+2025-08-05 12:08:14,873 [INFO] Inicio de estandarización de PDF: outputs\merged_d733c8f5742046af85aeec084f0cdd1e.pdf
+2025-08-05 12:08:15,840 [INFO] Estandarización completada: outputs\standardized_d733c8f5742046af85aeec084f0cdd1e.pdf
+2025-08-05 12:08:15,840 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:08:18,281 [INFO] Compresión completada: outputs\elmercurio_d733c8f5742046af85aeec084f0cdd1e.pdf
+2025-08-05 12:08:18,287 [INFO] Archivo enviado: outputs\elmercurio_d733c8f5742046af85aeec084f0cdd1e.pdf (original 1297215 bytes → comprimido 689697 bytes)
+2025-08-05 12:08:28,292 [INFO] Archivo eliminado: outputs\elmercurio_d733c8f5742046af85aeec084f0cdd1e.pdf
+2025-08-05 12:52:54,665 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:52:54 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 12:52:54,668 [INFO] Archivo guardado: uploads\a4774d76fa9f48a593c00b9f60d41ea6_elmercurio.pdf
+2025-08-05 12:52:54,669 [INFO] Archivo guardado: uploads\a4774d76fa9f48a593c00b9f60d41ea6_TITULO.pdf
+2025-08-05 12:52:54,671 [INFO] Archivo guardado: uploads\a4774d76fa9f48a593c00b9f60d41ea6_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 12:52:54,671 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 12:52:54,730 [INFO] Merge completado: outputs\merged_a4774d76fa9f48a593c00b9f60d41ea6.pdf
+2025-08-05 12:52:54,730 [INFO] Inicio de estandarización de PDF: outputs\merged_a4774d76fa9f48a593c00b9f60d41ea6.pdf
+2025-08-05 12:52:55,658 [INFO] Estandarización completada: outputs\standardized_a4774d76fa9f48a593c00b9f60d41ea6.pdf
+2025-08-05 12:52:55,658 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:52:57,964 [INFO] Compresión completada: outputs\elmercurio_a4774d76fa9f48a593c00b9f60d41ea6.pdf
+2025-08-05 12:52:57,971 [INFO] Archivo enviado: outputs\elmercurio_a4774d76fa9f48a593c00b9f60d41ea6.pdf (original 1339256 bytes → comprimido 700520 bytes)
+2025-08-05 12:53:07,977 [INFO] Archivo eliminado: outputs\elmercurio_a4774d76fa9f48a593c00b9f60d41ea6.pdf
+2025-08-05 12:53:17,533 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:53:17 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 12:53:17,534 [INFO] Archivo guardado: uploads\537f66e934c44e58a8f5680c26bb783d_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 12:53:17,538 [INFO] Archivo guardado: uploads\537f66e934c44e58a8f5680c26bb783d_elmercurio.pdf
+2025-08-05 12:53:17,539 [INFO] Archivo guardado: uploads\537f66e934c44e58a8f5680c26bb783d_TITULO.pdf
+2025-08-05 12:53:17,539 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 12:53:17,607 [INFO] Merge completado: outputs\merged_537f66e934c44e58a8f5680c26bb783d.pdf
+2025-08-05 12:53:17,607 [INFO] Inicio de estandarización de PDF: outputs\merged_537f66e934c44e58a8f5680c26bb783d.pdf
+2025-08-05 12:53:18,548 [INFO] Estandarización completada: outputs\standardized_537f66e934c44e58a8f5680c26bb783d.pdf
+2025-08-05 12:53:18,548 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:53:18,709 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_537f66e934c44e58a8f5680c26bb783d.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_537f66e934c44e58a8f5680c26bb783d.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 12:53:18,710 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_537f66e934c44e58a8f5680c26bb783d.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 578, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_537f66e934c44e58a8f5680c26bb783d.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 12:53:25,735 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:53:25 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 12:53:25,736 [INFO] Archivo guardado: uploads\213b1226db364c849416ecd072bed268_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 12:53:25,740 [INFO] Archivo guardado: uploads\213b1226db364c849416ecd072bed268_elmercurio.pdf
+2025-08-05 12:53:25,741 [INFO] Archivo guardado: uploads\213b1226db364c849416ecd072bed268_TITULO.pdf
+2025-08-05 12:53:25,741 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 12:53:25,780 [INFO] Merge completado: outputs\merged_213b1226db364c849416ecd072bed268.pdf
+2025-08-05 12:53:25,780 [INFO] Inicio de estandarización de PDF: outputs\merged_213b1226db364c849416ecd072bed268.pdf
+2025-08-05 12:53:27,211 [INFO] Estandarización completada: outputs\standardized_213b1226db364c849416ecd072bed268.pdf
+2025-08-05 12:53:27,212 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:53:27,384 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_213b1226db364c849416ecd072bed268.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_213b1226db364c849416ecd072bed268.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 12:53:27,385 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_213b1226db364c849416ecd072bed268.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 578, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_213b1226db364c849416ecd072bed268.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 12:54:06,198 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:54:06 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 12:54:06,199 [INFO] Archivo guardado: uploads\a109441c9423411ea9bd628c8bf7dea6_renuncia.pdf
+2025-08-05 12:54:06,203 [INFO] Archivo guardado: uploads\a109441c9423411ea9bd628c8bf7dea6_elmercurio.pdf
+2025-08-05 12:54:06,204 [INFO] Archivo guardado: uploads\a109441c9423411ea9bd628c8bf7dea6_TITULO.pdf
+2025-08-05 12:54:06,204 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 12:54:06,252 [INFO] Merge completado: outputs\merged_a109441c9423411ea9bd628c8bf7dea6.pdf
+2025-08-05 12:54:06,252 [INFO] Inicio de estandarización de PDF: outputs\merged_a109441c9423411ea9bd628c8bf7dea6.pdf
+2025-08-05 12:54:07,320 [INFO] Estandarización completada: outputs\standardized_a109441c9423411ea9bd628c8bf7dea6.pdf
+2025-08-05 12:54:07,320 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:54:09,698 [INFO] Compresión completada: outputs\renuncia_a109441c9423411ea9bd628c8bf7dea6.pdf
+2025-08-05 12:54:09,708 [INFO] Archivo enviado: outputs\renuncia_a109441c9423411ea9bd628c8bf7dea6.pdf (original 1504499 bytes → comprimido 772518 bytes)
+2025-08-05 12:54:19,704 [INFO] Archivo eliminado: outputs\renuncia_a109441c9423411ea9bd628c8bf7dea6.pdf
+2025-08-05 12:54:25,885 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:54:25 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 12:54:25,886 [INFO] Archivo guardado: uploads\ef7974e0e9604b96b4f84bd6abe064b1_renuncia.pdf
+2025-08-05 12:54:25,891 [INFO] Archivo guardado: uploads\ef7974e0e9604b96b4f84bd6abe064b1_elmercurio.pdf
+2025-08-05 12:54:25,892 [INFO] Archivo guardado: uploads\ef7974e0e9604b96b4f84bd6abe064b1_TITULO.pdf
+2025-08-05 12:54:25,892 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 12:54:25,973 [INFO] Merge completado: outputs\merged_ef7974e0e9604b96b4f84bd6abe064b1.pdf
+2025-08-05 12:54:25,973 [INFO] Inicio de estandarización de PDF: outputs\merged_ef7974e0e9604b96b4f84bd6abe064b1.pdf
+2025-08-05 12:54:27,974 [INFO] Estandarización completada: outputs\standardized_ef7974e0e9604b96b4f84bd6abe064b1.pdf
+2025-08-05 12:54:27,974 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:54:30,719 [INFO] Compresión completada: outputs\renuncia_ef7974e0e9604b96b4f84bd6abe064b1.pdf
+2025-08-05 12:54:30,724 [INFO] Archivo enviado: outputs\renuncia_ef7974e0e9604b96b4f84bd6abe064b1.pdf (original 1504499 bytes → comprimido 772518 bytes)
+2025-08-05 12:54:40,716 [INFO] Archivo eliminado: outputs\renuncia_ef7974e0e9604b96b4f84bd6abe064b1.pdf
+2025-08-05 12:54:41,981 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 12:54:41 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 12:54:41,983 [INFO] Archivo guardado: uploads\7b453fc0df654089af750ba3c44aacc6_renuncia.pdf
+2025-08-05 12:54:41,986 [INFO] Archivo guardado: uploads\7b453fc0df654089af750ba3c44aacc6_elmercurio.pdf
+2025-08-05 12:54:41,987 [INFO] Archivo guardado: uploads\7b453fc0df654089af750ba3c44aacc6_TITULO.pdf
+2025-08-05 12:54:41,987 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 12:54:42,032 [INFO] Merge completado: outputs\merged_7b453fc0df654089af750ba3c44aacc6.pdf
+2025-08-05 12:54:42,032 [INFO] Inicio de estandarización de PDF: outputs\merged_7b453fc0df654089af750ba3c44aacc6.pdf
+2025-08-05 12:54:43,344 [INFO] Estandarización completada: outputs\standardized_7b453fc0df654089af750ba3c44aacc6.pdf
+2025-08-05 12:54:43,344 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 12:54:45,708 [INFO] Compresión completada: outputs\renuncia_7b453fc0df654089af750ba3c44aacc6.pdf
+2025-08-05 12:54:45,711 [INFO] Archivo enviado: outputs\renuncia_7b453fc0df654089af750ba3c44aacc6.pdf (original 1504499 bytes → comprimido 772518 bytes)
+2025-08-05 12:54:55,706 [INFO] Archivo eliminado: outputs\renuncia_7b453fc0df654089af750ba3c44aacc6.pdf
+2025-08-05 13:15:33,221 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 13:15:33 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 13:15:33,223 [INFO] Archivo guardado: uploads\3319cfbd4d2e4d7ca8ff36467e6ddb31_renuncia.pdf
+2025-08-05 13:15:33,228 [INFO] Archivo guardado: uploads\3319cfbd4d2e4d7ca8ff36467e6ddb31_elmercurio.pdf
+2025-08-05 13:15:33,229 [INFO] Archivo guardado: uploads\3319cfbd4d2e4d7ca8ff36467e6ddb31_TITULO.pdf
+2025-08-05 13:15:33,229 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 13:15:33,283 [INFO] Merge completado: outputs\merged_3319cfbd4d2e4d7ca8ff36467e6ddb31.pdf
+2025-08-05 13:15:33,283 [INFO] Inicio de estandarización de PDF: outputs\merged_3319cfbd4d2e4d7ca8ff36467e6ddb31.pdf
+2025-08-05 13:15:35,069 [INFO] Estandarización completada: outputs\standardized_3319cfbd4d2e4d7ca8ff36467e6ddb31.pdf
+2025-08-05 13:15:35,069 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 13:15:37,453 [INFO] Compresión completada: outputs\renuncia_3319cfbd4d2e4d7ca8ff36467e6ddb31.pdf
+2025-08-05 13:15:37,458 [INFO] Archivo enviado: outputs\renuncia_3319cfbd4d2e4d7ca8ff36467e6ddb31.pdf (original 1506528 bytes → comprimido 772476 bytes)
+2025-08-05 13:15:47,460 [INFO] Archivo eliminado: outputs\renuncia_3319cfbd4d2e4d7ca8ff36467e6ddb31.pdf
+2025-08-05 13:16:13,351 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 13:16:13 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 13:16:13,355 [INFO] Archivo guardado: uploads\8afd7a364b6a403c8374f9cbb6b85733_elmercurio.pdf
+2025-08-05 13:16:13,357 [INFO] Archivo guardado: uploads\8afd7a364b6a403c8374f9cbb6b85733_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 13:16:13,357 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 13:16:13,388 [INFO] Merge completado: outputs\merged_8afd7a364b6a403c8374f9cbb6b85733.pdf
+2025-08-05 13:16:13,388 [INFO] Inicio de estandarización de PDF: outputs\merged_8afd7a364b6a403c8374f9cbb6b85733.pdf
+2025-08-05 13:16:14,285 [INFO] Estandarización completada: outputs\standardized_8afd7a364b6a403c8374f9cbb6b85733.pdf
+2025-08-05 13:16:14,285 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 13:16:16,584 [INFO] Compresión completada: outputs\elmercurio_8afd7a364b6a403c8374f9cbb6b85733.pdf
+2025-08-05 13:16:16,589 [INFO] Archivo enviado: outputs\elmercurio_8afd7a364b6a403c8374f9cbb6b85733.pdf (original 1267977 bytes → comprimido 667414 bytes)
+2025-08-05 13:16:26,595 [INFO] Archivo eliminado: outputs\elmercurio_8afd7a364b6a403c8374f9cbb6b85733.pdf
+2025-08-05 13:17:21,614 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 13:17:21 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 13:17:21,620 [INFO] Archivo guardado: uploads\818bb651919b44d49612c169c7919174_elmercurio.pdf
+2025-08-05 13:17:21,622 [INFO] Archivo guardado: uploads\818bb651919b44d49612c169c7919174_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 13:17:21,622 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 13:17:21,655 [INFO] Merge completado: outputs\merged_818bb651919b44d49612c169c7919174.pdf
+2025-08-05 13:17:21,656 [INFO] Inicio de estandarización de PDF: outputs\merged_818bb651919b44d49612c169c7919174.pdf
+2025-08-05 13:17:22,539 [INFO] Estandarización completada: outputs\standardized_818bb651919b44d49612c169c7919174.pdf
+2025-08-05 13:17:22,539 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 13:17:25,172 [INFO] Compresión completada: outputs\elmercurio_818bb651919b44d49612c169c7919174.pdf
+2025-08-05 13:17:25,182 [INFO] Archivo enviado: outputs\elmercurio_818bb651919b44d49612c169c7919174.pdf (original 1271199 bytes → comprimido 667202 bytes)
+2025-08-05 13:17:33,996 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 13:17:33 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 13:17:33,999 [INFO] Archivo guardado: uploads\05f45696cde345799f979bdbd77e6bc7_elmercurio.pdf
+2025-08-05 13:17:34,000 [INFO] Archivo guardado: uploads\05f45696cde345799f979bdbd77e6bc7_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 13:17:34,000 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 13:17:34,027 [INFO] Merge completado: outputs\merged_05f45696cde345799f979bdbd77e6bc7.pdf
+2025-08-05 13:17:34,028 [INFO] Inicio de estandarización de PDF: outputs\merged_05f45696cde345799f979bdbd77e6bc7.pdf
+2025-08-05 13:17:35,180 [INFO] Archivo eliminado: outputs\elmercurio_818bb651919b44d49612c169c7919174.pdf
+2025-08-05 13:17:35,468 [INFO] Estandarización completada: outputs\standardized_05f45696cde345799f979bdbd77e6bc7.pdf
+2025-08-05 13:17:35,468 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 13:17:37,763 [INFO] Compresión completada: outputs\elmercurio_05f45696cde345799f979bdbd77e6bc7.pdf
+2025-08-05 13:17:37,772 [INFO] Archivo enviado: outputs\elmercurio_05f45696cde345799f979bdbd77e6bc7.pdf (original 1265945 bytes → comprimido 667148 bytes)
+2025-08-05 13:17:47,766 [INFO] Archivo eliminado: outputs\elmercurio_05f45696cde345799f979bdbd77e6bc7.pdf
+2025-08-05 13:17:53,951 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 13:17:53 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 13:17:53,956 [INFO] Archivo guardado: uploads\ec35f268d82848629f0cab250acd655a_elmercurio.pdf
+2025-08-05 13:17:53,957 [INFO] Archivo guardado: uploads\ec35f268d82848629f0cab250acd655a_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 13:17:53,957 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 13:17:53,989 [INFO] Merge completado: outputs\merged_ec35f268d82848629f0cab250acd655a.pdf
+2025-08-05 13:17:53,989 [INFO] Inicio de estandarización de PDF: outputs\merged_ec35f268d82848629f0cab250acd655a.pdf
+2025-08-05 13:17:54,878 [INFO] Estandarización completada: outputs\standardized_ec35f268d82848629f0cab250acd655a.pdf
+2025-08-05 13:17:54,878 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 13:17:57,236 [INFO] Compresión completada: outputs\elmercurio_ec35f268d82848629f0cab250acd655a.pdf
+2025-08-05 13:17:57,242 [INFO] Archivo enviado: outputs\elmercurio_ec35f268d82848629f0cab250acd655a.pdf (original 1265945 bytes → comprimido 667148 bytes)
+2025-08-05 13:18:06,893 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 13:18:06 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 13:18:06,897 [INFO] Archivo guardado: uploads\9a71cfe3b43c4d17a7dd105aec93aa2a_elmercurio.pdf
+2025-08-05 13:18:06,898 [INFO] Archivo guardado: uploads\9a71cfe3b43c4d17a7dd105aec93aa2a_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 13:18:06,898 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 13:18:06,927 [INFO] Merge completado: outputs\merged_9a71cfe3b43c4d17a7dd105aec93aa2a.pdf
+2025-08-05 13:18:06,927 [INFO] Inicio de estandarización de PDF: outputs\merged_9a71cfe3b43c4d17a7dd105aec93aa2a.pdf
+2025-08-05 13:18:07,244 [INFO] Archivo eliminado: outputs\elmercurio_ec35f268d82848629f0cab250acd655a.pdf
+2025-08-05 13:18:07,956 [INFO] Estandarización completada: outputs\standardized_9a71cfe3b43c4d17a7dd105aec93aa2a.pdf
+2025-08-05 13:18:07,956 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 13:18:10,318 [INFO] Compresión completada: outputs\elmercurio_9a71cfe3b43c4d17a7dd105aec93aa2a.pdf
+2025-08-05 13:18:10,323 [INFO] Archivo enviado: outputs\elmercurio_9a71cfe3b43c4d17a7dd105aec93aa2a.pdf (original 1265947 bytes → comprimido 667131 bytes)
+2025-08-05 13:18:20,320 [INFO] Archivo eliminado: outputs\elmercurio_9a71cfe3b43c4d17a7dd105aec93aa2a.pdf
+2025-08-05 13:27:54,450 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 13:27:54 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 13:27:54,455 [INFO] Archivo guardado: uploads\06ca1fe7e1394f369bc160216978c28c_elmercurio.pdf
+2025-08-05 13:27:54,456 [INFO] Archivo guardado: uploads\06ca1fe7e1394f369bc160216978c28c_TITULO.pdf
+2025-08-05 13:27:54,457 [INFO] Archivo guardado: uploads\06ca1fe7e1394f369bc160216978c28c_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 13:27:54,457 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 13:27:54,507 [INFO] Merge completado: outputs\merged_06ca1fe7e1394f369bc160216978c28c.pdf
+2025-08-05 13:27:54,507 [INFO] Inicio de estandarización de PDF: outputs\merged_06ca1fe7e1394f369bc160216978c28c.pdf
+2025-08-05 13:27:55,598 [INFO] Estandarización completada: outputs\standardized_06ca1fe7e1394f369bc160216978c28c.pdf
+2025-08-05 13:27:55,599 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 13:27:58,109 [INFO] Compresión completada: outputs\elmercurio_06ca1fe7e1394f369bc160216978c28c.pdf
+2025-08-05 13:27:58,114 [INFO] Archivo enviado: outputs\elmercurio_06ca1fe7e1394f369bc160216978c28c.pdf (original 1348221 bytes → comprimido 700475 bytes)
+2025-08-05 13:28:08,111 [INFO] Archivo eliminado: outputs\elmercurio_06ca1fe7e1394f369bc160216978c28c.pdf
+2025-08-05 15:20:56,172 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 15:20:56 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 15:20:56,175 [INFO] Archivo guardado: uploads\c9c9cf6b38274d6a833ebc474ac0261a_elmercurio.pdf
+2025-08-05 15:20:56,176 [INFO] Archivo guardado: uploads\c9c9cf6b38274d6a833ebc474ac0261a_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 15:20:56,177 [INFO] Archivo guardado: uploads\c9c9cf6b38274d6a833ebc474ac0261a_TITULO.pdf
+2025-08-05 15:20:56,177 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 15:20:56,828 [INFO] Merge completado: outputs\merged_c9c9cf6b38274d6a833ebc474ac0261a.pdf
+2025-08-05 15:20:56,828 [INFO] Inicio de estandarización de PDF: outputs\merged_c9c9cf6b38274d6a833ebc474ac0261a.pdf
+2025-08-05 15:20:58,400 [INFO] Estandarización completada: outputs\standardized_c9c9cf6b38274d6a833ebc474ac0261a.pdf
+2025-08-05 15:20:58,401 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 15:21:01,032 [INFO] Compresión completada: outputs\elmercurio_c9c9cf6b38274d6a833ebc474ac0261a.pdf
+2025-08-05 15:21:01,038 [INFO] Archivo enviado: outputs\elmercurio_c9c9cf6b38274d6a833ebc474ac0261a.pdf (original 1336036 bytes → comprimido 700430 bytes)
+2025-08-05 15:21:11,030 [INFO] Archivo eliminado: outputs\elmercurio_c9c9cf6b38274d6a833ebc474ac0261a.pdf
+2025-08-05 15:34:30,544 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 15:34:30 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 15:34:30,549 [INFO] Archivo guardado: uploads\3df16742cb264d8dbccae89edb6ff9c6_elmercurio.pdf
+2025-08-05 15:34:30,571 [INFO] Inicio de estandarización de PDF: outputs\merged_3df16742cb264d8dbccae89edb6ff9c6.pdf
+2025-08-05 15:34:31,617 [INFO] Estandarización completada: outputs\standardized_3df16742cb264d8dbccae89edb6ff9c6.pdf
+2025-08-05 15:34:31,617 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 15:34:34,164 [INFO] Compresión completada: outputs\elmercurio_3df16742cb264d8dbccae89edb6ff9c6.pdf
+2025-08-05 15:34:34,174 [INFO] Archivo enviado: outputs\elmercurio_3df16742cb264d8dbccae89edb6ff9c6.pdf (original 1241485 bytes → comprimido 647998 bytes)
+2025-08-05 15:34:44,172 [INFO] Archivo eliminado: outputs\elmercurio_3df16742cb264d8dbccae89edb6ff9c6.pdf
+2025-08-05 15:35:13,390 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 15:35:13 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 15:35:13,394 [INFO] Archivo guardado: uploads\60616e10eecc46ae959b781ccb5b0ca0_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 15:35:13,415 [INFO] Inicio de estandarización de PDF: outputs\merged_60616e10eecc46ae959b781ccb5b0ca0.pdf
+2025-08-05 15:35:13,706 [INFO] Estandarización completada: outputs\standardized_60616e10eecc46ae959b781ccb5b0ca0.pdf
+2025-08-05 15:35:13,707 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 15:35:13,907 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_60616e10eecc46ae959b781ccb5b0ca0.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_60616e10eecc46ae959b781ccb5b0ca0.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 15:35:13,909 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_60616e10eecc46ae959b781ccb5b0ca0.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 578, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_60616e10eecc46ae959b781ccb5b0ca0.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 15:35:25,477 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 15:35:25 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 15:35:25,479 [INFO] Archivo guardado: uploads\9bc84587c01e4aec9cd8ec9748d7c6a8_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 15:35:25,501 [INFO] Inicio de estandarización de PDF: outputs\merged_9bc84587c01e4aec9cd8ec9748d7c6a8.pdf
+2025-08-05 15:35:25,743 [INFO] Estandarización completada: outputs\standardized_9bc84587c01e4aec9cd8ec9748d7c6a8.pdf
+2025-08-05 15:35:25,743 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 15:35:25,919 [ERROR] Error al comprimir PDF: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_9bc84587c01e4aec9cd8ec9748d7c6a8.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_9bc84587c01e4aec9cd8ec9748d7c6a8.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 15:35:25,921 [ERROR] Error general en ihatepdf: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_9bc84587c01e4aec9cd8ec9748d7c6a8.pdf .
+**** Unable to open the initial device, quitting.
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 578, in ihatepdf
+    compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 513, in compress_pdf_with_ghostscript
+    raise RuntimeError(f"Ghostscript falló: {result.stderr.decode().strip()}")
+RuntimeError: Ghostscript falló: GPL Ghostscript 10.05.1: **** Could not open the file outputs\Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es_9bc84587c01e4aec9cd8ec9748d7c6a8.pdf .
+**** Unable to open the initial device, quitting.
+2025-08-05 15:39:48,337 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 15:39:48 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 15:39:48,340 [INFO] Archivo guardado: uploads\60dc2b3bca3f48148bfa45d68da0c290_elmercurio.pdf
+2025-08-05 15:39:48,341 [INFO] Archivo guardado: uploads\60dc2b3bca3f48148bfa45d68da0c290_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 15:39:48,341 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 15:39:48,373 [INFO] Merge completado: outputs\merged_60dc2b3bca3f48148bfa45d68da0c290.pdf
+2025-08-05 15:39:48,373 [INFO] Inicio de estandarización de PDF: outputs\merged_60dc2b3bca3f48148bfa45d68da0c290.pdf
+2025-08-05 15:39:49,583 [INFO] Estandarización completada: outputs\standardized_60dc2b3bca3f48148bfa45d68da0c290.pdf
+2025-08-05 15:39:49,583 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 15:39:52,382 [INFO] Compresión completada: outputs\elmercurio_60dc2b3bca3f48148bfa45d68da0c290.pdf
+2025-08-05 15:39:52,390 [INFO] Archivo enviado: outputs\elmercurio_60dc2b3bca3f48148bfa45d68da0c290.pdf (original 1273229 bytes → comprimido 667168 bytes)
+2025-08-05 15:40:02,392 [INFO] Archivo eliminado: outputs\elmercurio_60dc2b3bca3f48148bfa45d68da0c290.pdf
+2025-08-05 15:40:36,755 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 15:40:36 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 15:40:36,758 [INFO] Archivo guardado: uploads\4ac5831ef1844e9dab082361eb4b0a8c_elmercurio.pdf
+2025-08-05 15:40:36,759 [INFO] Archivo guardado: uploads\4ac5831ef1844e9dab082361eb4b0a8c_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 15:40:36,759 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 15:40:36,791 [INFO] Merge completado: outputs\merged_4ac5831ef1844e9dab082361eb4b0a8c.pdf
+2025-08-05 15:40:36,792 [INFO] Inicio de estandarización de PDF: outputs\merged_4ac5831ef1844e9dab082361eb4b0a8c.pdf
+2025-08-05 15:40:37,828 [INFO] Estandarización completada: outputs\standardized_4ac5831ef1844e9dab082361eb4b0a8c.pdf
+2025-08-05 15:40:37,829 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 15:40:40,585 [INFO] Compresión completada: outputs\elmercurio_4ac5831ef1844e9dab082361eb4b0a8c.pdf
+2025-08-05 15:40:40,593 [INFO] Archivo enviado: outputs\elmercurio_4ac5831ef1844e9dab082361eb4b0a8c.pdf (original 1273229 bytes → comprimido 667168 bytes)
+2025-08-05 15:40:50,588 [INFO] Archivo eliminado: outputs\elmercurio_4ac5831ef1844e9dab082361eb4b0a8c.pdf
+2025-08-05 15:57:39,460 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 15:57:39 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 15:57:39,463 [INFO] Archivo guardado: uploads\d3272a1abd6e4ad48192b3b61fb59017_elmercurio.pdf
+2025-08-05 15:57:39,464 [INFO] Archivo guardado: uploads\d3272a1abd6e4ad48192b3b61fb59017_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 15:57:39,464 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 15:57:39,493 [INFO] Merge completado: outputs\merged_d3272a1abd6e4ad48192b3b61fb59017.pdf
+2025-08-05 15:57:39,493 [INFO] Inicio de estandarización de PDF: outputs\merged_d3272a1abd6e4ad48192b3b61fb59017.pdf
+2025-08-05 15:57:41,043 [INFO] Estandarización completada: outputs\standardized_d3272a1abd6e4ad48192b3b61fb59017.pdf
+2025-08-05 15:57:41,044 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 15:57:43,761 [INFO] Compresión completada: outputs\elmercurio_d3272a1abd6e4ad48192b3b61fb59017.pdf
+2025-08-05 15:57:43,766 [INFO] Archivo enviado: outputs\elmercurio_d3272a1abd6e4ad48192b3b61fb59017.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-05 15:57:53,757 [INFO] Archivo eliminado: outputs\elmercurio_d3272a1abd6e4ad48192b3b61fb59017.pdf
+2025-08-05 16:01:36,682 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:01:36 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 16:01:36,686 [INFO] Archivo guardado: uploads\8e68e94d18414821af83f94df7421630_elmercurio.pdf
+2025-08-05 16:01:36,687 [INFO] Archivo guardado: uploads\8e68e94d18414821af83f94df7421630_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:01:36,688 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 16:01:36,723 [INFO] Merge completado: outputs\merged_8e68e94d18414821af83f94df7421630.pdf
+2025-08-05 16:01:36,723 [INFO] Inicio de estandarización de PDF: outputs\merged_8e68e94d18414821af83f94df7421630.pdf
+2025-08-05 16:01:38,084 [INFO] Estandarización completada: outputs\standardized_8e68e94d18414821af83f94df7421630.pdf
+2025-08-05 16:01:38,084 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:01:41,559 [INFO] Compresión completada: outputs\elmercurio_8e68e94d18414821af83f94df7421630.pdf
+2025-08-05 16:01:41,565 [INFO] Archivo enviado: outputs\elmercurio_8e68e94d18414821af83f94df7421630.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-05 16:01:51,567 [INFO] Archivo eliminado: outputs\elmercurio_8e68e94d18414821af83f94df7421630.pdf
+2025-08-05 16:07:34,048 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:07:34 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:07:34,049 [INFO] Archivo guardado: uploads\7de37468b20e4f98811b1f89446bc712_TITULO.pdf
+2025-08-05 16:07:34,051 [INFO] Archivo guardado: uploads\7de37468b20e4f98811b1f89446bc712_elmercurio.pdf
+2025-08-05 16:07:34,052 [INFO] Archivo guardado: uploads\7de37468b20e4f98811b1f89446bc712_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:07:34,052 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:07:34,101 [INFO] Merge completado: outputs\merged_7de37468b20e4f98811b1f89446bc712.pdf
+2025-08-05 16:07:34,101 [INFO] Inicio de estandarización de PDF: outputs\merged_7de37468b20e4f98811b1f89446bc712.pdf
+2025-08-05 16:07:35,388 [INFO] Estandarización completada: outputs\standardized_7de37468b20e4f98811b1f89446bc712.pdf
+2025-08-05 16:07:35,388 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:07:37,756 [INFO] Compresión completada: outputs\TITULO_7de37468b20e4f98811b1f89446bc712.pdf
+2025-08-05 16:07:37,762 [INFO] Archivo enviado: outputs\TITULO_7de37468b20e4f98811b1f89446bc712.pdf (original 1346188 bytes → comprimido 700492 bytes)
+2025-08-05 16:07:47,769 [INFO] Archivo eliminado: outputs\TITULO_7de37468b20e4f98811b1f89446bc712.pdf
+2025-08-05 16:08:02,600 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:08:02 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:08:02,603 [INFO] Archivo guardado: uploads\11eb52f7af544051904ba06ec50bb3cc_elmercurio.pdf
+2025-08-05 16:08:02,604 [INFO] Archivo guardado: uploads\11eb52f7af544051904ba06ec50bb3cc_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:08:02,605 [INFO] Archivo guardado: uploads\11eb52f7af544051904ba06ec50bb3cc_TITULO.pdf
+2025-08-05 16:08:02,605 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:08:02,660 [INFO] Merge completado: outputs\merged_11eb52f7af544051904ba06ec50bb3cc.pdf
+2025-08-05 16:08:02,660 [INFO] Inicio de estandarización de PDF: outputs\merged_11eb52f7af544051904ba06ec50bb3cc.pdf
+2025-08-05 16:08:03,811 [INFO] Estandarización completada: outputs\standardized_11eb52f7af544051904ba06ec50bb3cc.pdf
+2025-08-05 16:08:03,812 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:08:06,195 [INFO] Compresión completada: outputs\elmercurio_11eb52f7af544051904ba06ec50bb3cc.pdf
+2025-08-05 16:08:06,202 [INFO] Archivo enviado: outputs\elmercurio_11eb52f7af544051904ba06ec50bb3cc.pdf (original 1339258 bytes → comprimido 700513 bytes)
+2025-08-05 16:08:15,674 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:08:15 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:08:15,676 [INFO] Archivo guardado: uploads\219e4f658e574916903783c483907a8b_elmercurio.pdf
+2025-08-05 16:08:15,677 [INFO] Archivo guardado: uploads\219e4f658e574916903783c483907a8b_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:08:15,678 [INFO] Archivo guardado: uploads\219e4f658e574916903783c483907a8b_TITULO.pdf
+2025-08-05 16:08:15,678 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:08:15,958 [INFO] Merge completado: outputs\merged_219e4f658e574916903783c483907a8b.pdf
+2025-08-05 16:08:15,958 [INFO] Inicio de estandarización de PDF: outputs\merged_219e4f658e574916903783c483907a8b.pdf
+2025-08-05 16:08:16,198 [INFO] Archivo eliminado: outputs\elmercurio_11eb52f7af544051904ba06ec50bb3cc.pdf
+2025-08-05 16:08:16,940 [INFO] Estandarización completada: outputs\standardized_219e4f658e574916903783c483907a8b.pdf
+2025-08-05 16:08:16,940 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:08:19,973 [INFO] Compresión completada: outputs\elmercurio_219e4f658e574916903783c483907a8b.pdf
+2025-08-05 16:08:19,980 [INFO] Archivo enviado: outputs\elmercurio_219e4f658e574916903783c483907a8b.pdf (original 1339261 bytes → comprimido 700496 bytes)
+2025-08-05 16:08:29,981 [INFO] Archivo eliminado: outputs\elmercurio_219e4f658e574916903783c483907a8b.pdf
+2025-08-05 16:08:42,526 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:08:42 | Archivos: 4 | Extensiones: .pdf
+2025-08-05 16:08:42,530 [INFO] Archivo guardado: uploads\e92e66413b8247ed9b71788065c6ebdf_elmercurio.pdf
+2025-08-05 16:08:42,531 [INFO] Archivo guardado: uploads\e92e66413b8247ed9b71788065c6ebdf_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:08:42,532 [INFO] Archivo guardado: uploads\e92e66413b8247ed9b71788065c6ebdf_TITULO.pdf
+2025-08-05 16:08:42,567 [INFO] Archivo guardado: uploads\e92e66413b8247ed9b71788065c6ebdf_Cartola_Santander_CV04.pdf
+2025-08-05 16:08:42,567 [INFO] Merge iniciado con 4 archivos...
+2025-08-05 16:08:42,668 [INFO] Merge completado: outputs\merged_e92e66413b8247ed9b71788065c6ebdf.pdf
+2025-08-05 16:08:42,668 [INFO] Inicio de estandarización de PDF: outputs\merged_e92e66413b8247ed9b71788065c6ebdf.pdf
+2025-08-05 16:08:48,766 [INFO] Estandarización completada: outputs\standardized_e92e66413b8247ed9b71788065c6ebdf.pdf
+2025-08-05 16:08:48,766 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:08:56,337 [INFO] Compresión completada: outputs\elmercurio_e92e66413b8247ed9b71788065c6ebdf.pdf
+2025-08-05 16:08:56,344 [INFO] Archivo enviado: outputs\elmercurio_e92e66413b8247ed9b71788065c6ebdf.pdf (original 13994752 bytes → comprimido 11743035 bytes)
+2025-08-05 16:09:06,351 [INFO] Archivo eliminado: outputs\elmercurio_e92e66413b8247ed9b71788065c6ebdf.pdf
+2025-08-05 16:10:30,895 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:10:30 | Archivos: 4 | Extensiones: .pdf
+2025-08-05 16:10:30,902 [INFO] Archivo guardado: uploads\8641dc3240dd46829aee5f57e2af6b99_elmercurio.pdf
+2025-08-05 16:10:30,903 [INFO] Archivo guardado: uploads\8641dc3240dd46829aee5f57e2af6b99_TITULO.pdf
+2025-08-05 16:10:30,945 [INFO] Archivo guardado: uploads\8641dc3240dd46829aee5f57e2af6b99_Cartola_Santander_CV04.pdf
+2025-08-05 16:10:30,946 [INFO] Archivo guardado: uploads\8641dc3240dd46829aee5f57e2af6b99_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:10:30,946 [INFO] Merge iniciado con 4 archivos...
+2025-08-05 16:10:31,158 [INFO] Merge completado: outputs\merged_8641dc3240dd46829aee5f57e2af6b99.pdf
+2025-08-05 16:10:31,158 [INFO] Inicio de estandarización de PDF: outputs\merged_8641dc3240dd46829aee5f57e2af6b99.pdf
+2025-08-05 16:10:37,574 [INFO] Estandarización completada: outputs\standardized_8641dc3240dd46829aee5f57e2af6b99.pdf
+2025-08-05 16:10:37,574 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:10:45,267 [INFO] Compresión completada: outputs\elmercurio_8641dc3240dd46829aee5f57e2af6b99.pdf
+2025-08-05 16:10:45,277 [INFO] Archivo enviado: outputs\elmercurio_8641dc3240dd46829aee5f57e2af6b99.pdf (original 13994750 bytes → comprimido 11742905 bytes)
+2025-08-05 16:10:55,278 [INFO] Archivo eliminado: outputs\elmercurio_8641dc3240dd46829aee5f57e2af6b99.pdf
+2025-08-05 16:17:00,397 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:17:00 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 16:17:00,402 [INFO] Archivo guardado: uploads\9f101d1396ca414994f378e7f7e4a74e_elmercurio.pdf
+2025-08-05 16:17:00,403 [INFO] Archivo guardado: uploads\9f101d1396ca414994f378e7f7e4a74e_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:17:00,403 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 16:17:00,452 [INFO] Merge completado: outputs\merged_9f101d1396ca414994f378e7f7e4a74e.pdf
+2025-08-05 16:17:00,452 [INFO] Inicio de estandarización de PDF: outputs\merged_9f101d1396ca414994f378e7f7e4a74e.pdf
+2025-08-05 16:17:01,451 [INFO] Estandarización completada: outputs\standardized_9f101d1396ca414994f378e7f7e4a74e.pdf
+2025-08-05 16:17:01,451 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:17:03,995 [INFO] Compresión completada: outputs\elmercurio_9f101d1396ca414994f378e7f7e4a74e.pdf
+2025-08-05 16:17:04,000 [INFO] Archivo enviado: outputs\elmercurio_9f101d1396ca414994f378e7f7e4a74e.pdf (original 1273229 bytes → comprimido 667168 bytes)
+2025-08-05 16:17:14,005 [INFO] Archivo eliminado: outputs\elmercurio_9f101d1396ca414994f378e7f7e4a74e.pdf
+2025-08-05 16:17:14,723 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:17:14 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 16:17:14,726 [INFO] Archivo guardado: uploads\cb67dd7c40b344b695f194e5498b3e26_elmercurio.pdf
+2025-08-05 16:17:14,727 [INFO] Archivo guardado: uploads\cb67dd7c40b344b695f194e5498b3e26_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 16:17:14,727 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 16:17:14,755 [INFO] Merge completado: outputs\merged_cb67dd7c40b344b695f194e5498b3e26.pdf
+2025-08-05 16:17:14,756 [INFO] Inicio de estandarización de PDF: outputs\merged_cb67dd7c40b344b695f194e5498b3e26.pdf
+2025-08-05 16:17:15,949 [INFO] Estandarización completada: outputs\standardized_cb67dd7c40b344b695f194e5498b3e26.pdf
+2025-08-05 16:17:15,949 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:17:18,560 [INFO] Compresión completada: outputs\elmercurio_cb67dd7c40b344b695f194e5498b3e26.pdf
+2025-08-05 16:17:18,567 [INFO] Archivo enviado: outputs\elmercurio_cb67dd7c40b344b695f194e5498b3e26.pdf (original 1271199 bytes → comprimido 667202 bytes)
+2025-08-05 16:17:28,570 [INFO] Archivo eliminado: outputs\elmercurio_cb67dd7c40b344b695f194e5498b3e26.pdf
+2025-08-05 16:20:05,647 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:20:05 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 16:20:05,653 [INFO] Archivo guardado: uploads\a74e3e0b74f24981934c2fec5108a9bd_elmercurio.pdf
+2025-08-05 16:20:05,677 [INFO] Inicio de estandarización de PDF: outputs\merged_a74e3e0b74f24981934c2fec5108a9bd.pdf
+2025-08-05 16:20:06,886 [INFO] Estandarización completada: outputs\standardized_a74e3e0b74f24981934c2fec5108a9bd.pdf
+2025-08-05 16:20:06,886 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:20:09,531 [INFO] Compresión completada: outputs\elmercurio_a74e3e0b74f24981934c2fec5108a9bd.pdf
+2025-08-05 16:20:09,540 [INFO] Archivo enviado: outputs\elmercurio_a74e3e0b74f24981934c2fec5108a9bd.pdf (original 1241485 bytes → comprimido 647998 bytes)
+2025-08-05 16:20:19,537 [INFO] Archivo eliminado: outputs\elmercurio_a74e3e0b74f24981934c2fec5108a9bd.pdf
+2025-08-05 16:20:40,939 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:20:40 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 16:20:40,942 [INFO] Archivo guardado: uploads\9751c2b635a54b29acbf687a867647c7_elmercurio.pdf
+2025-08-05 16:20:40,958 [INFO] Inicio de estandarización de PDF: outputs\merged_9751c2b635a54b29acbf687a867647c7.pdf
+2025-08-05 16:20:41,870 [INFO] Estandarización completada: outputs\standardized_9751c2b635a54b29acbf687a867647c7.pdf
+2025-08-05 16:20:41,871 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:20:44,353 [INFO] Compresión completada: outputs\elmercurio_9751c2b635a54b29acbf687a867647c7.pdf
+2025-08-05 16:20:44,366 [INFO] Archivo enviado: outputs\elmercurio_9751c2b635a54b29acbf687a867647c7.pdf (original 1241485 bytes → comprimido 647998 bytes)
+2025-08-05 16:20:54,354 [INFO] Archivo eliminado: outputs\elmercurio_9751c2b635a54b29acbf687a867647c7.pdf
+2025-08-05 16:57:52,994 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:57:52 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:57:53,004 [INFO] Archivo guardado: uploads\0936deccf81d4042b144006dd981f3a4_elmercurio.pdf
+2025-08-05 16:57:53,005 [INFO] Archivo guardado: uploads\0936deccf81d4042b144006dd981f3a4_renuncia.pdf
+2025-08-05 16:57:53,006 [INFO] Archivo guardado: uploads\0936deccf81d4042b144006dd981f3a4_Fotocopia_carnet.pdf
+2025-08-05 16:57:53,006 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:57:53,127 [INFO] Merge completado: outputs\merged_0936deccf81d4042b144006dd981f3a4.pdf
+2025-08-05 16:57:53,128 [INFO] Inicio de estandarización de PDF: outputs\merged_0936deccf81d4042b144006dd981f3a4.pdf
+2025-08-05 16:57:54,237 [INFO] Estandarización completada: outputs\standardized_0936deccf81d4042b144006dd981f3a4.pdf
+2025-08-05 16:57:54,237 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:57:56,711 [INFO] Compresión completada: outputs\elmercurio_0936deccf81d4042b144006dd981f3a4.pdf
+2025-08-05 16:57:56,719 [INFO] Archivo enviado: outputs\elmercurio_0936deccf81d4042b144006dd981f3a4.pdf (original 1609302 bytes → comprimido 917355 bytes)
+2025-08-05 16:58:06,720 [INFO] Archivo eliminado: outputs\elmercurio_0936deccf81d4042b144006dd981f3a4.pdf
+2025-08-05 16:58:15,735 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:58:15 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:58:15,740 [INFO] Archivo guardado: uploads\a4f51f1533244feeb716582ff75d1c91_elmercurio.pdf
+2025-08-05 16:58:15,741 [INFO] Archivo guardado: uploads\a4f51f1533244feeb716582ff75d1c91_renuncia.pdf
+2025-08-05 16:58:15,743 [INFO] Archivo guardado: uploads\a4f51f1533244feeb716582ff75d1c91_Fotocopia_carnet.pdf
+2025-08-05 16:58:15,743 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:58:15,797 [INFO] Merge completado: outputs\merged_a4f51f1533244feeb716582ff75d1c91.pdf
+2025-08-05 16:58:15,797 [INFO] Inicio de estandarización de PDF: outputs\merged_a4f51f1533244feeb716582ff75d1c91.pdf
+2025-08-05 16:58:16,972 [INFO] Estandarización completada: outputs\standardized_a4f51f1533244feeb716582ff75d1c91.pdf
+2025-08-05 16:58:16,973 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:58:19,387 [INFO] Compresión completada: outputs\elmercurio_a4f51f1533244feeb716582ff75d1c91.pdf
+2025-08-05 16:58:19,393 [INFO] Archivo enviado: outputs\elmercurio_a4f51f1533244feeb716582ff75d1c91.pdf (original 1636052 bytes → comprimido 917372 bytes)
+2025-08-05 16:58:29,383 [INFO] Archivo eliminado: outputs\elmercurio_a4f51f1533244feeb716582ff75d1c91.pdf
+2025-08-05 16:58:33,461 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:58:33 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:58:33,464 [INFO] Archivo guardado: uploads\873d546fa41b4203874f79dc4e8a0ca8_elmercurio.pdf
+2025-08-05 16:58:33,465 [INFO] Archivo guardado: uploads\873d546fa41b4203874f79dc4e8a0ca8_renuncia.pdf
+2025-08-05 16:58:33,466 [INFO] Archivo guardado: uploads\873d546fa41b4203874f79dc4e8a0ca8_Fotocopia_carnet.pdf
+2025-08-05 16:58:33,466 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:58:33,508 [INFO] Merge completado: outputs\merged_873d546fa41b4203874f79dc4e8a0ca8.pdf
+2025-08-05 16:58:33,508 [INFO] Inicio de estandarización de PDF: outputs\merged_873d546fa41b4203874f79dc4e8a0ca8.pdf
+2025-08-05 16:58:34,784 [INFO] Estandarización completada: outputs\standardized_873d546fa41b4203874f79dc4e8a0ca8.pdf
+2025-08-05 16:58:34,784 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:58:37,472 [INFO] Compresión completada: outputs\elmercurio_873d546fa41b4203874f79dc4e8a0ca8.pdf
+2025-08-05 16:58:37,482 [INFO] Archivo enviado: outputs\elmercurio_873d546fa41b4203874f79dc4e8a0ca8.pdf (original 1633925 bytes → comprimido 917406 bytes)
+2025-08-05 16:58:47,488 [INFO] Archivo eliminado: outputs\elmercurio_873d546fa41b4203874f79dc4e8a0ca8.pdf
+2025-08-05 16:59:23,667 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:59:23 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:59:23,671 [INFO] Archivo guardado: uploads\9a795ebb2b0148079c26de1319487254_elmercurio.pdf
+2025-08-05 16:59:23,672 [INFO] Archivo guardado: uploads\9a795ebb2b0148079c26de1319487254_renuncia.pdf
+2025-08-05 16:59:23,673 [INFO] Archivo guardado: uploads\9a795ebb2b0148079c26de1319487254_Fotocopia_carnet.pdf
+2025-08-05 16:59:23,673 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:59:23,722 [INFO] Merge completado: outputs\merged_9a795ebb2b0148079c26de1319487254.pdf
+2025-08-05 16:59:23,722 [INFO] Inicio de estandarización de PDF: outputs\merged_9a795ebb2b0148079c26de1319487254.pdf
+2025-08-05 16:59:24,822 [INFO] Estandarización completada: outputs\standardized_9a795ebb2b0148079c26de1319487254.pdf
+2025-08-05 16:59:24,822 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:59:27,137 [INFO] Compresión completada: outputs\elmercurio_9a795ebb2b0148079c26de1319487254.pdf
+2025-08-05 16:59:27,142 [INFO] Archivo enviado: outputs\elmercurio_9a795ebb2b0148079c26de1319487254.pdf (original 1607270 bytes → comprimido 917389 bytes)
+2025-08-05 16:59:37,139 [INFO] Archivo eliminado: outputs\elmercurio_9a795ebb2b0148079c26de1319487254.pdf
+2025-08-05 16:59:43,060 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 16:59:43 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 16:59:43,062 [INFO] Archivo guardado: uploads\c0c8e9e4ce4d456191f5e41971d5bc4b_renuncia.pdf
+2025-08-05 16:59:43,071 [INFO] Archivo guardado: uploads\c0c8e9e4ce4d456191f5e41971d5bc4b_elmercurio.pdf
+2025-08-05 16:59:43,072 [INFO] Archivo guardado: uploads\c0c8e9e4ce4d456191f5e41971d5bc4b_Fotocopia_carnet.pdf
+2025-08-05 16:59:43,072 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 16:59:43,114 [INFO] Merge completado: outputs\merged_c0c8e9e4ce4d456191f5e41971d5bc4b.pdf
+2025-08-05 16:59:43,114 [INFO] Inicio de estandarización de PDF: outputs\merged_c0c8e9e4ce4d456191f5e41971d5bc4b.pdf
+2025-08-05 16:59:44,284 [INFO] Estandarización completada: outputs\standardized_c0c8e9e4ce4d456191f5e41971d5bc4b.pdf
+2025-08-05 16:59:44,284 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 16:59:47,428 [INFO] Compresión completada: outputs\renuncia_c0c8e9e4ce4d456191f5e41971d5bc4b.pdf
+2025-08-05 16:59:47,434 [INFO] Archivo enviado: outputs\renuncia_c0c8e9e4ce4d456191f5e41971d5bc4b.pdf (original 1635957 bytes → comprimido 917292 bytes)
+2025-08-05 16:59:57,442 [INFO] Archivo eliminado: outputs\renuncia_c0c8e9e4ce4d456191f5e41971d5bc4b.pdf
+2025-08-05 17:00:01,044 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:00:01 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 17:00:01,046 [INFO] Archivo guardado: uploads\bf2da456ec1143fdb6f5c555d21cfeb5_renuncia.pdf
+2025-08-05 17:00:01,050 [INFO] Archivo guardado: uploads\bf2da456ec1143fdb6f5c555d21cfeb5_elmercurio.pdf
+2025-08-05 17:00:01,051 [INFO] Archivo guardado: uploads\bf2da456ec1143fdb6f5c555d21cfeb5_Fotocopia_carnet.pdf
+2025-08-05 17:00:01,052 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 17:00:01,091 [INFO] Merge completado: outputs\merged_bf2da456ec1143fdb6f5c555d21cfeb5.pdf
+2025-08-05 17:00:01,091 [INFO] Inicio de estandarización de PDF: outputs\merged_bf2da456ec1143fdb6f5c555d21cfeb5.pdf
+2025-08-05 17:00:02,153 [INFO] Estandarización completada: outputs\standardized_bf2da456ec1143fdb6f5c555d21cfeb5.pdf
+2025-08-05 17:00:02,154 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:00:04,712 [INFO] Compresión completada: outputs\renuncia_bf2da456ec1143fdb6f5c555d21cfeb5.pdf
+2025-08-05 17:00:04,719 [INFO] Archivo enviado: outputs\renuncia_bf2da456ec1143fdb6f5c555d21cfeb5.pdf (original 1633927 bytes → comprimido 917328 bytes)
+2025-08-05 17:00:14,722 [INFO] Archivo eliminado: outputs\renuncia_bf2da456ec1143fdb6f5c555d21cfeb5.pdf
+2025-08-05 17:00:44,875 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:00:44 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 17:00:44,877 [INFO] Archivo guardado: uploads\cf98b4b0e1e84cf7b9b6e0bc5c079560_renuncia.pdf
+2025-08-05 17:00:44,880 [INFO] Archivo guardado: uploads\cf98b4b0e1e84cf7b9b6e0bc5c079560_elmercurio.pdf
+2025-08-05 17:00:44,885 [INFO] Archivo guardado: uploads\cf98b4b0e1e84cf7b9b6e0bc5c079560_Fotocopia_carnet.pdf
+2025-08-05 17:00:44,885 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 17:00:44,943 [INFO] Merge completado: outputs\merged_cf98b4b0e1e84cf7b9b6e0bc5c079560.pdf
+2025-08-05 17:00:44,943 [INFO] Inicio de estandarización de PDF: outputs\merged_cf98b4b0e1e84cf7b9b6e0bc5c079560.pdf
+2025-08-05 17:00:45,958 [INFO] Estandarización completada: outputs\standardized_cf98b4b0e1e84cf7b9b6e0bc5c079560.pdf
+2025-08-05 17:00:45,959 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:00:48,598 [INFO] Compresión completada: outputs\renuncia_cf98b4b0e1e84cf7b9b6e0bc5c079560.pdf
+2025-08-05 17:00:48,603 [INFO] Archivo enviado: outputs\renuncia_cf98b4b0e1e84cf7b9b6e0bc5c079560.pdf (original 1607370 bytes → comprimido 917212 bytes)
+2025-08-05 17:00:58,599 [INFO] Archivo eliminado: outputs\renuncia_cf98b4b0e1e84cf7b9b6e0bc5c079560.pdf
+2025-08-05 17:01:00,837 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:01:00 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 17:01:00,842 [INFO] Archivo guardado: uploads\15cd16a293ea4a278a5a280f86e14605_elmercurio.pdf
+2025-08-05 17:01:00,843 [INFO] Archivo guardado: uploads\15cd16a293ea4a278a5a280f86e14605_renuncia.pdf
+2025-08-05 17:01:00,845 [INFO] Archivo guardado: uploads\15cd16a293ea4a278a5a280f86e14605_Fotocopia_carnet.pdf
+2025-08-05 17:01:00,845 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 17:01:00,898 [INFO] Merge completado: outputs\merged_15cd16a293ea4a278a5a280f86e14605.pdf
+2025-08-05 17:01:00,898 [INFO] Inicio de estandarización de PDF: outputs\merged_15cd16a293ea4a278a5a280f86e14605.pdf
+2025-08-05 17:01:01,939 [INFO] Estandarización completada: outputs\standardized_15cd16a293ea4a278a5a280f86e14605.pdf
+2025-08-05 17:01:01,940 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:01:04,534 [INFO] Compresión completada: outputs\elmercurio_15cd16a293ea4a278a5a280f86e14605.pdf
+2025-08-05 17:01:04,541 [INFO] Archivo enviado: outputs\elmercurio_15cd16a293ea4a278a5a280f86e14605.pdf (original 1607371 bytes → comprimido 917288 bytes)
+2025-08-05 17:01:14,537 [INFO] Archivo eliminado: outputs\elmercurio_15cd16a293ea4a278a5a280f86e14605.pdf
+2025-08-05 17:01:14,814 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:01:14 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 17:01:15,048 [INFO] Archivo guardado: uploads\790801092cac408aa84ed73f9dcd0fdc_elmercurio.pdf
+2025-08-05 17:01:15,050 [INFO] Archivo guardado: uploads\790801092cac408aa84ed73f9dcd0fdc_Fotocopia_carnet.pdf
+2025-08-05 17:01:15,051 [INFO] Archivo guardado: uploads\790801092cac408aa84ed73f9dcd0fdc_renuncia.pdf
+2025-08-05 17:01:15,051 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 17:01:15,104 [INFO] Merge completado: outputs\merged_790801092cac408aa84ed73f9dcd0fdc.pdf
+2025-08-05 17:01:15,104 [INFO] Inicio de estandarización de PDF: outputs\merged_790801092cac408aa84ed73f9dcd0fdc.pdf
+2025-08-05 17:01:16,996 [INFO] Estandarización completada: outputs\standardized_790801092cac408aa84ed73f9dcd0fdc.pdf
+2025-08-05 17:01:16,996 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:01:19,324 [INFO] Compresión completada: outputs\elmercurio_790801092cac408aa84ed73f9dcd0fdc.pdf
+2025-08-05 17:01:19,329 [INFO] Archivo enviado: outputs\elmercurio_790801092cac408aa84ed73f9dcd0fdc.pdf (original 1607370 bytes → comprimido 917289 bytes)
+2025-08-05 17:01:26,785 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:01:26 | Archivos: 3 | Extensiones: .pdf
+2025-08-05 17:01:26,789 [INFO] Archivo guardado: uploads\89970d28847643549b46136c7d9aeb85_elmercurio.pdf
+2025-08-05 17:01:26,790 [INFO] Archivo guardado: uploads\89970d28847643549b46136c7d9aeb85_Fotocopia_carnet.pdf
+2025-08-05 17:01:26,792 [INFO] Archivo guardado: uploads\89970d28847643549b46136c7d9aeb85_renuncia.pdf
+2025-08-05 17:01:26,792 [INFO] Merge iniciado con 3 archivos...
+2025-08-05 17:01:26,842 [INFO] Merge completado: outputs\merged_89970d28847643549b46136c7d9aeb85.pdf
+2025-08-05 17:01:26,842 [INFO] Inicio de estandarización de PDF: outputs\merged_89970d28847643549b46136c7d9aeb85.pdf
+2025-08-05 17:01:28,254 [INFO] Estandarización completada: outputs\standardized_89970d28847643549b46136c7d9aeb85.pdf
+2025-08-05 17:01:28,255 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:01:29,333 [INFO] Archivo eliminado: outputs\elmercurio_790801092cac408aa84ed73f9dcd0fdc.pdf
+2025-08-05 17:01:30,680 [INFO] Compresión completada: outputs\elmercurio_89970d28847643549b46136c7d9aeb85.pdf
+2025-08-05 17:01:30,686 [INFO] Archivo enviado: outputs\elmercurio_89970d28847643549b46136c7d9aeb85.pdf (original 1607369 bytes → comprimido 917308 bytes)
+2025-08-05 17:01:40,693 [INFO] Archivo eliminado: outputs\elmercurio_89970d28847643549b46136c7d9aeb85.pdf
+2025-08-05 17:04:09,990 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:04:09 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 17:04:09,994 [INFO] Archivo guardado: uploads\6c8201b1da6341f78b59bcf2a39b5c0f_compressed_19.pdf
+2025-08-05 17:04:10,015 [INFO] Inicio de estandarización de PDF: outputs\merged_6c8201b1da6341f78b59bcf2a39b5c0f.pdf
+2025-08-05 17:04:10,500 [INFO] Estandarización completada: outputs\standardized_6c8201b1da6341f78b59bcf2a39b5c0f.pdf
+2025-08-05 17:04:10,500 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:04:11,463 [INFO] Compresión completada: outputs\compressed_19_6c8201b1da6341f78b59bcf2a39b5c0f.pdf
+2025-08-05 17:04:11,469 [INFO] Archivo enviado: outputs\compressed_19_6c8201b1da6341f78b59bcf2a39b5c0f.pdf (original 913406 bytes → comprimido 912696 bytes)
+2025-08-05 17:04:21,469 [INFO] Archivo eliminado: outputs\compressed_19_6c8201b1da6341f78b59bcf2a39b5c0f.pdf
+2025-08-05 17:13:23,546 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:13:23 | Archivos: 4 | Extensiones: .pdf
+2025-08-05 17:13:23,550 [INFO] Archivo guardado: uploads\ea9f84cd7850488db1befde20c3883ba_elmercurio.pdf
+2025-08-05 17:13:23,551 [INFO] Archivo guardado: uploads\ea9f84cd7850488db1befde20c3883ba_TITULO.pdf
+2025-08-05 17:13:23,552 [INFO] Archivo guardado: uploads\ea9f84cd7850488db1befde20c3883ba_Fotocopia_carnet.pdf
+2025-08-05 17:13:23,553 [INFO] Archivo guardado: uploads\ea9f84cd7850488db1befde20c3883ba_aaaaaaa.pdf
+2025-08-05 17:13:23,553 [INFO] Merge iniciado con 4 archivos...
+2025-08-05 17:13:23,621 [INFO] Merge completado: outputs\merged_ea9f84cd7850488db1befde20c3883ba.pdf
+2025-08-05 17:13:23,621 [INFO] Inicio de estandarización de PDF: outputs\merged_ea9f84cd7850488db1befde20c3883ba.pdf
+2025-08-05 17:13:24,699 [INFO] Estandarización completada: outputs\standardized_ea9f84cd7850488db1befde20c3883ba.pdf
+2025-08-05 17:13:24,699 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:13:27,076 [INFO] Compresión completada: outputs\elmercurio_ea9f84cd7850488db1befde20c3883ba.pdf
+2025-08-05 17:13:27,081 [INFO] Archivo enviado: outputs\elmercurio_ea9f84cd7850488db1befde20c3883ba.pdf (original 1617686 bytes → comprimido 914465 bytes)
+2025-08-05 17:13:37,094 [INFO] Archivo eliminado: outputs\elmercurio_ea9f84cd7850488db1befde20c3883ba.pdf
+2025-08-05 17:13:51,270 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:13:51 | Archivos: 4 | Extensiones: .pdf
+2025-08-05 17:13:51,274 [INFO] Archivo guardado: uploads\d3326bd1823a443faa68c4aafc6b8392_elmercurio.pdf
+2025-08-05 17:13:51,277 [INFO] Archivo guardado: uploads\d3326bd1823a443faa68c4aafc6b8392_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 17:13:51,278 [INFO] Archivo guardado: uploads\d3326bd1823a443faa68c4aafc6b8392_TITULO.pdf
+2025-08-05 17:13:51,279 [INFO] Archivo guardado: uploads\d3326bd1823a443faa68c4aafc6b8392_renuncia.pdf
+2025-08-05 17:13:51,279 [INFO] Merge iniciado con 4 archivos...
+2025-08-05 17:13:51,343 [INFO] Merge completado: outputs\merged_d3326bd1823a443faa68c4aafc6b8392.pdf
+2025-08-05 17:13:51,343 [INFO] Inicio de estandarización de PDF: outputs\merged_d3326bd1823a443faa68c4aafc6b8392.pdf
+2025-08-05 17:13:52,809 [INFO] Estandarización completada: outputs\standardized_d3326bd1823a443faa68c4aafc6b8392.pdf
+2025-08-05 17:13:52,809 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:13:55,187 [INFO] Compresión completada: outputs\elmercurio_d3326bd1823a443faa68c4aafc6b8392.pdf
+2025-08-05 17:13:55,194 [INFO] Archivo enviado: outputs\elmercurio_d3326bd1823a443faa68c4aafc6b8392.pdf (original 1566604 bytes → comprimido 792317 bytes)
+2025-08-05 17:14:05,192 [INFO] Archivo eliminado: outputs\elmercurio_d3326bd1823a443faa68c4aafc6b8392.pdf
+2025-08-05 17:14:40,853 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:14:40 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 17:14:40,857 [INFO] Archivo guardado: uploads\164a7c2ee8bc4791bc13248003c43db1_elmercurio.pdf
+2025-08-05 17:14:40,875 [INFO] Inicio de estandarización de PDF: outputs\merged_164a7c2ee8bc4791bc13248003c43db1.pdf
+2025-08-05 17:14:41,812 [INFO] Estandarización completada: outputs\standardized_164a7c2ee8bc4791bc13248003c43db1.pdf
+2025-08-05 17:14:41,813 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:14:44,155 [INFO] Compresión completada: outputs\elmercurio_164a7c2ee8bc4791bc13248003c43db1.pdf
+2025-08-05 17:14:44,167 [INFO] Archivo enviado: outputs\elmercurio_164a7c2ee8bc4791bc13248003c43db1.pdf (original 1241485 bytes → comprimido 647998 bytes)
+2025-08-05 17:14:54,155 [INFO] Archivo eliminado: outputs\elmercurio_164a7c2ee8bc4791bc13248003c43db1.pdf
+2025-08-05 17:16:24,390 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:16:24 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:16:24,393 [INFO] Archivo guardado: uploads\268e76f4bba64069b7854ca310650688_elmercurio.pdf
+2025-08-05 17:16:24,395 [INFO] Archivo guardado: uploads\268e76f4bba64069b7854ca310650688_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 17:16:24,395 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:16:24,425 [INFO] Merge completado: outputs\merged_268e76f4bba64069b7854ca310650688.pdf
+2025-08-05 17:16:24,425 [INFO] Inicio de estandarización de PDF: outputs\merged_268e76f4bba64069b7854ca310650688.pdf
+2025-08-05 17:16:25,289 [INFO] Estandarización completada: outputs\standardized_268e76f4bba64069b7854ca310650688.pdf
+2025-08-05 17:16:25,290 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:16:28,116 [INFO] Compresión completada: outputs\elmercurio_268e76f4bba64069b7854ca310650688.pdf
+2025-08-05 17:16:28,121 [INFO] Archivo enviado: outputs\elmercurio_268e76f4bba64069b7854ca310650688.pdf (original 1273229 bytes → comprimido 667168 bytes)
+2025-08-05 17:16:55,503 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:16:55 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:16:55,509 [INFO] Archivo guardado: uploads\760503ee610c4497978a5717a51de272_elmercurio.pdf
+2025-08-05 17:16:55,510 [INFO] Archivo guardado: uploads\760503ee610c4497978a5717a51de272_CartolaProvisoria-000063651060-0182-20250730.pdf
+2025-08-05 17:16:55,511 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:16:55,562 [INFO] Merge completado: outputs\merged_760503ee610c4497978a5717a51de272.pdf
+2025-08-05 17:16:55,562 [INFO] Inicio de estandarización de PDF: outputs\merged_760503ee610c4497978a5717a51de272.pdf
+2025-08-05 17:16:56,699 [INFO] Estandarización completada: outputs\standardized_760503ee610c4497978a5717a51de272.pdf
+2025-08-05 17:16:56,699 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:16:59,389 [INFO] Compresión completada: outputs\elmercurio_760503ee610c4497978a5717a51de272.pdf
+2025-08-05 17:16:59,398 [INFO] Archivo enviado: outputs\elmercurio_760503ee610c4497978a5717a51de272.pdf (original 1421869 bytes → comprimido 694998 bytes)
+2025-08-05 17:17:03,494 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:17:03 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:17:03,497 [INFO] Archivo guardado: uploads\f4ef661dfc6a486592b84174f443fcb8_elmercurio.pdf
+2025-08-05 17:17:03,498 [INFO] Archivo guardado: uploads\f4ef661dfc6a486592b84174f443fcb8_CartolaProvisoria-000063651060-0182-20250730.pdf
+2025-08-05 17:17:03,498 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:17:03,528 [INFO] Merge completado: outputs\merged_f4ef661dfc6a486592b84174f443fcb8.pdf
+2025-08-05 17:17:03,528 [INFO] Inicio de estandarización de PDF: outputs\merged_f4ef661dfc6a486592b84174f443fcb8.pdf
+2025-08-05 17:17:04,495 [INFO] Estandarización completada: outputs\standardized_f4ef661dfc6a486592b84174f443fcb8.pdf
+2025-08-05 17:17:04,495 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:17:06,883 [INFO] Compresión completada: outputs\elmercurio_f4ef661dfc6a486592b84174f443fcb8.pdf
+2025-08-05 17:17:06,889 [INFO] Archivo enviado: outputs\elmercurio_f4ef661dfc6a486592b84174f443fcb8.pdf (original 1401328 bytes → comprimido 695498 bytes)
+2025-08-05 17:17:09,392 [INFO] Archivo eliminado: outputs\elmercurio_760503ee610c4497978a5717a51de272.pdf
+2025-08-05 17:17:16,895 [INFO] Archivo eliminado: outputs\elmercurio_f4ef661dfc6a486592b84174f443fcb8.pdf
+2025-08-05 17:18:06,022 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:18:06 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:18:06,026 [INFO] Archivo guardado: uploads\35c2891e988c41639173f85205e137dd_elmercurio.pdf
+2025-08-05 17:18:06,028 [INFO] Archivo guardado: uploads\35c2891e988c41639173f85205e137dd_CartolaProvisoria-000063651060-0182-20250730.pdf
+2025-08-05 17:18:06,028 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:18:06,062 [INFO] Merge completado: outputs\merged_35c2891e988c41639173f85205e137dd.pdf
+2025-08-05 17:18:06,062 [INFO] Inicio de estandarización de PDF: outputs\merged_35c2891e988c41639173f85205e137dd.pdf
+2025-08-05 17:18:06,983 [INFO] Estandarización completada: outputs\standardized_35c2891e988c41639173f85205e137dd.pdf
+2025-08-05 17:18:06,983 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:18:09,314 [INFO] Compresión completada: outputs\elmercurio_35c2891e988c41639173f85205e137dd.pdf
+2025-08-05 17:18:09,319 [INFO] Archivo enviado: outputs\elmercurio_35c2891e988c41639173f85205e137dd.pdf (original 1401328 bytes → comprimido 695498 bytes)
+2025-08-05 17:18:19,318 [INFO] Archivo eliminado: outputs\elmercurio_35c2891e988c41639173f85205e137dd.pdf
+2025-08-05 17:25:58,732 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:25:58 | Archivos: 1 | Extensiones: .pdf
+2025-08-05 17:25:58,735 [INFO] Archivo guardado: uploads\ecb2ddbdeafb49b8b7f2306f3aac3455_elmercurio.pdf
+2025-08-05 17:25:58,748 [INFO] Inicio de estandarización de PDF: outputs\merged_ecb2ddbdeafb49b8b7f2306f3aac3455.pdf
+2025-08-05 17:25:59,646 [INFO] Estandarización completada: outputs\standardized_ecb2ddbdeafb49b8b7f2306f3aac3455.pdf
+2025-08-05 17:25:59,646 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:26:02,130 [INFO] Compresión completada: outputs\elmercurio_ecb2ddbdeafb49b8b7f2306f3aac3455.pdf
+2025-08-05 17:26:02,138 [INFO] Archivo enviado: outputs\elmercurio_ecb2ddbdeafb49b8b7f2306f3aac3455.pdf (original 1239455 bytes → comprimido 648034 bytes)
+2025-08-05 17:26:12,146 [INFO] Archivo eliminado: outputs\elmercurio_ecb2ddbdeafb49b8b7f2306f3aac3455.pdf
+2025-08-05 17:30:29,422 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:30:29 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:30:29,429 [INFO] Archivo guardado: uploads\82478c2a65fd479d8d0af25023037341_elmercurio.pdf
+2025-08-05 17:30:29,432 [INFO] Archivo guardado: uploads\82478c2a65fd479d8d0af25023037341_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 17:30:29,432 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:30:29,478 [INFO] Merge completado: outputs\merged_82478c2a65fd479d8d0af25023037341.pdf
+2025-08-05 17:30:29,479 [INFO] Inicio de estandarización de PDF: outputs\merged_82478c2a65fd479d8d0af25023037341.pdf
+2025-08-05 17:30:30,478 [INFO] Estandarización completada: outputs\standardized_82478c2a65fd479d8d0af25023037341.pdf
+2025-08-05 17:30:30,479 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:30:32,751 [INFO] Compresión completada: outputs\elmercurio_82478c2a65fd479d8d0af25023037341.pdf
+2025-08-05 17:30:32,762 [INFO] Archivo enviado: outputs\elmercurio_82478c2a65fd479d8d0af25023037341.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-05 17:30:42,762 [INFO] Archivo eliminado: outputs\elmercurio_82478c2a65fd479d8d0af25023037341.pdf
+2025-08-05 17:32:41,482 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:32:41 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:32:41,489 [INFO] Archivo guardado: uploads\d1315b6a982f442b9b1b3e33b30ce5f2_elmercurio.pdf
+2025-08-05 17:32:41,491 [INFO] Archivo guardado: uploads\d1315b6a982f442b9b1b3e33b30ce5f2_Estimada_Maithe_Al_llegar_a_cien_mil_pensamos_No_esta_mal_es_un_canal_nuevo_y_saludable._Al_llegar_al_millon_pensamos_Wow_ese_creador_tiene_algo_increible_entre_manos._Pero_diez_millones_A_es.pdf
+2025-08-05 17:32:41,491 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:32:41,532 [INFO] Merge completado: outputs\merged_d1315b6a982f442b9b1b3e33b30ce5f2.pdf
+2025-08-05 17:32:41,532 [INFO] Inicio de estandarización de PDF: outputs\merged_d1315b6a982f442b9b1b3e33b30ce5f2.pdf
+2025-08-05 17:32:42,458 [INFO] Estandarización completada: outputs\standardized_d1315b6a982f442b9b1b3e33b30ce5f2.pdf
+2025-08-05 17:32:42,459 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:32:44,712 [INFO] Compresión completada: outputs\elmercurio_d1315b6a982f442b9b1b3e33b30ce5f2.pdf
+2025-08-05 17:32:44,727 [INFO] Archivo enviado: outputs\elmercurio_d1315b6a982f442b9b1b3e33b30ce5f2.pdf (original 1271197 bytes → comprimido 667202 bytes)
+2025-08-05 17:32:54,730 [INFO] Archivo eliminado: outputs\elmercurio_d1315b6a982f442b9b1b3e33b30ce5f2.pdf
+2025-08-05 17:33:23,457 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:33:23 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:33:23,462 [INFO] Archivo guardado: uploads\eec530d87b8e4ef490de2e31b5ba3e98_elmercurio.pdf
+2025-08-05 17:33:23,468 [INFO] Archivo guardado: uploads\eec530d87b8e4ef490de2e31b5ba3e98_Maithe.pdf
+2025-08-05 17:33:23,468 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:33:23,511 [INFO] Merge completado: outputs\merged_eec530d87b8e4ef490de2e31b5ba3e98.pdf
+2025-08-05 17:33:23,511 [INFO] Inicio de estandarización de PDF: outputs\merged_eec530d87b8e4ef490de2e31b5ba3e98.pdf
+2025-08-05 17:33:24,391 [INFO] Estandarización completada: outputs\standardized_eec530d87b8e4ef490de2e31b5ba3e98.pdf
+2025-08-05 17:33:24,391 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:33:26,496 [INFO] Compresión completada: outputs\elmercurio_eec530d87b8e4ef490de2e31b5ba3e98.pdf
+2025-08-05 17:33:26,502 [INFO] Archivo enviado: outputs\elmercurio_eec530d87b8e4ef490de2e31b5ba3e98.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-05 17:33:36,505 [INFO] Archivo eliminado: outputs\elmercurio_eec530d87b8e4ef490de2e31b5ba3e98.pdf
+2025-08-05 17:37:57,973 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-05 17:37:57 | Archivos: 2 | Extensiones: .pdf
+2025-08-05 17:37:57,979 [INFO] Archivo guardado: uploads\401e5116c3b54526bc0a4c94ed44f74b_elmercurio.pdf
+2025-08-05 17:37:57,980 [INFO] Archivo guardado: uploads\401e5116c3b54526bc0a4c94ed44f74b_Maithe.pdf
+2025-08-05 17:37:57,980 [INFO] Merge iniciado con 2 archivos...
+2025-08-05 17:37:58,028 [INFO] Merge completado: outputs\merged_401e5116c3b54526bc0a4c94ed44f74b.pdf
+2025-08-05 17:37:58,028 [INFO] Inicio de estandarización de PDF: outputs\merged_401e5116c3b54526bc0a4c94ed44f74b.pdf
+2025-08-05 17:37:59,156 [INFO] Estandarización completada: outputs\standardized_401e5116c3b54526bc0a4c94ed44f74b.pdf
+2025-08-05 17:37:59,156 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-05 17:38:02,058 [INFO] Compresión completada: outputs\elmercurio_401e5116c3b54526bc0a4c94ed44f74b.pdf
+2025-08-05 17:38:02,066 [INFO] Archivo enviado: outputs\elmercurio_401e5116c3b54526bc0a4c94ed44f74b.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-05 17:38:12,077 [INFO] Archivo eliminado: outputs\elmercurio_401e5116c3b54526bc0a4c94ed44f74b.pdf
+2025-08-06 11:00:21,165 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:00:21 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:00:21,168 [ERROR] Error general en ihatepdf: cannot access local variable 'filename' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 564, in ihatepdf
+    print(f"✔️ Archivo recibido: {filename} - Guardado en: {filepath}")
+                                  ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filename' where it is not associated with a value
+2025-08-06 11:01:44,729 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:01:44 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:01:44,732 [INFO] Archivo guardado: uploads\3a88132ab76449a990e14434fc462bb0_elmercurio.pdf
+2025-08-06 11:01:44,734 [INFO] Archivo guardado: uploads\3a88132ab76449a990e14434fc462bb0_Maithe.pdf
+2025-08-06 11:01:44,734 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:01:44,843 [INFO] Merge completado: outputs\merged_3a88132ab76449a990e14434fc462bb0.pdf
+2025-08-06 11:01:44,843 [INFO] Inicio de estandarización de PDF: outputs\merged_3a88132ab76449a990e14434fc462bb0.pdf
+2025-08-06 11:01:45,767 [INFO] Estandarización completada: outputs\standardized_3a88132ab76449a990e14434fc462bb0.pdf
+2025-08-06 11:01:45,768 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:01:48,049 [INFO] Compresión completada: outputs\elmercurio_3a88132ab76449a990e14434fc462bb0.pdf
+2025-08-06 11:01:48,063 [INFO] Archivo enviado: outputs\elmercurio_3a88132ab76449a990e14434fc462bb0.pdf (original 1271199 bytes → comprimido 667202 bytes)
+2025-08-06 11:01:58,062 [INFO] Archivo eliminado: outputs\elmercurio_3a88132ab76449a990e14434fc462bb0.pdf
+2025-08-06 11:02:59,662 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:02:59 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:02:59,666 [INFO] Archivo guardado: uploads\9724f401e0844e10a36769885fb77b2f_elmercurio.pdf
+2025-08-06 11:02:59,667 [INFO] Archivo guardado: uploads\9724f401e0844e10a36769885fb77b2f_Maithe.pdf
+2025-08-06 11:02:59,667 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:02:59,696 [INFO] Merge completado: outputs\merged_9724f401e0844e10a36769885fb77b2f.pdf
+2025-08-06 11:02:59,696 [INFO] Inicio de estandarización de PDF: outputs\merged_9724f401e0844e10a36769885fb77b2f.pdf
+2025-08-06 11:03:00,566 [INFO] Estandarización completada: outputs\standardized_9724f401e0844e10a36769885fb77b2f.pdf
+2025-08-06 11:03:00,566 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:03:02,804 [INFO] Compresión completada: outputs\elmercurio_9724f401e0844e10a36769885fb77b2f.pdf
+2025-08-06 11:03:02,809 [INFO] Archivo enviado: outputs\elmercurio_9724f401e0844e10a36769885fb77b2f.pdf (original 1271201 bytes → comprimido 667185 bytes)
+2025-08-06 11:03:11,219 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:03:11 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:03:11,222 [INFO] Archivo guardado: uploads\56a770002ce640b3bdb9c41e49e8b0ca_elmercurio.pdf
+2025-08-06 11:03:11,223 [INFO] Archivo guardado: uploads\56a770002ce640b3bdb9c41e49e8b0ca_Maithe.pdf
+2025-08-06 11:03:11,223 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:03:11,283 [INFO] Merge completado: outputs\merged_56a770002ce640b3bdb9c41e49e8b0ca.pdf
+2025-08-06 11:03:11,283 [INFO] Inicio de estandarización de PDF: outputs\merged_56a770002ce640b3bdb9c41e49e8b0ca.pdf
+2025-08-06 11:03:12,150 [INFO] Estandarización completada: outputs\standardized_56a770002ce640b3bdb9c41e49e8b0ca.pdf
+2025-08-06 11:03:12,150 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:03:12,805 [INFO] Archivo eliminado: outputs\elmercurio_9724f401e0844e10a36769885fb77b2f.pdf
+2025-08-06 11:03:14,913 [INFO] Compresión completada: outputs\elmercurio_56a770002ce640b3bdb9c41e49e8b0ca.pdf
+2025-08-06 11:03:14,918 [INFO] Archivo enviado: outputs\elmercurio_56a770002ce640b3bdb9c41e49e8b0ca.pdf (original 1271202 bytes → comprimido 667110 bytes)
+2025-08-06 11:03:23,450 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:03:23 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:03:23,455 [INFO] Archivo guardado: uploads\ec5cd6d7974c490d9292730c77e838c6_elmercurio.pdf
+2025-08-06 11:03:23,456 [INFO] Archivo guardado: uploads\ec5cd6d7974c490d9292730c77e838c6_Maithe.pdf
+2025-08-06 11:03:23,456 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:03:23,484 [INFO] Merge completado: outputs\merged_ec5cd6d7974c490d9292730c77e838c6.pdf
+2025-08-06 11:03:23,485 [INFO] Inicio de estandarización de PDF: outputs\merged_ec5cd6d7974c490d9292730c77e838c6.pdf
+2025-08-06 11:03:24,354 [INFO] Estandarización completada: outputs\standardized_ec5cd6d7974c490d9292730c77e838c6.pdf
+2025-08-06 11:03:24,354 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:03:24,919 [INFO] Archivo eliminado: outputs\elmercurio_56a770002ce640b3bdb9c41e49e8b0ca.pdf
+2025-08-06 11:03:26,911 [INFO] Compresión completada: outputs\elmercurio_ec5cd6d7974c490d9292730c77e838c6.pdf
+2025-08-06 11:03:26,916 [INFO] Archivo enviado: outputs\elmercurio_ec5cd6d7974c490d9292730c77e838c6.pdf (original 1273229 bytes → comprimido 667168 bytes)
+2025-08-06 11:03:34,203 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:03:34 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:03:34,212 [INFO] Archivo guardado: uploads\c77e219a3c4b4202b48afc5d2fcb6a29_elmercurio.pdf
+2025-08-06 11:03:34,213 [INFO] Archivo guardado: uploads\c77e219a3c4b4202b48afc5d2fcb6a29_Maithe.pdf
+2025-08-06 11:03:34,214 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:03:34,506 [INFO] Merge completado: outputs\merged_c77e219a3c4b4202b48afc5d2fcb6a29.pdf
+2025-08-06 11:03:34,506 [INFO] Inicio de estandarización de PDF: outputs\merged_c77e219a3c4b4202b48afc5d2fcb6a29.pdf
+2025-08-06 11:03:35,397 [INFO] Estandarización completada: outputs\standardized_c77e219a3c4b4202b48afc5d2fcb6a29.pdf
+2025-08-06 11:03:35,397 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:03:36,911 [INFO] Archivo eliminado: outputs\elmercurio_ec5cd6d7974c490d9292730c77e838c6.pdf
+2025-08-06 11:03:37,671 [INFO] Compresión completada: outputs\elmercurio_c77e219a3c4b4202b48afc5d2fcb6a29.pdf
+2025-08-06 11:03:37,676 [INFO] Archivo enviado: outputs\elmercurio_c77e219a3c4b4202b48afc5d2fcb6a29.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-06 11:03:47,686 [INFO] Archivo eliminado: outputs\elmercurio_c77e219a3c4b4202b48afc5d2fcb6a29.pdf
+2025-08-06 11:07:52,005 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:07:52 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:07:52,008 [INFO] Archivo guardado: uploads\af9fe99a2afd4837899a3a7ec6323ae1_elmercurio.pdf
+2025-08-06 11:07:52,009 [INFO] Archivo guardado: uploads\af9fe99a2afd4837899a3a7ec6323ae1_Maithe.pdf
+2025-08-06 11:07:52,009 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:07:52,044 [INFO] Merge completado: outputs\merged_af9fe99a2afd4837899a3a7ec6323ae1.pdf
+2025-08-06 11:07:52,044 [INFO] Inicio de estandarización de PDF: outputs\merged_af9fe99a2afd4837899a3a7ec6323ae1.pdf
+2025-08-06 11:07:53,001 [INFO] Estandarización completada: outputs\standardized_af9fe99a2afd4837899a3a7ec6323ae1.pdf
+2025-08-06 11:07:53,001 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:07:55,448 [INFO] Compresión completada: outputs\elmercurio_af9fe99a2afd4837899a3a7ec6323ae1.pdf
+2025-08-06 11:07:55,454 [INFO] Archivo enviado: outputs\elmercurio_af9fe99a2afd4837899a3a7ec6323ae1.pdf (original 1267978 bytes → comprimido 667338 bytes)
+2025-08-06 11:08:05,445 [INFO] Archivo eliminado: outputs\elmercurio_af9fe99a2afd4837899a3a7ec6323ae1.pdf
+2025-08-06 11:11:47,908 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:11:47 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:11:47,913 [INFO] Archivo guardado: uploads\a91e0d5234fc49f18517140646571e74_elmercurio.pdf
+2025-08-06 11:11:47,914 [INFO] Archivo guardado: uploads\a91e0d5234fc49f18517140646571e74_Maithe.pdf
+2025-08-06 11:11:47,914 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:11:47,953 [INFO] Merge completado: outputs\merged_a91e0d5234fc49f18517140646571e74.pdf
+2025-08-06 11:11:47,953 [INFO] Inicio de estandarización de PDF: outputs\merged_a91e0d5234fc49f18517140646571e74.pdf
+2025-08-06 11:11:48,899 [INFO] Estandarización completada: outputs\standardized_a91e0d5234fc49f18517140646571e74.pdf
+2025-08-06 11:11:48,899 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:11:51,577 [INFO] Compresión completada: outputs\elmercurio_a91e0d5234fc49f18517140646571e74.pdf
+2025-08-06 11:11:51,585 [INFO] Archivo enviado: outputs\elmercurio_a91e0d5234fc49f18517140646571e74.pdf (original 1267979 bytes → comprimido 667414 bytes)
+2025-08-06 11:12:01,575 [INFO] Archivo eliminado: outputs\elmercurio_a91e0d5234fc49f18517140646571e74.pdf
+2025-08-06 11:12:43,585 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:12:43 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:12:43,588 [INFO] Archivo guardado: uploads\1500d970eadf4f7381fb6190ac6fb14d_elmercurio.pdf
+2025-08-06 11:12:43,589 [INFO] Archivo guardado: uploads\1500d970eadf4f7381fb6190ac6fb14d_Maithe.pdf
+2025-08-06 11:12:43,589 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:12:43,626 [INFO] Merge completado: outputs\merged_1500d970eadf4f7381fb6190ac6fb14d.pdf
+2025-08-06 11:12:43,626 [INFO] Inicio de estandarización de PDF: outputs\merged_1500d970eadf4f7381fb6190ac6fb14d.pdf
+2025-08-06 11:12:44,559 [INFO] Estandarización completada: outputs\standardized_1500d970eadf4f7381fb6190ac6fb14d.pdf
+2025-08-06 11:12:44,559 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:12:46,850 [INFO] Compresión completada: outputs\elmercurio_1500d970eadf4f7381fb6190ac6fb14d.pdf
+2025-08-06 11:12:46,855 [INFO] Archivo enviado: outputs\elmercurio_1500d970eadf4f7381fb6190ac6fb14d.pdf (original 1273229 bytes → comprimido 667168 bytes)
+2025-08-06 11:12:56,853 [INFO] Archivo eliminado: outputs\elmercurio_1500d970eadf4f7381fb6190ac6fb14d.pdf
+2025-08-06 11:14:09,320 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:14:09 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:14:09,323 [INFO] Archivo guardado: uploads\883157f71b93458f91a770b930a521a5_elmercurio.pdf
+2025-08-06 11:14:09,324 [INFO] Archivo guardado: uploads\883157f71b93458f91a770b930a521a5_Maithe.pdf
+2025-08-06 11:14:09,324 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:14:09,354 [INFO] Merge completado: outputs\merged_883157f71b93458f91a770b930a521a5.pdf
+2025-08-06 11:14:09,354 [INFO] Inicio de estandarización de PDF: outputs\merged_883157f71b93458f91a770b930a521a5.pdf
+2025-08-06 11:14:10,303 [INFO] Estandarización completada: outputs\standardized_883157f71b93458f91a770b930a521a5.pdf
+2025-08-06 11:14:10,303 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:14:12,598 [INFO] Compresión completada: outputs\elmercurio_883157f71b93458f91a770b930a521a5.pdf
+2025-08-06 11:14:12,602 [INFO] Archivo enviado: outputs\elmercurio_883157f71b93458f91a770b930a521a5.pdf (original 1271199 bytes → comprimido 667202 bytes)
+2025-08-06 11:14:22,606 [INFO] Archivo eliminado: outputs\elmercurio_883157f71b93458f91a770b930a521a5.pdf
+2025-08-06 11:25:19,380 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:25:19 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:25:19,387 [INFO] Archivo guardado: uploads\68c086d203424739b90919ab17266f5a_elmercurio.pdf
+2025-08-06 11:25:19,388 [INFO] Archivo guardado: uploads\68c086d203424739b90919ab17266f5a_Maithe.pdf
+2025-08-06 11:25:19,389 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:25:19,448 [INFO] Merge completado: outputs\merged_68c086d203424739b90919ab17266f5a.pdf
+2025-08-06 11:25:19,449 [INFO] Inicio de estandarización de PDF: outputs\merged_68c086d203424739b90919ab17266f5a.pdf
+2025-08-06 11:25:20,881 [INFO] Estandarización completada: outputs\standardized_68c086d203424739b90919ab17266f5a.pdf
+2025-08-06 11:25:20,881 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:25:24,423 [INFO] Compresión completada: outputs\elmercurio_68c086d203424739b90919ab17266f5a.pdf
+2025-08-06 11:25:24,436 [INFO] Archivo enviado: outputs\elmercurio_68c086d203424739b90919ab17266f5a.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-06 11:25:34,425 [INFO] Archivo eliminado: outputs\elmercurio_68c086d203424739b90919ab17266f5a.pdf
+2025-08-06 11:25:37,611 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:25:37 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 11:25:37,615 [INFO] Archivo guardado: uploads\bbb292f3c963426b9ef147aa1e9b2fc8_elmercurio.pdf
+2025-08-06 11:25:37,646 [INFO] Inicio de estandarización de PDF: outputs\merged_bbb292f3c963426b9ef147aa1e9b2fc8.pdf
+2025-08-06 11:25:38,946 [INFO] Estandarización completada: outputs\standardized_bbb292f3c963426b9ef147aa1e9b2fc8.pdf
+2025-08-06 11:25:38,947 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:25:42,070 [INFO] Compresión completada: outputs\elmercurio_bbb292f3c963426b9ef147aa1e9b2fc8.pdf
+2025-08-06 11:25:42,084 [INFO] Archivo enviado: outputs\elmercurio_bbb292f3c963426b9ef147aa1e9b2fc8.pdf (original 1239456 bytes → comprimido 648034 bytes)
+2025-08-06 11:25:52,075 [INFO] Archivo eliminado: outputs\elmercurio_bbb292f3c963426b9ef147aa1e9b2fc8.pdf
+2025-08-06 11:28:28,799 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:28:28 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:28:28,806 [INFO] Archivo guardado: uploads\480c9c1ab8bd49d79c42d3b7c615b925_elmercurio.pdf
+2025-08-06 11:28:28,807 [INFO] Archivo guardado: uploads\480c9c1ab8bd49d79c42d3b7c615b925_Maithe.pdf
+2025-08-06 11:28:28,807 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:28:28,878 [INFO] Merge completado: outputs\merged_480c9c1ab8bd49d79c42d3b7c615b925.pdf
+2025-08-06 11:28:28,879 [INFO] Inicio de estandarización de PDF: outputs\merged_480c9c1ab8bd49d79c42d3b7c615b925.pdf
+2025-08-06 11:28:30,142 [INFO] Estandarización completada: outputs\standardized_480c9c1ab8bd49d79c42d3b7c615b925.pdf
+2025-08-06 11:28:30,142 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:28:32,736 [INFO] Compresión completada: outputs\elmercurio_480c9c1ab8bd49d79c42d3b7c615b925.pdf
+2025-08-06 11:28:32,749 [INFO] Archivo enviado: outputs\elmercurio_480c9c1ab8bd49d79c42d3b7c615b925.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-06 11:28:42,746 [INFO] Archivo eliminado: outputs\elmercurio_480c9c1ab8bd49d79c42d3b7c615b925.pdf
+2025-08-06 11:50:54,826 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 11:50:54 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 11:50:54,836 [INFO] Archivo guardado: uploads\48895cb08d184f498eca90f3f5d793d9_elmercurio.pdf
+2025-08-06 11:50:54,837 [INFO] Archivo guardado: uploads\48895cb08d184f498eca90f3f5d793d9_Maithe.pdf
+2025-08-06 11:50:54,838 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 11:50:54,922 [INFO] Merge completado: outputs\merged_48895cb08d184f498eca90f3f5d793d9.pdf
+2025-08-06 11:50:54,922 [INFO] Inicio de estandarización de PDF: outputs\merged_48895cb08d184f498eca90f3f5d793d9.pdf
+2025-08-06 11:50:56,238 [INFO] Estandarización completada: outputs\standardized_48895cb08d184f498eca90f3f5d793d9.pdf
+2025-08-06 11:50:56,238 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 11:50:59,242 [INFO] Compresión completada: outputs\elmercurio_48895cb08d184f498eca90f3f5d793d9.pdf
+2025-08-06 11:50:59,252 [INFO] Archivo enviado: outputs\elmercurio_48895cb08d184f498eca90f3f5d793d9.pdf (original 1267976 bytes → comprimido 667114 bytes)
+2025-08-06 11:51:09,237 [INFO] Archivo eliminado: outputs\elmercurio_48895cb08d184f498eca90f3f5d793d9.pdf
+2025-08-06 12:03:03,750 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:03:03 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 12:03:03,754 [INFO] Archivo guardado: uploads\4d985d35fd614d52a29dc876776199fe_renuncia.pdf
+2025-08-06 12:03:03,756 [INFO] Archivo guardado: uploads\4d985d35fd614d52a29dc876776199fe_TITULO.pdf
+2025-08-06 12:03:03,759 [INFO] Archivo guardado: uploads\4d985d35fd614d52a29dc876776199fe_certificado-fonasa.pdf
+2025-08-06 12:03:03,761 [INFO] Archivo guardado: uploads\4d985d35fd614d52a29dc876776199fe_certificado-afp.pdf
+2025-08-06 12:03:03,761 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 12:03:03,937 [INFO] Merge completado: outputs\merged_4d985d35fd614d52a29dc876776199fe.pdf
+2025-08-06 12:03:03,937 [INFO] Inicio de estandarización de PDF: outputs\merged_4d985d35fd614d52a29dc876776199fe.pdf
+2025-08-06 12:03:04,751 [INFO] Estandarización completada: outputs\standardized_4d985d35fd614d52a29dc876776199fe.pdf
+2025-08-06 12:03:04,751 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:03:05,220 [INFO] Compresión completada: outputs\renuncia_4d985d35fd614d52a29dc876776199fe.pdf
+2025-08-06 12:03:05,233 [INFO] Archivo enviado: outputs\renuncia_4d985d35fd614d52a29dc876776199fe.pdf (original 423382 bytes → comprimido 229822 bytes)
+2025-08-06 12:03:15,221 [INFO] Archivo eliminado: outputs\renuncia_4d985d35fd614d52a29dc876776199fe.pdf
+2025-08-06 12:03:51,055 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:03:51 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 12:03:51,056 [INFO] Archivo guardado: uploads\60d635cc7be8458e96622687af8c35db_renuncia.pdf
+2025-08-06 12:03:51,058 [INFO] Archivo guardado: uploads\60d635cc7be8458e96622687af8c35db_TITULO.pdf
+2025-08-06 12:03:51,059 [INFO] Archivo guardado: uploads\60d635cc7be8458e96622687af8c35db_certificado-fonasa.pdf
+2025-08-06 12:03:51,060 [INFO] Archivo guardado: uploads\60d635cc7be8458e96622687af8c35db_certificado-afp.pdf
+2025-08-06 12:03:51,060 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 12:03:51,133 [INFO] Merge completado: outputs\merged_60d635cc7be8458e96622687af8c35db.pdf
+2025-08-06 12:03:51,133 [INFO] Inicio de estandarización de PDF: outputs\merged_60d635cc7be8458e96622687af8c35db.pdf
+2025-08-06 12:03:51,616 [INFO] Estandarización completada: outputs\standardized_60d635cc7be8458e96622687af8c35db.pdf
+2025-08-06 12:03:51,616 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:03:52,034 [INFO] Compresión completada: outputs\renuncia_60d635cc7be8458e96622687af8c35db.pdf
+2025-08-06 12:03:52,040 [INFO] Archivo enviado: outputs\renuncia_60d635cc7be8458e96622687af8c35db.pdf (original 394158 bytes → comprimido 229824 bytes)
+2025-08-06 12:04:02,040 [INFO] Archivo eliminado: outputs\renuncia_60d635cc7be8458e96622687af8c35db.pdf
+2025-08-06 12:05:31,727 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:05:31 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 12:05:31,730 [INFO] Archivo guardado: uploads\8d01899ed20f4118aabf8b9d04916c8b_renuncia.pdf
+2025-08-06 12:05:31,732 [INFO] Archivo guardado: uploads\8d01899ed20f4118aabf8b9d04916c8b_TITULO.pdf
+2025-08-06 12:05:31,735 [INFO] Archivo guardado: uploads\8d01899ed20f4118aabf8b9d04916c8b_certificado-fonasa.pdf
+2025-08-06 12:05:31,737 [INFO] Archivo guardado: uploads\8d01899ed20f4118aabf8b9d04916c8b_certificado-afp.pdf
+2025-08-06 12:05:31,737 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 12:05:31,854 [INFO] Merge completado: outputs\merged_8d01899ed20f4118aabf8b9d04916c8b.pdf
+2025-08-06 12:05:31,855 [INFO] Inicio de estandarización de PDF: outputs\merged_8d01899ed20f4118aabf8b9d04916c8b.pdf
+2025-08-06 12:05:32,396 [INFO] Estandarización completada: outputs\standardized_8d01899ed20f4118aabf8b9d04916c8b.pdf
+2025-08-06 12:05:32,397 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:05:32,887 [INFO] Compresión completada: outputs\renuncia_8d01899ed20f4118aabf8b9d04916c8b.pdf
+2025-08-06 12:05:32,901 [INFO] Archivo enviado: outputs\renuncia_8d01899ed20f4118aabf8b9d04916c8b.pdf (original 394158 bytes → comprimido 229818 bytes)
+2025-08-06 12:05:42,902 [INFO] Archivo eliminado: outputs\renuncia_8d01899ed20f4118aabf8b9d04916c8b.pdf
+2025-08-06 12:06:29,572 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:06:29 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 12:06:29,574 [INFO] Archivo guardado: uploads\60b4c2c8740b4f498f83175d3100c845_renuncia.pdf
+2025-08-06 12:06:29,575 [INFO] Archivo guardado: uploads\60b4c2c8740b4f498f83175d3100c845_TITULO.pdf
+2025-08-06 12:06:29,577 [INFO] Archivo guardado: uploads\60b4c2c8740b4f498f83175d3100c845_certificado-fonasa.pdf
+2025-08-06 12:06:29,578 [INFO] Archivo guardado: uploads\60b4c2c8740b4f498f83175d3100c845_certificado-afp.pdf
+2025-08-06 12:06:29,578 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 12:06:29,691 [INFO] Merge completado: outputs\merged_60b4c2c8740b4f498f83175d3100c845.pdf
+2025-08-06 12:06:29,691 [INFO] Inicio de estandarización de PDF: outputs\merged_60b4c2c8740b4f498f83175d3100c845.pdf
+2025-08-06 12:06:30,597 [INFO] Estandarización completada: outputs\standardized_60b4c2c8740b4f498f83175d3100c845.pdf
+2025-08-06 12:06:30,597 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:06:31,086 [INFO] Compresión completada: outputs\renuncia_60b4c2c8740b4f498f83175d3100c845.pdf
+2025-08-06 12:06:31,095 [INFO] Archivo enviado: outputs\renuncia_60b4c2c8740b4f498f83175d3100c845.pdf (original 423381 bytes → comprimido 229822 bytes)
+2025-08-06 12:06:41,096 [INFO] Archivo eliminado: outputs\renuncia_60b4c2c8740b4f498f83175d3100c845.pdf
+2025-08-06 12:15:59,454 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:15:59 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:15:59,457 [INFO] Archivo guardado: uploads\5309af7534b0410fb9ca1be11b45103b_renuncia.pdf
+2025-08-06 12:15:59,497 [INFO] Inicio de estandarización de PDF: outputs\merged_5309af7534b0410fb9ca1be11b45103b.pdf
+2025-08-06 12:16:00,014 [INFO] Estandarización completada: outputs\standardized_5309af7534b0410fb9ca1be11b45103b.pdf
+2025-08-06 12:16:00,014 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:16:00,728 [INFO] Compresión completada: outputs\renuncia_5309af7534b0410fb9ca1be11b45103b.pdf
+2025-08-06 12:16:00,741 [INFO] Archivo enviado: outputs\renuncia_5309af7534b0410fb9ca1be11b45103b.pdf (original 196979 bytes → comprimido 94043 bytes)
+2025-08-06 12:16:10,745 [INFO] Archivo eliminado: outputs\renuncia_5309af7534b0410fb9ca1be11b45103b.pdf
+2025-08-06 12:22:16,815 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:22:16 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:22:16,817 [INFO] Archivo guardado: uploads\6bc3eedef5c9460e969243b6f440bcf4_renuncia.pdf
+2025-08-06 12:22:16,847 [INFO] Inicio de estandarización de PDF: outputs\merged_6bc3eedef5c9460e969243b6f440bcf4.pdf
+2025-08-06 12:22:17,271 [INFO] Estandarización completada: outputs\standardized_6bc3eedef5c9460e969243b6f440bcf4.pdf
+2025-08-06 12:22:17,271 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:22:17,655 [INFO] Compresión completada: outputs\renuncia_6bc3eedef5c9460e969243b6f440bcf4.pdf
+2025-08-06 12:22:17,661 [INFO] Archivo enviado: outputs\renuncia_6bc3eedef5c9460e969243b6f440bcf4.pdf (original 196981 bytes → comprimido 94043 bytes)
+2025-08-06 12:22:27,668 [INFO] Archivo eliminado: outputs\renuncia_6bc3eedef5c9460e969243b6f440bcf4.pdf
+2025-08-06 12:25:36,004 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:25:36 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:25:36,012 [INFO] Archivo guardado: uploads\db34be73b78f4d6a9b787e78cc46cb52_renuncia.pdf
+2025-08-06 12:25:36,048 [INFO] Inicio de estandarización de PDF: outputs\merged_db34be73b78f4d6a9b787e78cc46cb52.pdf
+2025-08-06 12:25:36,604 [INFO] Estandarización completada: outputs\standardized_db34be73b78f4d6a9b787e78cc46cb52.pdf
+2025-08-06 12:25:36,604 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:25:36,982 [INFO] Compresión completada: outputs\renuncia_db34be73b78f4d6a9b787e78cc46cb52.pdf
+2025-08-06 12:25:36,989 [INFO] Archivo enviado: outputs\renuncia_db34be73b78f4d6a9b787e78cc46cb52.pdf (original 196981 bytes → comprimido 94043 bytes)
+2025-08-06 12:25:46,986 [INFO] Archivo eliminado: outputs\renuncia_db34be73b78f4d6a9b787e78cc46cb52.pdf
+2025-08-06 12:25:48,351 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:25:48 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:25:48,353 [INFO] Archivo guardado: uploads\33afb5c3781e4f5f97ce8e4d94123beb_TITULO.pdf
+2025-08-06 12:25:48,388 [INFO] Inicio de estandarización de PDF: outputs\merged_33afb5c3781e4f5f97ce8e4d94123beb.pdf
+2025-08-06 12:25:48,963 [INFO] Estandarización completada: outputs\standardized_33afb5c3781e4f5f97ce8e4d94123beb.pdf
+2025-08-06 12:25:48,963 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:25:49,354 [INFO] Compresión completada: outputs\TITULO_33afb5c3781e4f5f97ce8e4d94123beb.pdf
+2025-08-06 12:25:49,367 [INFO] Archivo enviado: outputs\TITULO_33afb5c3781e4f5f97ce8e4d94123beb.pdf (original 68061 bytes → comprimido 35558 bytes)
+2025-08-06 12:25:59,367 [INFO] Archivo eliminado: outputs\TITULO_33afb5c3781e4f5f97ce8e4d94123beb.pdf
+2025-08-06 12:31:13,002 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:31:13 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:31:13,046 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 12:31:13,047 [INFO] Archivo guardado: uploads\2d2deedeb6f441678782968e26c84bd9_TITULO.pdf
+2025-08-06 12:31:13,050 [INFO] Inicio de estandarización de PDF: outputs\merged_2d2deedeb6f441678782968e26c84bd9.pdf
+2025-08-06 12:31:14,120 [INFO] Estandarización completada: outputs\standardized_2d2deedeb6f441678782968e26c84bd9.pdf
+2025-08-06 12:31:14,121 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:31:14,496 [INFO] Compresión completada: outputs\TITULO_2d2deedeb6f441678782968e26c84bd9.pdf
+2025-08-06 12:31:14,629 [INFO] Archivo enviado: outputs\TITULO_2d2deedeb6f441678782968e26c84bd9.pdf (original 68060 bytes → comprimido 35558 bytes)
+2025-08-06 12:31:24,508 [INFO] Archivo eliminado: outputs\TITULO_2d2deedeb6f441678782968e26c84bd9.pdf
+2025-08-06 12:37:04,255 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:37:04 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:37:04,295 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 12:37:04,296 [INFO] Archivo guardado: uploads\cb572fde25cb4a0fbc2055a6b2e92ab1_TITULO.pdf
+2025-08-06 12:37:04,298 [INFO] Inicio de estandarización de PDF: outputs\merged_cb572fde25cb4a0fbc2055a6b2e92ab1.pdf
+2025-08-06 12:37:05,157 [INFO] Estandarización completada: outputs\standardized_cb572fde25cb4a0fbc2055a6b2e92ab1.pdf
+2025-08-06 12:37:05,157 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:37:05,571 [INFO] Compresión completada: outputs\TITULO_cb572fde25cb4a0fbc2055a6b2e92ab1.pdf
+2025-08-06 12:37:05,659 [INFO] Archivo enviado: outputs\TITULO_cb572fde25cb4a0fbc2055a6b2e92ab1.pdf (original 68060 bytes → comprimido 35558 bytes)
+2025-08-06 12:37:15,574 [INFO] Archivo eliminado: outputs\TITULO_cb572fde25cb4a0fbc2055a6b2e92ab1.pdf
+2025-08-06 12:37:25,028 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:37:25 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:37:25,053 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 12:37:25,053 [INFO] Archivo guardado: uploads\d16c31c87ebb4f308374add112a893cd_TITULO.pdf
+2025-08-06 12:37:25,057 [INFO] Inicio de estandarización de PDF: outputs\merged_d16c31c87ebb4f308374add112a893cd.pdf
+2025-08-06 12:37:25,924 [INFO] Estandarización completada: outputs\standardized_d16c31c87ebb4f308374add112a893cd.pdf
+2025-08-06 12:37:25,924 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:37:26,254 [INFO] Compresión completada: outputs\TITULO_d16c31c87ebb4f308374add112a893cd.pdf
+2025-08-06 12:37:26,361 [INFO] Archivo enviado: outputs\TITULO_d16c31c87ebb4f308374add112a893cd.pdf (original 68060 bytes → comprimido 35558 bytes)
+2025-08-06 12:37:36,261 [INFO] Archivo eliminado: outputs\TITULO_d16c31c87ebb4f308374add112a893cd.pdf
+2025-08-06 12:40:19,193 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:40:19 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:40:19,252 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 12:40:19,253 [INFO] Archivo guardado: uploads\296cb25f07b24ab4a7e42df10f10d55f_TITULO.pdf
+2025-08-06 12:40:19,260 [INFO] Inicio de estandarización de PDF: outputs\merged_296cb25f07b24ab4a7e42df10f10d55f.pdf
+2025-08-06 12:40:20,484 [INFO] Estandarización completada: outputs\standardized_296cb25f07b24ab4a7e42df10f10d55f.pdf
+2025-08-06 12:40:20,485 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:40:21,023 [INFO] Compresión completada: outputs\TITULO_296cb25f07b24ab4a7e42df10f10d55f.pdf
+2025-08-06 12:40:21,177 [INFO] Archivo enviado: outputs\TITULO_296cb25f07b24ab4a7e42df10f10d55f.pdf (original 68059 bytes → comprimido 35558 bytes)
+2025-08-06 12:40:31,049 [INFO] Archivo eliminado: outputs\TITULO_296cb25f07b24ab4a7e42df10f10d55f.pdf
+2025-08-06 12:45:39,425 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:45:39 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:45:39,453 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 12:45:39,454 [INFO] Archivo guardado: uploads\767d957075c245bf9dca78c307e3b61c_TITULO.pdf
+2025-08-06 12:45:39,456 [INFO] Inicio de estandarización de PDF: outputs\merged_767d957075c245bf9dca78c307e3b61c.pdf
+2025-08-06 12:45:40,046 [INFO] Estandarización completada: outputs\standardized_767d957075c245bf9dca78c307e3b61c.pdf
+2025-08-06 12:45:40,046 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:45:40,405 [INFO] Compresión completada: outputs\TITULO_767d957075c245bf9dca78c307e3b61c.pdf
+2025-08-06 12:45:40,517 [INFO] Archivo enviado: outputs\TITULO_767d957075c245bf9dca78c307e3b61c.pdf (original 68061 bytes → comprimido 35558 bytes)
+2025-08-06 12:45:50,419 [INFO] Archivo eliminado: outputs\TITULO_767d957075c245bf9dca78c307e3b61c.pdf
+2025-08-06 12:59:03,182 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 12:59:03 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 12:59:03,251 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 12:59:03,251 [INFO] Archivo guardado: uploads\b4989139335d436081059a5e8cf87eef_TITULO.pdf
+2025-08-06 12:59:03,316 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_b4989139335d436081059a5e8cf87eef.pdf'
+2025-08-06 12:59:03,316 [INFO] Inicio de estandarización de PDF: outputs\merged_b4989139335d436081059a5e8cf87eef.pdf
+2025-08-06 12:59:05,080 [INFO] Estandarización completada: outputs\standardized_b4989139335d436081059a5e8cf87eef.pdf
+2025-08-06 12:59:05,104 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_b4989139335d436081059a5e8cf87eef.pdf'
+2025-08-06 12:59:05,104 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 12:59:05,560 [INFO] Compresión completada: outputs\TITULO_b4989139335d436081059a5e8cf87eef.pdf
+2025-08-06 12:59:05,572 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_b4989139335d436081059a5e8cf87eef.pdf'
+2025-08-06 12:59:05,745 [INFO] Archivo enviado: outputs\TITULO_b4989139335d436081059a5e8cf87eef.pdf (original 68061 bytes → comprimido 35515 bytes)
+2025-08-06 12:59:15,576 [INFO] Archivo eliminado: outputs\TITULO_b4989139335d436081059a5e8cf87eef.pdf
+2025-08-06 13:02:50,866 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:02:50 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:02:50,895 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:02:50,895 [INFO] Archivo guardado: uploads\4bfb5aa4f25a411395fcb9ab7b89cda0_TITULO.pdf
+2025-08-06 13:02:50,963 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf'
+2025-08-06 13:02:50,963 [INFO] Inicio de estandarización de PDF: outputs\merged_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf
+2025-08-06 13:02:51,405 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf
+2025-08-06 13:02:51,956 [INFO] Estandarización completada: outputs\standardized_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf
+2025-08-06 13:02:51,966 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf'
+2025-08-06 13:02:51,967 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:02:52,401 [INFO] Compresión completada: outputs\TITULO_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf
+2025-08-06 13:02:52,404 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf'
+2025-08-06 13:02:52,539 [INFO] Archivo enviado: outputs\TITULO_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf (original 68058 bytes → comprimido 35525 bytes)
+2025-08-06 13:03:02,429 [INFO] Archivo eliminado: outputs\TITULO_4bfb5aa4f25a411395fcb9ab7b89cda0.pdf
+2025-08-06 13:04:04,903 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:04:04 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:04:04,958 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:04:04,958 [INFO] Archivo guardado: uploads\cc1341b78f244a0a8be102c46643c3a6_TITULO.pdf
+2025-08-06 13:04:05,005 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_cc1341b78f244a0a8be102c46643c3a6.pdf'
+2025-08-06 13:04:05,005 [INFO] Inicio de estandarización de PDF: outputs\merged_cc1341b78f244a0a8be102c46643c3a6.pdf
+2025-08-06 13:04:05,009 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_cc1341b78f244a0a8be102c46643c3a6.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_cc1341b78f244a0a8be102c46643c3a6.pdf
+2025-08-06 13:04:05,366 [INFO] Estandarización completada: outputs\standardized_cc1341b78f244a0a8be102c46643c3a6.pdf
+2025-08-06 13:04:05,376 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_cc1341b78f244a0a8be102c46643c3a6.pdf'
+2025-08-06 13:04:05,376 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:04:05,700 [INFO] Compresión completada: outputs\TITULO_cc1341b78f244a0a8be102c46643c3a6.pdf
+2025-08-06 13:04:05,706 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_cc1341b78f244a0a8be102c46643c3a6.pdf'
+2025-08-06 13:04:05,708 [INFO] Archivo enviado: outputs\TITULO_cc1341b78f244a0a8be102c46643c3a6.pdf (original 68061 bytes → comprimido 35525 bytes)
+2025-08-06 13:04:15,705 [INFO] Archivo eliminado: outputs\TITULO_cc1341b78f244a0a8be102c46643c3a6.pdf
+2025-08-06 13:06:03,582 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:06:03 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:06:03,654 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:06:03,654 [INFO] Archivo guardado: uploads\0561d3ef15e3469292689b1970ecca1d_TITULO.pdf
+2025-08-06 13:06:03,716 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_0561d3ef15e3469292689b1970ecca1d.pdf'
+2025-08-06 13:06:03,716 [INFO] Inicio de estandarización de PDF: outputs\merged_0561d3ef15e3469292689b1970ecca1d.pdf
+2025-08-06 13:06:03,723 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_0561d3ef15e3469292689b1970ecca1d.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_0561d3ef15e3469292689b1970ecca1d.pdf
+2025-08-06 13:06:04,195 [INFO] Estandarización completada: outputs\standardized_0561d3ef15e3469292689b1970ecca1d.pdf
+2025-08-06 13:06:04,210 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_0561d3ef15e3469292689b1970ecca1d.pdf'
+2025-08-06 13:06:04,210 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:06:04,661 [INFO] Compresión completada: outputs\TITULO_0561d3ef15e3469292689b1970ecca1d.pdf
+2025-08-06 13:06:04,676 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_0561d3ef15e3469292689b1970ecca1d.pdf'
+2025-08-06 13:06:04,679 [INFO] Archivo enviado: outputs\TITULO_0561d3ef15e3469292689b1970ecca1d.pdf (original 74992 bytes → comprimido 35530 bytes)
+2025-08-06 13:06:10,615 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:06:10 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:06:10,701 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:06:10,701 [INFO] Archivo guardado: uploads\6e1ad7ac0f034f3195d7eb68aee3209b_TITULO.pdf
+2025-08-06 13:06:10,725 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_6e1ad7ac0f034f3195d7eb68aee3209b.pdf'
+2025-08-06 13:06:10,725 [INFO] Inicio de estandarización de PDF: outputs\merged_6e1ad7ac0f034f3195d7eb68aee3209b.pdf
+2025-08-06 13:06:10,729 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_6e1ad7ac0f034f3195d7eb68aee3209b.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_6e1ad7ac0f034f3195d7eb68aee3209b.pdf
+2025-08-06 13:06:11,050 [INFO] Estandarización completada: outputs\standardized_6e1ad7ac0f034f3195d7eb68aee3209b.pdf
+2025-08-06 13:06:11,059 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_6e1ad7ac0f034f3195d7eb68aee3209b.pdf'
+2025-08-06 13:06:11,060 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:06:11,367 [INFO] Compresión completada: outputs\TITULO_6e1ad7ac0f034f3195d7eb68aee3209b.pdf
+2025-08-06 13:06:11,380 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_6e1ad7ac0f034f3195d7eb68aee3209b.pdf'
+2025-08-06 13:06:11,382 [INFO] Archivo enviado: outputs\TITULO_6e1ad7ac0f034f3195d7eb68aee3209b.pdf (original 68060 bytes → comprimido 35538 bytes)
+2025-08-06 13:06:14,687 [INFO] Archivo eliminado: outputs\TITULO_0561d3ef15e3469292689b1970ecca1d.pdf
+2025-08-06 13:06:21,397 [INFO] Archivo eliminado: outputs\TITULO_6e1ad7ac0f034f3195d7eb68aee3209b.pdf
+2025-08-06 13:06:23,821 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:06:23 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:06:23,894 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:06:23,894 [INFO] Archivo guardado: uploads\52c7f8becb8e43908dab47bf708a4c51_TITULO.pdf
+2025-08-06 13:06:23,926 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_52c7f8becb8e43908dab47bf708a4c51.pdf'
+2025-08-06 13:06:23,927 [INFO] Inicio de estandarización de PDF: outputs\merged_52c7f8becb8e43908dab47bf708a4c51.pdf
+2025-08-06 13:06:23,930 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_52c7f8becb8e43908dab47bf708a4c51.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_52c7f8becb8e43908dab47bf708a4c51.pdf
+2025-08-06 13:06:24,258 [INFO] Estandarización completada: outputs\standardized_52c7f8becb8e43908dab47bf708a4c51.pdf
+2025-08-06 13:06:24,273 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_52c7f8becb8e43908dab47bf708a4c51.pdf'
+2025-08-06 13:06:24,273 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:06:24,599 [INFO] Compresión completada: outputs\TITULO_52c7f8becb8e43908dab47bf708a4c51.pdf
+2025-08-06 13:06:24,610 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_52c7f8becb8e43908dab47bf708a4c51.pdf'
+2025-08-06 13:06:24,612 [INFO] Archivo enviado: outputs\TITULO_52c7f8becb8e43908dab47bf708a4c51.pdf (original 68058 bytes → comprimido 35543 bytes)
+2025-08-06 13:06:32,018 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:06:32 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:06:32,046 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:06:32,047 [INFO] Archivo guardado: uploads\a5ace65fec7e4c97bfa3faa41139818a_TITULO.pdf
+2025-08-06 13:06:32,068 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_a5ace65fec7e4c97bfa3faa41139818a.pdf'
+2025-08-06 13:06:32,069 [INFO] Inicio de estandarización de PDF: outputs\merged_a5ace65fec7e4c97bfa3faa41139818a.pdf
+2025-08-06 13:06:32,072 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_a5ace65fec7e4c97bfa3faa41139818a.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_a5ace65fec7e4c97bfa3faa41139818a.pdf
+2025-08-06 13:06:32,455 [INFO] Estandarización completada: outputs\standardized_a5ace65fec7e4c97bfa3faa41139818a.pdf
+2025-08-06 13:06:32,467 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_a5ace65fec7e4c97bfa3faa41139818a.pdf'
+2025-08-06 13:06:32,467 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:06:32,915 [INFO] Compresión completada: outputs\TITULO_a5ace65fec7e4c97bfa3faa41139818a.pdf
+2025-08-06 13:06:32,920 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_a5ace65fec7e4c97bfa3faa41139818a.pdf'
+2025-08-06 13:06:32,935 [INFO] Archivo enviado: outputs\TITULO_a5ace65fec7e4c97bfa3faa41139818a.pdf (original 68058 bytes → comprimido 35540 bytes)
+2025-08-06 13:06:34,624 [INFO] Archivo eliminado: outputs\TITULO_52c7f8becb8e43908dab47bf708a4c51.pdf
+2025-08-06 13:06:39,313 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:06:39 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:06:39,338 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:06:39,339 [INFO] Archivo guardado: uploads\2dd4d84f78d148cc82c5ea885584e7d5_TITULO.pdf
+2025-08-06 13:06:39,361 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_2dd4d84f78d148cc82c5ea885584e7d5.pdf'
+2025-08-06 13:06:39,361 [INFO] Inicio de estandarización de PDF: outputs\merged_2dd4d84f78d148cc82c5ea885584e7d5.pdf
+2025-08-06 13:06:39,365 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_2dd4d84f78d148cc82c5ea885584e7d5.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_2dd4d84f78d148cc82c5ea885584e7d5.pdf
+2025-08-06 13:06:39,642 [INFO] Estandarización completada: outputs\standardized_2dd4d84f78d148cc82c5ea885584e7d5.pdf
+2025-08-06 13:06:39,648 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_2dd4d84f78d148cc82c5ea885584e7d5.pdf'
+2025-08-06 13:06:39,648 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:06:39,900 [INFO] Compresión completada: outputs\TITULO_2dd4d84f78d148cc82c5ea885584e7d5.pdf
+2025-08-06 13:06:39,910 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_2dd4d84f78d148cc82c5ea885584e7d5.pdf'
+2025-08-06 13:06:39,912 [INFO] Archivo enviado: outputs\TITULO_2dd4d84f78d148cc82c5ea885584e7d5.pdf (original 74992 bytes → comprimido 35530 bytes)
+2025-08-06 13:06:42,937 [INFO] Archivo eliminado: outputs\TITULO_a5ace65fec7e4c97bfa3faa41139818a.pdf
+2025-08-06 13:06:49,928 [INFO] Archivo eliminado: outputs\TITULO_2dd4d84f78d148cc82c5ea885584e7d5.pdf
+2025-08-06 13:06:54,344 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:06:54 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:06:54,396 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:06:54,397 [INFO] Archivo guardado: uploads\4b18b7d3bb2545209e96c2f6c409dce0_TITULO.pdf
+2025-08-06 13:06:54,426 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:06:54,426 [INFO] Archivo guardado: uploads\4b18b7d3bb2545209e96c2f6c409dce0_renuncia.pdf
+2025-08-06 13:06:54,426 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:06:54,505 [INFO] Merge completado: outputs\merged_4b18b7d3bb2545209e96c2f6c409dce0.pdf
+2025-08-06 13:06:54,525 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_4b18b7d3bb2545209e96c2f6c409dce0.pdf'
+2025-08-06 13:06:54,526 [INFO] Inicio de estandarización de PDF: outputs\merged_4b18b7d3bb2545209e96c2f6c409dce0.pdf
+2025-08-06 13:06:54,528 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_4b18b7d3bb2545209e96c2f6c409dce0.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_4b18b7d3bb2545209e96c2f6c409dce0.pdf
+2025-08-06 13:06:55,078 [INFO] Estandarización completada: outputs\standardized_4b18b7d3bb2545209e96c2f6c409dce0.pdf
+2025-08-06 13:06:55,091 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_4b18b7d3bb2545209e96c2f6c409dce0.pdf'
+2025-08-06 13:06:55,091 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:06:55,722 [INFO] Compresión completada: outputs\TITULO_4b18b7d3bb2545209e96c2f6c409dce0.pdf
+2025-08-06 13:06:55,747 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_4b18b7d3bb2545209e96c2f6c409dce0.pdf'
+2025-08-06 13:06:55,759 [INFO] Archivo enviado: outputs\TITULO_4b18b7d3bb2545209e96c2f6c409dce0.pdf (original 271973 bytes → comprimido 127350 bytes)
+2025-08-06 13:07:03,899 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:07:03 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:07:03,944 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:07:03,945 [INFO] Archivo guardado: uploads\3e2eaf6a27a8442b920b18d9ca12d22f_TITULO.pdf
+2025-08-06 13:07:03,978 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:07:03,978 [INFO] Archivo guardado: uploads\3e2eaf6a27a8442b920b18d9ca12d22f_renuncia.pdf
+2025-08-06 13:07:03,978 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:07:03,985 [INFO] Merge completado: outputs\merged_3e2eaf6a27a8442b920b18d9ca12d22f.pdf
+2025-08-06 13:07:04,015 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_3e2eaf6a27a8442b920b18d9ca12d22f.pdf'
+2025-08-06 13:07:04,015 [INFO] Inicio de estandarización de PDF: outputs\merged_3e2eaf6a27a8442b920b18d9ca12d22f.pdf
+2025-08-06 13:07:04,020 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_3e2eaf6a27a8442b920b18d9ca12d22f.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_3e2eaf6a27a8442b920b18d9ca12d22f.pdf
+2025-08-06 13:07:04,539 [INFO] Estandarización completada: outputs\standardized_3e2eaf6a27a8442b920b18d9ca12d22f.pdf
+2025-08-06 13:07:04,556 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_3e2eaf6a27a8442b920b18d9ca12d22f.pdf'
+2025-08-06 13:07:04,556 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:07:05,544 [INFO] Compresión completada: outputs\TITULO_3e2eaf6a27a8442b920b18d9ca12d22f.pdf
+2025-08-06 13:07:05,553 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_3e2eaf6a27a8442b920b18d9ca12d22f.pdf'
+2025-08-06 13:07:05,555 [INFO] Archivo enviado: outputs\TITULO_3e2eaf6a27a8442b920b18d9ca12d22f.pdf (original 271974 bytes → comprimido 127342 bytes)
+2025-08-06 13:07:05,763 [INFO] Archivo eliminado: outputs\TITULO_4b18b7d3bb2545209e96c2f6c409dce0.pdf
+2025-08-06 13:07:12,001 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:07:12 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:07:12,045 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:07:12,045 [INFO] Archivo guardado: uploads\1dd417a600974bc99fea62dfc233f2cd_TITULO.pdf
+2025-08-06 13:07:12,107 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:07:12,107 [INFO] Archivo guardado: uploads\1dd417a600974bc99fea62dfc233f2cd_renuncia.pdf
+2025-08-06 13:07:12,107 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:07:12,122 [INFO] Merge completado: outputs\merged_1dd417a600974bc99fea62dfc233f2cd.pdf
+2025-08-06 13:07:12,140 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_1dd417a600974bc99fea62dfc233f2cd.pdf'
+2025-08-06 13:07:12,140 [INFO] Inicio de estandarización de PDF: outputs\merged_1dd417a600974bc99fea62dfc233f2cd.pdf
+2025-08-06 13:07:12,142 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_1dd417a600974bc99fea62dfc233f2cd.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_1dd417a600974bc99fea62dfc233f2cd.pdf
+2025-08-06 13:07:12,678 [INFO] Estandarización completada: outputs\standardized_1dd417a600974bc99fea62dfc233f2cd.pdf
+2025-08-06 13:07:12,693 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_1dd417a600974bc99fea62dfc233f2cd.pdf'
+2025-08-06 13:07:12,693 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:07:13,565 [INFO] Compresión completada: outputs\TITULO_1dd417a600974bc99fea62dfc233f2cd.pdf
+2025-08-06 13:07:13,573 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_1dd417a600974bc99fea62dfc233f2cd.pdf'
+2025-08-06 13:07:13,576 [INFO] Archivo enviado: outputs\TITULO_1dd417a600974bc99fea62dfc233f2cd.pdf (original 271975 bytes → comprimido 127348 bytes)
+2025-08-06 13:07:15,549 [INFO] Archivo eliminado: outputs\TITULO_3e2eaf6a27a8442b920b18d9ca12d22f.pdf
+2025-08-06 13:07:23,575 [INFO] Archivo eliminado: outputs\TITULO_1dd417a600974bc99fea62dfc233f2cd.pdf
+2025-08-06 13:07:23,689 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:07:23 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:07:23,713 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:07:23,714 [INFO] Archivo guardado: uploads\17ee1e3f56874e2382cb30c8aa73a39b_TITULO.pdf
+2025-08-06 13:07:23,769 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:07:23,769 [INFO] Archivo guardado: uploads\17ee1e3f56874e2382cb30c8aa73a39b_renuncia.pdf
+2025-08-06 13:07:23,769 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:07:23,775 [INFO] Merge completado: outputs\merged_17ee1e3f56874e2382cb30c8aa73a39b.pdf
+2025-08-06 13:07:23,796 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_17ee1e3f56874e2382cb30c8aa73a39b.pdf'
+2025-08-06 13:07:23,796 [INFO] Inicio de estandarización de PDF: outputs\merged_17ee1e3f56874e2382cb30c8aa73a39b.pdf
+2025-08-06 13:07:23,802 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_17ee1e3f56874e2382cb30c8aa73a39b.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_17ee1e3f56874e2382cb30c8aa73a39b.pdf
+2025-08-06 13:07:24,472 [INFO] Estandarización completada: outputs\standardized_17ee1e3f56874e2382cb30c8aa73a39b.pdf
+2025-08-06 13:07:24,485 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_17ee1e3f56874e2382cb30c8aa73a39b.pdf'
+2025-08-06 13:07:24,485 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:07:25,094 [INFO] Compresión completada: outputs\TITULO_17ee1e3f56874e2382cb30c8aa73a39b.pdf
+2025-08-06 13:07:25,097 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_17ee1e3f56874e2382cb30c8aa73a39b.pdf'
+2025-08-06 13:07:25,102 [INFO] Archivo enviado: outputs\TITULO_17ee1e3f56874e2382cb30c8aa73a39b.pdf (original 298628 bytes → comprimido 127358 bytes)
+2025-08-06 13:07:30,348 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:07:30 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:07:30,381 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:07:30,382 [INFO] Archivo guardado: uploads\adb9ad693742420788babc86abdfeac4_TITULO.pdf
+2025-08-06 13:07:30,442 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:07:30,442 [INFO] Archivo guardado: uploads\adb9ad693742420788babc86abdfeac4_renuncia.pdf
+2025-08-06 13:07:30,442 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:07:30,459 [INFO] Merge completado: outputs\merged_adb9ad693742420788babc86abdfeac4.pdf
+2025-08-06 13:07:30,488 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_adb9ad693742420788babc86abdfeac4.pdf'
+2025-08-06 13:07:30,489 [INFO] Inicio de estandarización de PDF: outputs\merged_adb9ad693742420788babc86abdfeac4.pdf
+2025-08-06 13:07:30,492 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_adb9ad693742420788babc86abdfeac4.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_adb9ad693742420788babc86abdfeac4.pdf
+2025-08-06 13:07:31,060 [INFO] Estandarización completada: outputs\standardized_adb9ad693742420788babc86abdfeac4.pdf
+2025-08-06 13:07:31,075 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_adb9ad693742420788babc86abdfeac4.pdf'
+2025-08-06 13:07:31,076 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:07:31,574 [INFO] Compresión completada: outputs\TITULO_adb9ad693742420788babc86abdfeac4.pdf
+2025-08-06 13:07:31,590 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_adb9ad693742420788babc86abdfeac4.pdf'
+2025-08-06 13:07:31,594 [INFO] Archivo enviado: outputs\TITULO_adb9ad693742420788babc86abdfeac4.pdf (original 291696 bytes → comprimido 127366 bytes)
+2025-08-06 13:07:35,105 [INFO] Archivo eliminado: outputs\TITULO_17ee1e3f56874e2382cb30c8aa73a39b.pdf
+2025-08-06 13:07:38,865 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:07:38 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:07:38,886 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:07:38,887 [INFO] Archivo guardado: uploads\bd7714b02c194a08be5f57e51b810d25_TITULO.pdf
+2025-08-06 13:07:38,916 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:07:38,916 [INFO] Archivo guardado: uploads\bd7714b02c194a08be5f57e51b810d25_renuncia.pdf
+2025-08-06 13:07:38,917 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:07:38,925 [INFO] Merge completado: outputs\merged_bd7714b02c194a08be5f57e51b810d25.pdf
+2025-08-06 13:07:38,948 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_bd7714b02c194a08be5f57e51b810d25.pdf'
+2025-08-06 13:07:38,948 [INFO] Inicio de estandarización de PDF: outputs\merged_bd7714b02c194a08be5f57e51b810d25.pdf
+2025-08-06 13:07:38,953 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_bd7714b02c194a08be5f57e51b810d25.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_bd7714b02c194a08be5f57e51b810d25.pdf
+2025-08-06 13:07:39,463 [INFO] Estandarización completada: outputs\standardized_bd7714b02c194a08be5f57e51b810d25.pdf
+2025-08-06 13:07:39,471 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_bd7714b02c194a08be5f57e51b810d25.pdf'
+2025-08-06 13:07:39,471 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:07:39,886 [INFO] Compresión completada: outputs\TITULO_bd7714b02c194a08be5f57e51b810d25.pdf
+2025-08-06 13:07:39,894 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_bd7714b02c194a08be5f57e51b810d25.pdf'
+2025-08-06 13:07:39,897 [INFO] Archivo enviado: outputs\TITULO_bd7714b02c194a08be5f57e51b810d25.pdf (original 291696 bytes → comprimido 127371 bytes)
+2025-08-06 13:07:41,608 [INFO] Archivo eliminado: outputs\TITULO_adb9ad693742420788babc86abdfeac4.pdf
+2025-08-06 13:07:47,368 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:07:47 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:07:47,394 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:07:47,394 [INFO] Archivo guardado: uploads\9f0ca256fb20416a8b45ffd09bafb9f2_TITULO.pdf
+2025-08-06 13:07:47,429 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:07:47,430 [INFO] Archivo guardado: uploads\9f0ca256fb20416a8b45ffd09bafb9f2_renuncia.pdf
+2025-08-06 13:07:47,430 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:07:47,441 [INFO] Merge completado: outputs\merged_9f0ca256fb20416a8b45ffd09bafb9f2.pdf
+2025-08-06 13:07:47,465 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_9f0ca256fb20416a8b45ffd09bafb9f2.pdf'
+2025-08-06 13:07:47,465 [INFO] Inicio de estandarización de PDF: outputs\merged_9f0ca256fb20416a8b45ffd09bafb9f2.pdf
+2025-08-06 13:07:47,470 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_9f0ca256fb20416a8b45ffd09bafb9f2.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_9f0ca256fb20416a8b45ffd09bafb9f2.pdf
+2025-08-06 13:07:48,050 [INFO] Estandarización completada: outputs\standardized_9f0ca256fb20416a8b45ffd09bafb9f2.pdf
+2025-08-06 13:07:48,063 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_9f0ca256fb20416a8b45ffd09bafb9f2.pdf'
+2025-08-06 13:07:48,063 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:07:48,516 [INFO] Compresión completada: outputs\TITULO_9f0ca256fb20416a8b45ffd09bafb9f2.pdf
+2025-08-06 13:07:48,529 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_9f0ca256fb20416a8b45ffd09bafb9f2.pdf'
+2025-08-06 13:07:48,623 [INFO] Archivo enviado: outputs\TITULO_9f0ca256fb20416a8b45ffd09bafb9f2.pdf (original 291696 bytes → comprimido 127368 bytes)
+2025-08-06 13:07:49,901 [INFO] Archivo eliminado: outputs\TITULO_bd7714b02c194a08be5f57e51b810d25.pdf
+2025-08-06 13:07:58,631 [INFO] Archivo eliminado: outputs\TITULO_9f0ca256fb20416a8b45ffd09bafb9f2.pdf
+2025-08-06 13:07:59,639 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:07:59 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 13:07:59,683 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:07:59,683 [INFO] Archivo guardado: uploads\a309cc0338be4f1fb73e9549e5eaac4e_TITULO.pdf
+2025-08-06 13:07:59,717 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:07:59,717 [INFO] Archivo guardado: uploads\a309cc0338be4f1fb73e9549e5eaac4e_renuncia.pdf
+2025-08-06 13:07:59,717 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 13:07:59,730 [INFO] Merge completado: outputs\merged_a309cc0338be4f1fb73e9549e5eaac4e.pdf
+2025-08-06 13:07:59,768 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_a309cc0338be4f1fb73e9549e5eaac4e.pdf'
+2025-08-06 13:07:59,769 [INFO] Inicio de estandarización de PDF: outputs\merged_a309cc0338be4f1fb73e9549e5eaac4e.pdf
+2025-08-06 13:07:59,775 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_a309cc0338be4f1fb73e9549e5eaac4e.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_a309cc0338be4f1fb73e9549e5eaac4e.pdf
+2025-08-06 13:08:00,374 [INFO] Estandarización completada: outputs\standardized_a309cc0338be4f1fb73e9549e5eaac4e.pdf
+2025-08-06 13:08:00,389 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_a309cc0338be4f1fb73e9549e5eaac4e.pdf'
+2025-08-06 13:08:00,390 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:08:01,123 [INFO] Compresión completada: outputs\TITULO_a309cc0338be4f1fb73e9549e5eaac4e.pdf
+2025-08-06 13:08:01,130 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_a309cc0338be4f1fb73e9549e5eaac4e.pdf'
+2025-08-06 13:08:01,142 [INFO] Archivo enviado: outputs\TITULO_a309cc0338be4f1fb73e9549e5eaac4e.pdf (original 265041 bytes → comprimido 127360 bytes)
+2025-08-06 13:08:11,145 [INFO] Archivo eliminado: outputs\TITULO_a309cc0338be4f1fb73e9549e5eaac4e.pdf
+2025-08-06 13:28:25,185 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:28:25 | Archivos: 3 | Extensiones: .pdf
+2025-08-06 13:28:25,209 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:28:25,209 [INFO] Archivo guardado: uploads\1458e75bd5ae41fe8fec23f23a4a9c03_TITULO.pdf
+2025-08-06 13:28:25,225 [INFO] Debug PDF original guardado: outputs\debug_raw_certificado-fonasa.pdf
+2025-08-06 13:28:25,225 [INFO] Archivo guardado: uploads\1458e75bd5ae41fe8fec23f23a4a9c03_certificado-fonasa.pdf
+2025-08-06 13:28:25,238 [INFO] Debug PDF original guardado: outputs\debug_raw_certificado-afp.pdf
+2025-08-06 13:28:25,238 [INFO] Archivo guardado: uploads\1458e75bd5ae41fe8fec23f23a4a9c03_certificado-afp.pdf
+2025-08-06 13:28:25,238 [INFO] Merge iniciado con 3 archivos...
+2025-08-06 13:28:25,250 [INFO] Merge completado: outputs\merged_1458e75bd5ae41fe8fec23f23a4a9c03.pdf
+2025-08-06 13:28:25,262 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_1458e75bd5ae41fe8fec23f23a4a9c03.pdf'
+2025-08-06 13:28:25,262 [INFO] Inicio de estandarización de PDF: outputs\merged_1458e75bd5ae41fe8fec23f23a4a9c03.pdf
+2025-08-06 13:28:25,265 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_1458e75bd5ae41fe8fec23f23a4a9c03.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_1458e75bd5ae41fe8fec23f23a4a9c03.pdf
+2025-08-06 13:28:25,604 [INFO] Estandarización completada: outputs\standardized_1458e75bd5ae41fe8fec23f23a4a9c03.pdf
+2025-08-06 13:28:25,611 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_1458e75bd5ae41fe8fec23f23a4a9c03.pdf'
+2025-08-06 13:28:25,611 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:28:25,936 [INFO] Compresión completada: outputs\TITULO_1458e75bd5ae41fe8fec23f23a4a9c03.pdf
+2025-08-06 13:28:25,942 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_1458e75bd5ae41fe8fec23f23a4a9c03.pdf'
+2025-08-06 13:28:25,945 [INFO] Archivo enviado: outputs\TITULO_1458e75bd5ae41fe8fec23f23a4a9c03.pdf (original 206677 bytes → comprimido 138048 bytes)
+2025-08-06 13:28:35,959 [INFO] Archivo eliminado: outputs\TITULO_1458e75bd5ae41fe8fec23f23a4a9c03.pdf
+2025-08-06 13:36:57,946 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:36:57 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:36:57,947 [INFO] Archivo guardado: uploads\4a067acc59154ca1933c31de71f40c3e_renuncia.pdf
+2025-08-06 13:36:57,959 [ERROR] Error general en ihatepdf: [WinError 2] El sistema no puede encontrar el archivo especificado: 'outputs\\renuncia_4a067acc59154ca1933c31de71f40c3e.pdf'
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 602, in ihatepdf
+    compressed_size = os.path.getsize(compressed_pdf_path)
+  File "<frozen genericpath>", line 86, in getsize
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado: 'outputs\\renuncia_4a067acc59154ca1933c31de71f40c3e.pdf'
+2025-08-06 13:37:11,427 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:37:11 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:37:11,428 [INFO] Archivo guardado: uploads\229a2422dda44f42869b96a95872c2ce_renuncia.pdf
+2025-08-06 13:37:11,443 [ERROR] Error general en ihatepdf: [WinError 2] El sistema no puede encontrar el archivo especificado: 'outputs\\renuncia_229a2422dda44f42869b96a95872c2ce.pdf'
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 602, in ihatepdf
+    compressed_size = os.path.getsize(compressed_pdf_path)
+  File "<frozen genericpath>", line 86, in getsize
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado: 'outputs\\renuncia_229a2422dda44f42869b96a95872c2ce.pdf'
+2025-08-06 13:37:49,509 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:37:49 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:37:49,522 [INFO] Debug PDF original guardado: outputs\debug_raw_certificado-fonasa.pdf
+2025-08-06 13:37:49,522 [INFO] Archivo guardado: uploads\5c101e7ca77c4684a882f03a474ff38f_certificado-fonasa.pdf
+2025-08-06 13:37:49,524 [ERROR] Error general en ihatepdf: [WinError 2] El sistema no puede encontrar el archivo especificado: 'outputs\\certificado-fonasa_5c101e7ca77c4684a882f03a474ff38f.pdf'
+Traceback (most recent call last):
+  File "C:\Users\isalazar\Desktop\PortalTI-Flask\app.py", line 614, in ihatepdf
+    compressed_size = os.path.getsize(compressed_pdf_path)
+  File "<frozen genericpath>", line 86, in getsize
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado: 'outputs\\certificado-fonasa_5c101e7ca77c4684a882f03a474ff38f.pdf'
+2025-08-06 13:38:41,769 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:38:41 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 13:38:41,798 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:38:41,799 [INFO] Archivo guardado: uploads\6b6cc12300bc4493ac2b049f3aab86d8_renuncia.pdf
+2025-08-06 13:38:41,820 [INFO] Debug PDF original guardado: outputs\debug_raw_TITULO.pdf
+2025-08-06 13:38:41,820 [INFO] Archivo guardado: uploads\6b6cc12300bc4493ac2b049f3aab86d8_TITULO.pdf
+2025-08-06 13:38:41,841 [INFO] Debug PDF original guardado: outputs\debug_raw_certificado-fonasa.pdf
+2025-08-06 13:38:41,841 [INFO] Archivo guardado: uploads\6b6cc12300bc4493ac2b049f3aab86d8_certificado-fonasa.pdf
+2025-08-06 13:38:41,861 [INFO] Debug PDF original guardado: outputs\debug_raw_certificado-afp.pdf
+2025-08-06 13:38:41,861 [INFO] Archivo guardado: uploads\6b6cc12300bc4493ac2b049f3aab86d8_certificado-afp.pdf
+2025-08-06 13:38:41,862 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 13:38:41,878 [INFO] Merge completado: outputs\merged_6b6cc12300bc4493ac2b049f3aab86d8.pdf
+2025-08-06 13:38:41,897 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_6b6cc12300bc4493ac2b049f3aab86d8.pdf'
+2025-08-06 13:38:41,897 [INFO] Inicio de estandarización de PDF: outputs\merged_6b6cc12300bc4493ac2b049f3aab86d8.pdf
+2025-08-06 13:38:41,977 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_6b6cc12300bc4493ac2b049f3aab86d8.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_6b6cc12300bc4493ac2b049f3aab86d8.pdf
+2025-08-06 13:38:42,763 [INFO] Estandarización completada: outputs\standardized_6b6cc12300bc4493ac2b049f3aab86d8.pdf
+2025-08-06 13:38:43,715 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_6b6cc12300bc4493ac2b049f3aab86d8.pdf'
+2025-08-06 13:38:43,715 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:38:44,369 [INFO] Compresión completada: outputs\renuncia_6b6cc12300bc4493ac2b049f3aab86d8.pdf
+2025-08-06 13:38:44,377 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_6b6cc12300bc4493ac2b049f3aab86d8.pdf'
+2025-08-06 13:38:44,496 [INFO] Archivo enviado: outputs\renuncia_6b6cc12300bc4493ac2b049f3aab86d8.pdf (original 425087 bytes → comprimido 230224 bytes)
+2025-08-06 13:38:54,383 [INFO] Archivo eliminado: outputs\renuncia_6b6cc12300bc4493ac2b049f3aab86d8.pdf
+2025-08-06 13:38:55,552 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:38:55 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:38:55,568 [INFO] Debug PDF original guardado: outputs\debug_raw_renuncia.pdf
+2025-08-06 13:38:55,568 [INFO] Archivo guardado: uploads\b42fde6b85d545bba15e4ac67ddb837b_renuncia.pdf
+2025-08-06 13:38:55,582 [INFO] DEBUG: Guardado el resultado de 'merge_pdfs' en '1_merge_b42fde6b85d545bba15e4ac67ddb837b.pdf'
+2025-08-06 13:38:55,582 [INFO] Inicio de estandarización de PDF: outputs\merged_b42fde6b85d545bba15e4ac67ddb837b.pdf
+2025-08-06 13:38:55,585 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_b42fde6b85d545bba15e4ac67ddb837b.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_b42fde6b85d545bba15e4ac67ddb837b.pdf
+2025-08-06 13:38:55,975 [INFO] Estandarización completada: outputs\standardized_b42fde6b85d545bba15e4ac67ddb837b.pdf
+2025-08-06 13:38:55,979 [INFO] DEBUG: Guardado el resultado de 'standardize_pdf' en '2_standardize_b42fde6b85d545bba15e4ac67ddb837b.pdf'
+2025-08-06 13:38:55,979 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:38:56,741 [INFO] Compresión completada: outputs\renuncia_b42fde6b85d545bba15e4ac67ddb837b.pdf
+2025-08-06 13:38:56,749 [INFO] DEBUG: Guardado el resultado de 'compress_pdf' en '3_compress_b42fde6b85d545bba15e4ac67ddb837b.pdf'
+2025-08-06 13:38:56,752 [INFO] Archivo enviado: outputs\renuncia_b42fde6b85d545bba15e4ac67ddb837b.pdf (original 196982 bytes → comprimido 94047 bytes)
+2025-08-06 13:39:06,760 [INFO] Archivo eliminado: outputs\renuncia_b42fde6b85d545bba15e4ac67ddb837b.pdf
+2025-08-06 13:55:35,392 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:55:35 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:55:35,393 [INFO] Archivos recibidos: 1. Tamaño original total: 0.06 MB.
+2025-08-06 13:55:35,405 [INFO] Inicio de estandarización de PDF: outputs\merged_3a8bccde8ca74b07bd30d5edfb4b9a0a.pdf
+2025-08-06 13:55:35,408 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_3a8bccde8ca74b07bd30d5edfb4b9a0a.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_3a8bccde8ca74b07bd30d5edfb4b9a0a.pdf
+2025-08-06 13:55:35,684 [INFO] Estandarización completada: outputs\standardized_3a8bccde8ca74b07bd30d5edfb4b9a0a.pdf
+2025-08-06 13:55:35,684 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:55:35,926 [INFO] Compresión completada: outputs\TITULO_3a8bccde8ca74b07bd30d5edfb4b9a0a_compressed.pdf
+2025-08-06 13:55:35,927 [INFO] Proceso completado para TITULO_3a8bccde8ca74b07bd30d5edfb4b9a0a_compressed.pdf. Original: 0.06 MB -> Comprimido: 0.03 MB.
+2025-08-06 13:55:40,733 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:55:40 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:55:40,734 [INFO] Archivos recibidos: 1. Tamaño original total: 0.06 MB.
+2025-08-06 13:55:40,746 [INFO] Inicio de estandarización de PDF: outputs\merged_53bb98d5a03f420397145c07c8da6c49.pdf
+2025-08-06 13:55:40,748 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_53bb98d5a03f420397145c07c8da6c49.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_53bb98d5a03f420397145c07c8da6c49.pdf
+2025-08-06 13:55:41,031 [INFO] Estandarización completada: outputs\standardized_53bb98d5a03f420397145c07c8da6c49.pdf
+2025-08-06 13:55:41,032 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:55:41,259 [INFO] Compresión completada: outputs\TITULO_53bb98d5a03f420397145c07c8da6c49_compressed.pdf
+2025-08-06 13:55:41,259 [INFO] Proceso completado para TITULO_53bb98d5a03f420397145c07c8da6c49_compressed.pdf. Original: 0.06 MB -> Comprimido: 0.03 MB.
+2025-08-06 13:55:46,801 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:55:46 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:55:46,802 [INFO] Archivos recibidos: 1. Tamaño original total: 0.06 MB.
+2025-08-06 13:55:46,824 [INFO] Inicio de estandarización de PDF: outputs\merged_7cf0e3f48043485bb3fa3a9ca609c220.pdf
+2025-08-06 13:55:46,828 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_7cf0e3f48043485bb3fa3a9ca609c220.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_7cf0e3f48043485bb3fa3a9ca609c220.pdf
+2025-08-06 13:55:47,222 [INFO] Estandarización completada: outputs\standardized_7cf0e3f48043485bb3fa3a9ca609c220.pdf
+2025-08-06 13:55:47,222 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:55:47,492 [INFO] Compresión completada: outputs\TITULO_7cf0e3f48043485bb3fa3a9ca609c220_compressed.pdf
+2025-08-06 13:55:47,492 [INFO] Proceso completado para TITULO_7cf0e3f48043485bb3fa3a9ca609c220_compressed.pdf. Original: 0.06 MB -> Comprimido: 0.03 MB.
+2025-08-06 13:55:50,948 [INFO] Archivo eliminado: outputs\TITULO_3a8bccde8ca74b07bd30d5edfb4b9a0a_compressed.pdf
+2025-08-06 13:55:53,582 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 13:55:53 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 13:55:53,583 [INFO] Archivos recibidos: 1. Tamaño original total: 0.07 MB.
+2025-08-06 13:55:53,598 [INFO] Inicio de estandarización de PDF: outputs\merged_a8ed10fcd83e4a21bc48c34291f36548.pdf
+2025-08-06 13:55:53,601 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_a8ed10fcd83e4a21bc48c34291f36548.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_a8ed10fcd83e4a21bc48c34291f36548.pdf
+2025-08-06 13:55:54,030 [INFO] Estandarización completada: outputs\standardized_a8ed10fcd83e4a21bc48c34291f36548.pdf
+2025-08-06 13:55:54,030 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 13:55:54,259 [INFO] Compresión completada: outputs\TITULO_a8ed10fcd83e4a21bc48c34291f36548_compressed.pdf
+2025-08-06 13:55:54,259 [INFO] Proceso completado para TITULO_a8ed10fcd83e4a21bc48c34291f36548_compressed.pdf. Original: 0.07 MB -> Comprimido: 0.03 MB.
+2025-08-06 13:55:56,272 [INFO] Archivo eliminado: outputs\TITULO_53bb98d5a03f420397145c07c8da6c49_compressed.pdf
+2025-08-06 13:56:02,510 [INFO] Archivo eliminado: outputs\TITULO_7cf0e3f48043485bb3fa3a9ca609c220_compressed.pdf
+2025-08-06 13:56:09,253 [INFO] Archivo eliminado: outputs\TITULO_a8ed10fcd83e4a21bc48c34291f36548_compressed.pdf
+2025-08-06 14:04:51,250 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 14:04:51 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 14:04:51,252 [INFO] Archivos recibidos: 2. Tamaño original total: 0.13 MB.
+2025-08-06 14:04:51,252 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 14:04:51,283 [INFO] Merge completado: outputs\merged_64973ffb258b4b52847b4e191f700ecd.pdf
+2025-08-06 14:04:51,283 [INFO] Inicio de estandarización de PDF: outputs\merged_64973ffb258b4b52847b4e191f700ecd.pdf
+2025-08-06 14:04:51,285 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_64973ffb258b4b52847b4e191f700ecd.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_64973ffb258b4b52847b4e191f700ecd.pdf
+2025-08-06 14:04:51,547 [INFO] Estandarización completada: outputs\standardized_64973ffb258b4b52847b4e191f700ecd.pdf
+2025-08-06 14:04:51,548 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 14:04:51,845 [INFO] Compresión completada: outputs\TITULO_64973ffb258b4b52847b4e191f700ecd_compressed.pdf
+2025-08-06 14:04:51,845 [INFO] Proceso completado para TITULO_64973ffb258b4b52847b4e191f700ecd_compressed.pdf. Original: 0.13 MB -> Comprimido: 0.07 MB.
+2025-08-06 14:05:06,855 [INFO] Archivo eliminado: outputs\TITULO_64973ffb258b4b52847b4e191f700ecd_compressed.pdf
+2025-08-06 14:05:42,207 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 14:05:42 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 14:05:42,223 [INFO] Archivos recibidos: 4. Tamaño original total: 0.40 MB.
+2025-08-06 14:05:42,224 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 14:05:42,283 [INFO] Merge completado: outputs\merged_39dc8b22e5a64edf8cc319f82ac30497.pdf
+2025-08-06 14:05:42,283 [INFO] Inicio de estandarización de PDF: outputs\merged_39dc8b22e5a64edf8cc319f82ac30497.pdf
+2025-08-06 14:05:42,286 [INFO] Ejecutando comando Ghostscript: gswin64c -o outputs\standardized_39dc8b22e5a64edf8cc319f82ac30497.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/default -dAutoRotatePages=/None -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH outputs\merged_39dc8b22e5a64edf8cc319f82ac30497.pdf
+2025-08-06 14:05:43,282 [INFO] Estandarización completada: outputs\standardized_39dc8b22e5a64edf8cc319f82ac30497.pdf
+2025-08-06 14:05:43,282 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 14:05:43,681 [INFO] Compresión completada: outputs\certificado-fonasa_39dc8b22e5a64edf8cc319f82ac30497_compressed.pdf
+2025-08-06 14:05:43,682 [INFO] Proceso completado para certificado-fonasa_39dc8b22e5a64edf8cc319f82ac30497_compressed.pdf. Original: 0.40 MB -> Comprimido: 0.22 MB.
+2025-08-06 14:05:58,702 [INFO] Archivo eliminado: outputs\certificado-fonasa_39dc8b22e5a64edf8cc319f82ac30497_compressed.pdf
+2025-08-06 14:15:14,129 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 14:15:14 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 14:15:14,134 [INFO] Archivos recibidos: 4. Tamaño original total: 0.40 MB.
+2025-08-06 14:15:14,134 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 14:15:14,208 [INFO] Merge completado: outputs\merged_41f317159c1c4c5fa9ddd389ae6a6162.pdf
+2025-08-06 14:15:14,208 [INFO] Inicio de estandarización de PDF: outputs\merged_41f317159c1c4c5fa9ddd389ae6a6162.pdf
+2025-08-06 14:15:14,750 [INFO] Estandarización completada: outputs\standardized_41f317159c1c4c5fa9ddd389ae6a6162.pdf
+2025-08-06 14:15:14,751 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 14:15:15,636 [INFO] Compresión completada: outputs\certificado-fonasa_41f317159c1c4c5fa9ddd389ae6a6162_compressed.pdf
+2025-08-06 14:15:15,636 [INFO] Proceso completado para certificado-fonasa_41f317159c1c4c5fa9ddd389ae6a6162_compressed.pdf. Original: 0.40 MB -> Comprimido: 0.22 MB.
+2025-08-06 14:15:30,724 [INFO] Archivo eliminado: outputs\certificado-fonasa_41f317159c1c4c5fa9ddd389ae6a6162_compressed.pdf
+2025-08-06 17:13:10,572 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 17:13:10 | Archivos: 2 | Extensiones: .pdf
+2025-08-06 17:13:10,586 [INFO] Archivos recibidos: 2. Tamaño original total: 1.21 MB.
+2025-08-06 17:13:10,586 [INFO] Merge iniciado con 2 archivos...
+2025-08-06 17:13:10,826 [INFO] Merge completado: outputs\merged_25a35c3935b14b47954c60c48c484615.pdf
+2025-08-06 17:13:10,826 [INFO] Inicio de estandarización de PDF: outputs\merged_25a35c3935b14b47954c60c48c484615.pdf
+2025-08-06 17:13:12,414 [INFO] Estandarización completada: outputs\standardized_25a35c3935b14b47954c60c48c484615.pdf
+2025-08-06 17:13:12,431 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 17:13:13,086 [INFO] Compresión completada: outputs\elmercurio_25a35c3935b14b47954c60c48c484615_compressed.pdf
+2025-08-06 17:13:13,087 [INFO] Proceso completado para elmercurio_25a35c3935b14b47954c60c48c484615_compressed.pdf. Original: 1.21 MB -> Comprimido: 0.62 MB.
+2025-08-06 17:13:28,197 [INFO] Archivo eliminado: outputs\elmercurio_25a35c3935b14b47954c60c48c484615_compressed.pdf
+2025-08-06 17:15:41,346 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 17:15:41 | Archivos: 1 | Extensiones: .pdf
+2025-08-06 17:15:41,347 [INFO] Archivos recibidos: 1. Tamaño original total: 0.03 MB.
+2025-08-06 17:15:41,365 [INFO] Inicio de estandarización de PDF: outputs\merged_55c449d8b61e4ce1a6406249f3d5e4be.pdf
+2025-08-06 17:15:41,596 [INFO] Estandarización completada: outputs\standardized_55c449d8b61e4ce1a6406249f3d5e4be.pdf
+2025-08-06 17:15:41,596 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 17:15:42,000 [INFO] Compresión completada: outputs\Maithe_55c449d8b61e4ce1a6406249f3d5e4be_compressed.pdf
+2025-08-06 17:15:42,000 [INFO] Proceso completado para Maithe_55c449d8b61e4ce1a6406249f3d5e4be_compressed.pdf. Original: 0.03 MB -> Comprimido: 0.02 MB.
+2025-08-06 17:15:57,016 [INFO] Archivo eliminado: outputs\Maithe_55c449d8b61e4ce1a6406249f3d5e4be_compressed.pdf
+2025-08-06 17:44:13,338 [INFO] [USAGE] IP: 127.0.0.1 | Fecha: 2025-08-06 17:44:13 | Archivos: 4 | Extensiones: .pdf
+2025-08-06 17:44:13,343 [INFO] Archivos recibidos: 4. Tamaño original total: 0.41 MB.
+2025-08-06 17:44:13,344 [INFO] Merge iniciado con 4 archivos...
+2025-08-06 17:44:13,400 [INFO] Merge completado: outputs\merged_44a760a0e96043e98eefb25badae813f.pdf
+2025-08-06 17:44:13,400 [INFO] Inicio de estandarización de PDF: outputs\merged_44a760a0e96043e98eefb25badae813f.pdf
+2025-08-06 17:44:13,813 [INFO] Estandarización completada: outputs\standardized_44a760a0e96043e98eefb25badae813f.pdf
+2025-08-06 17:44:13,813 [INFO] Inicio de compresión con Ghostscript - Calidad: ebook
+2025-08-06 17:44:14,137 [INFO] Compresión completada: outputs\renuncia_44a760a0e96043e98eefb25badae813f_compressed.pdf
+2025-08-06 17:44:14,137 [INFO] Proceso completado para renuncia_44a760a0e96043e98eefb25badae813f_compressed.pdf. Original: 0.41 MB -> Comprimido: 0.22 MB.
+2025-08-06 17:44:29,148 [INFO] Archivo eliminado: outputs\renuncia_44a760a0e96043e98eefb25badae813f_compressed.pdf

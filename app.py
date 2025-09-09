@@ -463,9 +463,10 @@ def standardize_pdf(input_pdf, output_pdf):
 
         gs_command = [
             gs_executable,
-            "-o", output_pdf, # Forma más segura de especificar el output
+            "-o", output_pdf,
             "-sDEVICE=pdfwrite",
-            "-dPDFSETTINGS=/default", # Usamos /default para no comprimir, solo re-escribir
+            "-dPDFSETTINGS=/default",
+            "-dAutoRotatePages=/None",
             "-dCompatibilityLevel=1.4",
             "-dNOPAUSE",
             "-dQUIET",
@@ -473,15 +474,27 @@ def standardize_pdf(input_pdf, output_pdf):
             input_pdf
         ]
         
-        result = subprocess.run(gs_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+        result = subprocess.run(gs_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8')
+        
+        # Mostramos siempre la salida de Ghostscript para más información
+        if result.stdout:
+            logger.info(f"Ghostscript stdout: {result.stdout.strip()}")
+            
+        if result.stderr:
+            # Lo mostramos como 'warning' aunque el proceso sea exitoso, ya que GS a veces emite avisos.
+            logger.warning(f"Ghostscript stderr: {result.stderr.strip()}")
+        
+
         if result.returncode != 0:
-            raise RuntimeError(f"Ghostscript (estandarización) falló: {result.stderr.decode().strip()}")
+            # El error ahora será más detallado gracias al log anterior
+            raise RuntimeError(f"Ghostscript (estandarización) falló con código {result.returncode}")
 
         logger.info(f"Estandarización completada: {output_pdf}")
 
     except Exception as e:
         logger.exception(f"Error al estandarizar PDF: {e}")
-        raise   
+        raise
 
 def compress_pdf_with_ghostscript(input_pdf, output_pdf, quality="ebook"):
     """
@@ -501,6 +514,7 @@ def compress_pdf_with_ghostscript(input_pdf, output_pdf, quality="ebook"):
             "-sDEVICE=pdfwrite",
             "-dCompatibilityLevel=1.4",
             f"-dPDFSETTINGS=/{quality}",  # opciones: screen, ebook, printer, prepress, default
+            "-dAutoRotatePages=/None",
             "-dNOPAUSE",
             "-dQUIET",
             "-dBATCH",
@@ -535,31 +549,36 @@ def ihatepdf():
     if request.method == 'POST':
         if 'pdfs' not in request.files:
             flash('No files part')
-            logger.warning("Solicitud sin archivos adjuntos.")
+            logger.warning("Solicitud de 'ihatepdf' sin archivos adjuntos.")
             return redirect(request.url)
-
+        
         files = request.files.getlist('pdfs')
-        log_usage_info(files)
-        quality = request.form.get('quality', 'ebook')
-        token = request.form.get('download_token')
-
+        
         if not files or any(f.filename == '' for f in files):
             flash('No selected file')
-            logger.warning("Archivos vacíos o sin selección.")
+            logger.warning("Solicitud de 'ihatepdf' con archivos vacíos o sin selección.")
             return redirect(request.url)
+
+        log_usage_info(files)
+        
+        quality = request.form.get('quality', 'ebook')
+        token = request.form.get('download_token')
 
         unique_id = uuid.uuid4().hex
         first_filename = secure_filename(files[0].filename)
         base_name = os.path.splitext(first_filename)[0]
-        output_filename = f"{base_name}_{unique_id}.pdf"
+        output_filename = f"{base_name}_{unique_id}_compressed.pdf"
 
+        # Rutas para archivos temporales que se crearán y eliminarán
         merged_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'merged_{unique_id}.pdf')
         standardized_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], f'standardized_{unique_id}.pdf')
         compressed_pdf_path = os.path.join(app.config['OUTPUT_FOLDER'], output_filename)
 
         saved_files = []
         original_size = 0
+        
         try:
+            # Guarda los archivos subidos en una carpeta temporal
             for file in files:
                 filename = secure_filename(file.filename)
                 temp_filename = f"{unique_id}_{filename}"
@@ -567,49 +586,47 @@ def ihatepdf():
                 file.save(filepath)
                 saved_files.append(filepath)
                 original_size += os.path.getsize(filepath)
-                logger.info(f"Archivo guardado: {filepath}")
+            
+            logger.info(f"Archivos recibidos: {len(saved_files)}. Tamaño original total: {original_size / 1024 / 1024:.2f} MB.")
 
+            # Inicia el pipeline de procesamiento
             if len(saved_files) == 1:
                 shutil.copy(saved_files[0], merged_pdf_path)
             else:
                 merge_pdfs(saved_files, merged_pdf_path)
             
             standardize_pdf(merged_pdf_path, standardized_pdf_path)
-            compress_pdf_with_ghostscript(merged_pdf_path, compressed_pdf_path, quality=quality)
+            compress_pdf_with_ghostscript(standardized_pdf_path, compressed_pdf_path, quality=quality)
+            
             compressed_size = os.path.getsize(compressed_pdf_path)
 
-            # Borrar archivos temporales
-            for f in saved_files:
-                os.remove(f)
-            # Borramos los archivos intermedios creados
-            if os.path.exists(merged_pdf_path):
-                os.remove(merged_pdf_path)
-            ### AÑADIMOS EL NUEVO ARCHIVO A LA LIMPIEZA ###
-            if os.path.exists(standardized_pdf_path):
-                os.remove(standardized_pdf_path)
+            # --- LOG DE ÉXITO ---
+            logger.info(f"Proceso completado para {output_filename}. Original: {original_size / 1024 / 1024:.2f} MB -> Comprimido: {compressed_size / 1024 / 1024:.2f} MB.")
 
-            delayed_delete(compressed_pdf_path, delay=10)
-
+            # Envía el archivo al usuario y prepara las cookies de seguimiento
             response = make_response(send_file(compressed_pdf_path, as_attachment=True, download_name=output_filename))
-
             if token:
                 response.set_cookie(f'download_complete_{token}', 'true')
                 response.set_cookie(f'original_size_{token}', str(original_size))
                 response.set_cookie(f'compressed_size_{token}', str(compressed_size))
-
-            logger.info(f"Archivo enviado: {compressed_pdf_path} (original {original_size} bytes → comprimido {compressed_size} bytes)")
+            
             return response
 
         except Exception as e:
-            logger.exception(f"Error general en ihatepdf: {e}")
-            flash(str(e))
-            # Limpieza adicional en caso de error
+            # --- LOG DE ERROR ---
+            logger.exception(f"Error durante el procesamiento de PDF en 'ihatepdf': {e}")
+            flash("Ocurrió un error inesperado al procesar los archivos. Por favor, inténtalo de nuevo.")
+            return redirect(request.url)
+        
+        finally:
+            # --- LIMPIEZA DE ARCHIVOS TEMPORALES ---
+            # Se asegura de eliminar todos los archivos generados durante el proceso, incluso si falla.
+            for f in saved_files:
+                if os.path.exists(f): os.remove(f)
             if os.path.exists(merged_pdf_path): os.remove(merged_pdf_path)
             if os.path.exists(standardized_pdf_path): os.remove(standardized_pdf_path)
-            if os.path.exists(compressed_pdf_path): os.remove(compressed_pdf_path)
-            for f in saved_files: 
-                if os.path.exists(f): os.remove(f)
-            return redirect(request.url)
+            # El archivo final se elimina tras un breve retraso para asegurar la descarga
+            if os.path.exists(compressed_pdf_path): delayed_delete(compressed_pdf_path, delay=15)
 
     return render_template('ihatepdf.html')
 

@@ -23,6 +23,7 @@
                 MAX_FILE_SIZE_MB: 100,
                 THUMBNAIL_SCALE: 0.6,
                 ALERT_DURATION_MS: 5000,
+                ALERT_DURATION_DUPLICATE_FILE: 10000,
                 RESULT_FADEOUT_MS: 10000,
                 DOWNLOAD_CHECK_INTERVAL_MS: 1000,
                 DOWNLOAD_MIDWAY_TIMEOUT_MS: 15000,
@@ -60,6 +61,7 @@
                 loadingOverlay: document.getElementById("loadingOverlay"),
                 previewContainer: document.getElementById("previewContainer"),
                 uploadArea: document.querySelector(this.config.selectors.uploadArea),
+
                 resultInfo: document.getElementById("resultInfo"),
                 alertContainer: document.getElementById("alertContainer")
             };
@@ -111,6 +113,15 @@
             const newFiles = Array.from(fileList).filter(file =>
                 !this.state.files.some(f => f.name === file.name && f.size === file.size)
             );
+
+            if(newFiles.length != fileList.length) {
+              const omittedFiles = Array.from(fileList)
+                .filter(file => this.state.files.some(f => f.name === file.name && f.size === file.size))
+                .map(file => file.name)
+                .join(', ');
+              const message = `Se omitieron los siguientes archivos porque ya fueron añadidos, si son distintos cambia el nombre: ${omittedFiles}.`;
+              this._showBootstrapAlert(message, 'info');
+            }
 
             newFiles.forEach(file => {
                 const id = crypto.randomUUID(); // Genera un ID único para cada archivo
@@ -169,6 +180,11 @@
             } else {
                 console.warn("⚠️ No se encontró el placeholder en el card para aplicar rotación visual.");
             }
+            console.log("✅ ROTACIÓN FINAL REGISTRADA EN STATE:", this.state.files.map(f => ({
+                          name: f.name,
+                          rotation: f.rotation
+                        })));
+
         }
 
 
@@ -185,6 +201,40 @@
             this.dom.pdfInput.addEventListener("change", (e) => this.addFiles(e.target.files));
             this.dom.previewContainer.addEventListener("click", this._handlePreviewContainerClick.bind(this));
             this.dom.form.addEventListener("submit", this._handleFormSubmit.bind(this));
+            
+            const uploadArea = this.dom.uploadArea;
+            if (uploadArea) {
+                // Prevenir el comportamiento por defecto del navegador
+                ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                    uploadArea.addEventListener(eventName, e => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }, false);
+                });
+
+                // Añadir clase para efecto visual al arrastrar sobre el área
+                ['dragenter', 'dragover'].forEach(eventName => {
+                    uploadArea.addEventListener(eventName, () => {
+                        uploadArea.classList.add(this.config.cssClasses.dragOver);
+                    }, false);
+                });
+
+                // Quitar clase para efecto visual al salir del área
+                ['dragleave', 'drop'].forEach(eventName => {
+                    uploadArea.addEventListener(eventName, () => {
+                        uploadArea.classList.remove(this.config.cssClasses.dragOver);
+                    }, false);
+                });
+
+                // Manejar los archivos soltados
+                uploadArea.addEventListener('drop', e => {
+                    const dt = e.dataTransfer;
+                    const files = dt.files;
+                    if (files.length > 0) {
+                        this.addFiles(files);
+                    }
+                }, false);
+            }
         }
         
         /**
@@ -202,7 +252,7 @@
 
                       const newFilesState = newIdOrder.map(id => {
                       const file = this.state.files.find(f => f.uniqueId === id);
-                      return file ? { ...file } : null; // 🔁 copiar todo el objeto, manteniendo sourceFile y rotation
+                      return file || null; // 🔁 copiar todo el objeto, manteniendo sourceFile y rotation
                       }).filter(Boolean);
 
 
@@ -265,13 +315,12 @@
          */
         _handlePreviewContainerClick(event) {
             const target = event.target;
-            console.log("🖱 Click detectado en:", target.tagName, "| Clase:", target.className);
-
+            
             const closestCard = target.closest(this.config.selectors.card);
             if (!closestCard) return;
 
             const fileId = closestCard.dataset.fileId;
-            console.log("🆔 fileId obtenido desde el DOM:", fileId);
+            
 
             if (target.closest(this.config.selectors.addMoreCard)) {
                 this.dom.pdfInput.click();
@@ -294,9 +343,12 @@
          */
         async _handleFormSubmit(event) {
             event.preventDefault();
+
+
             if (this.state.files.length === 0) {
                 return this._showBootstrapAlert("Por favor, selecciona al menos un archivo PDF.", "danger");
             }
+            
             if (this.state.isSubmitting) return;
 
             this._showSpinner();
@@ -305,12 +357,19 @@
             const downloadToken = `token_${Date.now()}`;
 
             try {
+
+                this._syncFileOrderWithDOM();
+                console.log("🫚 estado de archivos antes de enviar:", this.state.files.map(f => ({ name: f.name, id: f.uniqueId, rotation: f.rotation })));
+                
                 const formData = await this._buildFormData(downloadToken);
                 this._startDownloadDetection(downloadToken);
 
                 const response = await fetch(this.dom.form.action, { method: "POST", body: formData });
+
                 if (!response.ok) {
+
                     throw new Error(`Error del servidor: ${response.status} ${response.statusText}`);
+
                 }
 
                 const blob = await response.blob();
@@ -343,10 +402,10 @@ async _buildFormData(downloadToken) {
         uniqueId: f.uniqueId,
         sizeMB: (f.size / 1024 / 1024).toFixed(2) + " MB"
     })));
-
+   
     for (const fileData of this.state.files) {
         const fileToUpload = await this._rotatePdfBinary(fileData.sourceFile, fileData.rotation);
-
+        
         console.log("✅ PDF preparado:", {
             name: fileData.name,
             rotated: fileData.rotation,
@@ -500,6 +559,25 @@ async _buildFormData(downloadToken) {
         }
 
         /**
+         * Sincroniza el orden del estado interno con el orden del DOM.
+         */
+        _syncFileOrderWithDOM() {
+            const cardElements = [...this.dom.previewContainer.querySelectorAll(`${this.config.selectors.pdfCardWrapper} ${this.config.selectors.card}`)];
+            const newIdOrder = cardElements.map(card => card.dataset.fileId);
+
+            const newFilesState = newIdOrder.map(id => {
+                const file = this.state.files.find(f => f.uniqueId === id);
+                return file; // usamos referencia directa
+            }).filter(Boolean);
+
+            if (newFilesState.length === this.state.files.length) {
+                this.state.files = newFilesState;
+                console.log("🔄 Estado sincronizado con DOM:", this.state.files.map(f => f.name));
+            }
+        }
+
+
+        /**
          * Rota un archivo PDF en memoria usando PDF-Lib.
          * @param {File} sourceFile - El archivo PDF original.
          * @param {number} angle - El ángulo de rotación (0, 90, 180, 270).
@@ -528,7 +606,11 @@ async _buildFormData(downloadToken) {
          * @param {string} [type="warning"] - El tipo de alerta (e.g., 'success', 'danger').
          */
         _showBootstrapAlert(message, type = "warning") {
+
             if (!this.dom.alertContainer) return;
+
+            this.dom.alertContainer.innerHTML = '';
+            
             const alert = document.createElement("div");
             alert.className = `alert alert-${type} alert-dismissible fade show`;
             alert.role = "alert";
@@ -539,7 +621,7 @@ async _buildFormData(downloadToken) {
             setTimeout(() => {
                 const alertInstance = bootstrap.Alert.getOrCreateInstance(alert);
                 if (alertInstance) alertInstance.close();
-            }, this.config.ALERT_DURATION_MS);
+            }, this.config.ALERT_DURATION_DUPLICATE_FILE);
         }
 
         /**
